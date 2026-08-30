@@ -1,0 +1,389 @@
+2026-07-13 15:30:35,575  INFO Hangfire.SqlServer.SqlServerObjectsInstaller.Start installing Hangfire SQL objects... [?] - MESSAGE: Start installing Hangfire SQL objects...
+ 2026-07-13 15:30:38,536  INFO Hangfire.SqlServer.SqlServerObjectsInstaller.Hangfire SQL objects installed. [?] - MESSAGE: Hangfire SQL objects installed.
+ 2026-07-13 15:30:41,729 ERROR AutomationAPI.SERVICES.FormWatcherService.FormWatcherService outer loop error [35] - MESSAGE: FormWatcherService outer loop error
+ System.InvalidOperationException: No service for type 'AutomationAPI.MODEL.Interface.IGoogleSheetsService' has been registered.
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at AutomationAPI.SERVICES.FormWatcherService.ExecuteAsync(CancellationToken stoppingToken) in C:\Sample Files\MY WORK\AutomationAPI\AutomationAPI\SERVICES\FormWatcherService.cs:line 35
+2026-07-13 15:30:41,881  INFO Microsoft.Hosting.Lifetime.Now listening on: http://localhost:5050 [?] - MESSAGE: Now listening on: http://localhost:5050
+ 2026-07-13 15:30:41,898  INFO Hangfire.BackgroundJobServer.Starting Hangfire Server using job storage: 'SQL Server: DESTINY-ELITEBO@JUTIX_AutomationAPI_DB' [?] - MESSAGE: Starting Hangfire Server using job storage: 'SQL Server: DESTINY-ELITEBO@JUTIX_AutomationAPI_DB'
+ 2026-07-13 15:30:41,901  INFO Hangfire.BackgroundJobServer.Using the following options for SQL Server job storage: Queue poll interval: 00:00:00. [?] - MESSAGE: Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+ 2026-07-13 15:30:41,902  INFO Hangfire.BackgroundJobServer.Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15 [?] - MESSAGE: Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+ 2026-07-13 15:30:41,927  INFO Microsoft.Hosting.Lifetime.Application started. Press Ctrl+C to shut down. [0] - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2026-07-13 15:30:41,928  INFO Microsoft.Hosting.Lifetime.Hosting environment: Development [0] - MESSAGE: Hosting environment: Development
+ 2026-07-13 15:30:41,929  INFO Microsoft.Hosting.Lifetime.Content root path: C:\Sample Files\MY WORK\AutomationAPI\AutomationAPI [0] - MESSAGE: Content root path: C:\Sample Files\MY WORK\AutomationAPI\AutomationAPI
+ 2026-07-13 15:30:41,998  INFO Hangfire.Server.BackgroundServerProcess.Server destiny-elitebo:21220:b0d84f7f successfully announced in 61.3514 ms [?] - MESSAGE: Server destiny-elitebo:21220:b0d84f7f successfully announced in 61.3514 ms
+ 2026-07-13 15:30:42,004  INFO Hangfire.Server.BackgroundServerProcess.Server destiny-elitebo:21220:b0d84f7f is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, SqlServerHeartbeatProcess, ExpirationManager, CountersAggregator, Worker, DelayedJobScheduler, RecurringJobScheduler... [?] - MESSAGE: Server destiny-elitebo:21220:b0d84f7f is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, SqlServerHeartbeatProcess, ExpirationManager, CountersAggregator, Worker, DelayedJobScheduler, RecurringJobScheduler...
+ 2026-07-13 15:30:42,028  INFO Hangfire.Server.BackgroundServerProcess.Server destiny-elitebo:21220:b0d84f7f all the dispatchers started [?] - MESSAGE: Server destiny-elitebo:21220:b0d84f7f all the dispatchers started
+ 2026-07-13 15:30:42,040  INFO Hangfire.Server.ServerWatchdog.1 servers were removed due to timeout [?] - MESSAGE: 1 servers were removed due to timeout
+ 2026-07-13 15:30:42,126  WARN Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware.Failed to determine the https port for redirect. [?] - MESSAGE: Failed to determine the https port for redirect.
+ 2026-07-13 15:30:45,500  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (43ms) [Parameters=[@__triggerEvent_TriggerName_0='?' (Size = 4000), @__triggerEvent_UserId_1='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT [a].[ID], [a].[CreatedAt], [a].[FolderId], [a].[IsActive], [a].[IsWorkflow], [a].[Trigger], [a].[UserID], [a].[WebhookKey], [w].[Id], [w].[Action], [w].[AutomationRuleId], [w].[ConfigurationJson], [w].[DelayAmount], [w].[DelayUnit], [w].[FalseStepId], [w].[IsBranchStep], [w].[IsLoopStep], [w].[LoopField], [w].[Order], [w].[Provider], [w].[ResourceId], [w].[ResourceName], [w].[RetryCount], [w].[RetryDelaySeconds], [w].[Target], [w].[TrueStepId]
+FROM [AutomationRules] AS [a]
+LEFT JOIN [WorkFlowSteps] AS [w] ON [a].[ID] = [w].[AutomationRuleId]
+WHERE [a].[Trigger] = @__triggerEvent_TriggerName_0 AND [a].[IsActive] = CAST(1 AS bit) AND [a].[UserID] = @__triggerEvent_UserId_1
+ORDER BY [a].[ID] [?] - MESSAGE: Executed DbCommand (43ms) [Parameters=[@__triggerEvent_TriggerName_0='?' (Size = 4000), @__triggerEvent_UserId_1='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT [a].[ID], [a].[CreatedAt], [a].[FolderId], [a].[IsActive], [a].[IsWorkflow], [a].[Trigger], [a].[UserID], [a].[WebhookKey], [w].[Id], [w].[Action], [w].[AutomationRuleId], [w].[ConfigurationJson], [w].[DelayAmount], [w].[DelayUnit], [w].[FalseStepId], [w].[IsBranchStep], [w].[IsLoopStep], [w].[LoopField], [w].[Order], [w].[Provider], [w].[ResourceId], [w].[ResourceName], [w].[RetryCount], [w].[RetryDelaySeconds], [w].[Target], [w].[TrueStepId]
+FROM [AutomationRules] AS [a]
+LEFT JOIN [WorkFlowSteps] AS [w] ON [a].[ID] = [w].[AutomationRuleId]
+WHERE [a].[Trigger] = @__triggerEvent_TriggerName_0 AND [a].[IsActive] = CAST(1 AS bit) AND [a].[UserID] = @__triggerEvent_UserId_1
+ORDER BY [a].[ID]
+ 2026-07-13 15:30:45,500  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (43ms) [Parameters=[@__triggerEvent_TriggerName_0='?' (Size = 4000), @__triggerEvent_UserId_1='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT [a].[ID], [a].[CreatedAt], [a].[FolderId], [a].[IsActive], [a].[IsWorkflow], [a].[Trigger], [a].[UserID], [a].[WebhookKey], [w].[Id], [w].[Action], [w].[AutomationRuleId], [w].[ConfigurationJson], [w].[DelayAmount], [w].[DelayUnit], [w].[FalseStepId], [w].[IsBranchStep], [w].[IsLoopStep], [w].[LoopField], [w].[Order], [w].[Provider], [w].[ResourceId], [w].[ResourceName], [w].[RetryCount], [w].[RetryDelaySeconds], [w].[Target], [w].[TrueStepId]
+FROM [AutomationRules] AS [a]
+LEFT JOIN [WorkFlowSteps] AS [w] ON [a].[ID] = [w].[AutomationRuleId]
+WHERE [a].[Trigger] = @__triggerEvent_TriggerName_0 AND [a].[IsActive] = CAST(1 AS bit) AND [a].[UserID] = @__triggerEvent_UserId_1
+ORDER BY [a].[ID] [?] - MESSAGE: Executed DbCommand (43ms) [Parameters=[@__triggerEvent_TriggerName_0='?' (Size = 4000), @__triggerEvent_UserId_1='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT [a].[ID], [a].[CreatedAt], [a].[FolderId], [a].[IsActive], [a].[IsWorkflow], [a].[Trigger], [a].[UserID], [a].[WebhookKey], [w].[Id], [w].[Action], [w].[AutomationRuleId], [w].[ConfigurationJson], [w].[DelayAmount], [w].[DelayUnit], [w].[FalseStepId], [w].[IsBranchStep], [w].[IsLoopStep], [w].[LoopField], [w].[Order], [w].[Provider], [w].[ResourceId], [w].[ResourceName], [w].[RetryCount], [w].[RetryDelaySeconds], [w].[Target], [w].[TrueStepId]
+FROM [AutomationRules] AS [a]
+LEFT JOIN [WorkFlowSteps] AS [w] ON [a].[ID] = [w].[AutomationRuleId]
+WHERE [a].[Trigger] = @__triggerEvent_TriggerName_0 AND [a].[IsActive] = CAST(1 AS bit) AND [a].[UserID] = @__triggerEvent_UserId_1
+ORDER BY [a].[ID]
+ 2026-07-13 15:30:45,500  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (42ms) [Parameters=[@__model_Email_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[ID], [u].[CreatedAt], [u].[Email], [u].[FullName], [u].[PasswordHash]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__model_Email_0 [?] - MESSAGE: Executed DbCommand (42ms) [Parameters=[@__model_Email_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[ID], [u].[CreatedAt], [u].[Email], [u].[FullName], [u].[PasswordHash]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__model_Email_0
+ 2026-07-13 15:30:45,547  INFO AutomationAPI.SERVICES.TriggerEngineService.Trigger Executed Successfully. [34] - MESSAGE: Trigger Executed Successfully.
+ 2026-07-13 15:30:45,547  INFO AutomationAPI.SERVICES.TriggerEngineService.Trigger Executed Successfully. [34] - MESSAGE: Trigger Executed Successfully.
+ 2026-07-13 15:30:46,295  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (10ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[AccessToken], [c].[ConnectedAt], [c].[ExpiresAt], [c].[ExternalAccountEmail], [c].[ExternalAccountId], [c].[IsActive], [c].[LastSyncCursor], [c].[MetaDataJson], [c].[Provider], [c].[RefreshToken], [c].[UserId]
+FROM [ConnectedApps] AS [c]
+WHERE [c].[Provider] = N'google' [?] - MESSAGE: Executed DbCommand (10ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[AccessToken], [c].[ConnectedAt], [c].[ExpiresAt], [c].[ExternalAccountEmail], [c].[ExternalAccountId], [c].[IsActive], [c].[LastSyncCursor], [c].[MetaDataJson], [c].[Provider], [c].[RefreshToken], [c].[UserId]
+FROM [ConnectedApps] AS [c]
+WHERE [c].[Provider] = N'google'
+ 2026-07-13 15:30:46,560  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (6ms) [Parameters=[@__userModel_Email_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[ID], [u].[CreatedAt], [u].[Email], [u].[FullName], [u].[PasswordHash]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__userModel_Email_0 [?] - MESSAGE: Executed DbCommand (6ms) [Parameters=[@__userModel_Email_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[ID], [u].[CreatedAt], [u].[Email], [u].[FullName], [u].[PasswordHash]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__userModel_Email_0
+ 2026-07-13 15:30:48,037  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (16ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[Provider], [c].[IsActive], [c].[ConnectedAt], [c].[ExternalAccountEmail], [c].[ExternalAccountId], [c].[MetaDataJson], [c].[ExpiresAt], [c].[LastSyncCursor]
+FROM [ConnectedApps] AS [c]
+WHERE [c].[UserId] = @__userId_0 [?] - MESSAGE: Executed DbCommand (16ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[Provider], [c].[IsActive], [c].[ConnectedAt], [c].[ExternalAccountEmail], [c].[ExternalAccountId], [c].[MetaDataJson], [c].[ExpiresAt], [c].[LastSyncCursor]
+FROM [ConnectedApps] AS [c]
+WHERE [c].[UserId] = @__userId_0
+ 2026-07-13 15:30:48,042 ERROR AutomationAPI.SERVICES.ConnectAppsService.[ERROR]: [ERROR] User USER-2026-04-68155150 has not connected with any apps. [117] - MESSAGE: [ERROR]: [ERROR] User USER-2026-04-68155150 has not connected with any apps.
+ 2026-07-13 15:30:48,050 ERROR Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.An unhandled exception has occurred while executing the request. [?] - MESSAGE: An unhandled exception has occurred while executing the request.
+ System.Exception: [ERROR] User USER-2026-04-68155150 has not connected with any apps.
+   at AutomationAPI.SERVICES.ConnectAppsService.GetConnectedAppsAsync() in C:\Sample Files\MY WORK\AutomationAPI\AutomationAPI\SERVICES\ConnectAppsService.cs:line 117
+   at AutomationAPI.Controllers.MyAppsController.GetMyApps() in C:\Sample Files\MY WORK\AutomationAPI\AutomationAPI\Controllers\MyAppsController.cs:line 23
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2026-07-13 15:30:50,706  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (9ms) [Parameters=[@__userId_0='?' (Size = 4000), @__startDate_1='?' (DbType = DateTime2)], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+WHERE [e].[UserId] = @__userId_0 AND [e].[ExecutedAt] >= @__startDate_1 [?] - MESSAGE: Executed DbCommand (9ms) [Parameters=[@__userId_0='?' (Size = 4000), @__startDate_1='?' (DbType = DateTime2)], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+WHERE [e].[UserId] = @__userId_0 AND [e].[ExecutedAt] >= @__startDate_1
+ 2026-07-13 15:30:50,719  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (26ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC [?] - MESSAGE: Executed DbCommand (26ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC
+ 2026-07-13 15:30:50,776  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (10ms) [Parameters=[@__userId_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [AutomationRules] AS [a]
+WHERE [a].[UserID] = @__userId_0 [?] - MESSAGE: Executed DbCommand (10ms) [Parameters=[@__userId_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [AutomationRules] AS [a]
+WHERE [a].[UserID] = @__userId_0
+ 2026-07-13 15:30:50,786  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (20ms) [Parameters=[@__p_1='?' (DbType = Int32), @__userId_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(@__p_1) [e].[Trigger] AS [trigger], [e].[Action] AS [action], COUNT(*) AS [count]
+FROM [ExecutionLogs] AS [e]
+WHERE [e].[UserId] = @__userId_0
+GROUP BY [e].[Trigger], [e].[Action]
+ORDER BY COUNT(*) DESC [?] - MESSAGE: Executed DbCommand (20ms) [Parameters=[@__p_1='?' (DbType = Int32), @__userId_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(@__p_1) [e].[Trigger] AS [trigger], [e].[Action] AS [action], COUNT(*) AS [count]
+FROM [ExecutionLogs] AS [e]
+WHERE [e].[UserId] = @__userId_0
+GROUP BY [e].[Trigger], [e].[Action]
+ORDER BY COUNT(*) DESC
+ 2026-07-13 15:30:50,800  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (14ms) [Parameters=[@__userId_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [ExecutionLogs] AS [e]
+WHERE [e].[UserId] = @__userId_0 [?] - MESSAGE: Executed DbCommand (14ms) [Parameters=[@__userId_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [ExecutionLogs] AS [e]
+WHERE [e].[UserId] = @__userId_0
+ 2026-07-13 15:30:50,816  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (8ms) [Parameters=[@__userId_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [ExecutionLogs] AS [e]
+WHERE [e].[UserId] = @__userId_0 AND [e].[Status] = N'Success' [?] - MESSAGE: Executed DbCommand (8ms) [Parameters=[@__userId_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [ExecutionLogs] AS [e]
+WHERE [e].[UserId] = @__userId_0 AND [e].[Status] = N'Success'
+ 2026-07-13 15:30:54,451  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (6ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[Provider], [c].[IsActive], [c].[ConnectedAt], [c].[ExternalAccountEmail], [c].[ExternalAccountId], [c].[MetaDataJson], [c].[ExpiresAt], [c].[LastSyncCursor]
+FROM [ConnectedApps] AS [c]
+WHERE [c].[UserId] = @__userId_0 [?] - MESSAGE: Executed DbCommand (6ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[Provider], [c].[IsActive], [c].[ConnectedAt], [c].[ExternalAccountEmail], [c].[ExternalAccountId], [c].[MetaDataJson], [c].[ExpiresAt], [c].[LastSyncCursor]
+FROM [ConnectedApps] AS [c]
+WHERE [c].[UserId] = @__userId_0
+ 2026-07-13 15:30:54,453 ERROR AutomationAPI.SERVICES.ConnectAppsService.[ERROR]: [ERROR] User USER-2026-04-68155150 has not connected with any apps. [117] - MESSAGE: [ERROR]: [ERROR] User USER-2026-04-68155150 has not connected with any apps.
+ 2026-07-13 15:30:54,458 ERROR Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.An unhandled exception has occurred while executing the request. [?] - MESSAGE: An unhandled exception has occurred while executing the request.
+ System.Exception: [ERROR] User USER-2026-04-68155150 has not connected with any apps.
+   at AutomationAPI.SERVICES.ConnectAppsService.GetConnectedAppsAsync() in C:\Sample Files\MY WORK\AutomationAPI\AutomationAPI\SERVICES\ConnectAppsService.cs:line 117
+   at AutomationAPI.Controllers.MyAppsController.GetMyApps() in C:\Sample Files\MY WORK\AutomationAPI\AutomationAPI\Controllers\MyAppsController.cs:line 23
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2026-07-13 15:31:11,766 ERROR AutomationAPI.SERVICES.FormWatcherService.FormWatcherService outer loop error [35] - MESSAGE: FormWatcherService outer loop error
+ System.InvalidOperationException: No service for type 'AutomationAPI.MODEL.Interface.IGoogleSheetsService' has been registered.
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at AutomationAPI.SERVICES.FormWatcherService.ExecuteAsync(CancellationToken stoppingToken) in C:\Sample Files\MY WORK\AutomationAPI\AutomationAPI\SERVICES\FormWatcherService.cs:line 35
+2026-07-13 15:31:41,861 ERROR AutomationAPI.SERVICES.FormWatcherService.FormWatcherService outer loop error [35] - MESSAGE: FormWatcherService outer loop error
+ System.InvalidOperationException: No service for type 'AutomationAPI.MODEL.Interface.IGoogleSheetsService' has been registered.
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at AutomationAPI.SERVICES.FormWatcherService.ExecuteAsync(CancellationToken stoppingToken) in C:\Sample Files\MY WORK\AutomationAPI\AutomationAPI\SERVICES\FormWatcherService.cs:line 35
+2026-07-13 15:32:11,917 ERROR AutomationAPI.SERVICES.FormWatcherService.FormWatcherService outer loop error [35] - MESSAGE: FormWatcherService outer loop error
+ System.InvalidOperationException: No service for type 'AutomationAPI.MODEL.Interface.IGoogleSheetsService' has been registered.
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at AutomationAPI.SERVICES.FormWatcherService.ExecuteAsync(CancellationToken stoppingToken) in C:\Sample Files\MY WORK\AutomationAPI\AutomationAPI\SERVICES\FormWatcherService.cs:line 35
+2026-07-13 15:32:19,021  INFO Hangfire.Server.BackgroundServerProcess.Server destiny-elitebo:21220:b0d84f7f caught stopping signal... [?] - MESSAGE: Server destiny-elitebo:21220:b0d84f7f caught stopping signal...
+ 2026-07-13 15:32:19,029  INFO Microsoft.Hosting.Lifetime.Application is shutting down... [0] - MESSAGE: Application is shutting down...
+ 2026-07-13 15:32:19,061  INFO Hangfire.Server.BackgroundServerProcess.Server destiny-elitebo:21220:b0d84f7f All dispatchers stopped [?] - MESSAGE: Server destiny-elitebo:21220:b0d84f7f All dispatchers stopped
+ 2026-07-13 15:32:19,086  INFO Hangfire.Server.BackgroundServerProcess.Server destiny-elitebo:21220:b0d84f7f successfully reported itself as stopped in 15.941 ms [?] - MESSAGE: Server destiny-elitebo:21220:b0d84f7f successfully reported itself as stopped in 15.941 ms
+ 2026-07-13 15:32:19,088  INFO Hangfire.Server.BackgroundServerProcess.Server destiny-elitebo:21220:b0d84f7f has been stopped in total 60.9929 ms [?] - MESSAGE: Server destiny-elitebo:21220:b0d84f7f has been stopped in total 60.9929 ms
+ 2026-07-13 15:33:07,320  INFO Hangfire.SqlServer.SqlServerObjectsInstaller.Start installing Hangfire SQL objects... [?] - MESSAGE: Start installing Hangfire SQL objects...
+ 2026-07-13 15:33:10,125  INFO Hangfire.SqlServer.SqlServerObjectsInstaller.Hangfire SQL objects installed. [?] - MESSAGE: Hangfire SQL objects installed.
+ 2026-07-13 15:33:11,190 ERROR AutomationAPI.SERVICES.FormWatcherService.FormWatcherService outer loop error [35] - MESSAGE: FormWatcherService outer loop error
+ System.InvalidOperationException: No service for type 'AutomationAPI.MODEL.Interface.IGoogleSheetsService' has been registered.
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at AutomationAPI.SERVICES.FormWatcherService.ExecuteAsync(CancellationToken stoppingToken) in C:\Sample Files\MY WORK\AutomationAPI\AutomationAPI\SERVICES\FormWatcherService.cs:line 35
+2026-07-13 15:33:11,281  INFO Microsoft.Hosting.Lifetime.Now listening on: http://localhost:5050 [?] - MESSAGE: Now listening on: http://localhost:5050
+ 2026-07-13 15:33:11,292  INFO Hangfire.BackgroundJobServer.Starting Hangfire Server using job storage: 'SQL Server: DESTINY-ELITEBO@JUTIX_AutomationAPI_DB' [?] - MESSAGE: Starting Hangfire Server using job storage: 'SQL Server: DESTINY-ELITEBO@JUTIX_AutomationAPI_DB'
+ 2026-07-13 15:33:11,294  INFO Hangfire.BackgroundJobServer.Using the following options for SQL Server job storage: Queue poll interval: 00:00:00. [?] - MESSAGE: Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+ 2026-07-13 15:33:11,295  INFO Hangfire.BackgroundJobServer.Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15 [?] - MESSAGE: Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+ 2026-07-13 15:33:11,312  INFO Microsoft.Hosting.Lifetime.Application started. Press Ctrl+C to shut down. [0] - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2026-07-13 15:33:11,313  INFO Microsoft.Hosting.Lifetime.Hosting environment: Development [0] - MESSAGE: Hosting environment: Development
+ 2026-07-13 15:33:11,314  INFO Microsoft.Hosting.Lifetime.Content root path: C:\Sample Files\MY WORK\AutomationAPI\AutomationAPI [0] - MESSAGE: Content root path: C:\Sample Files\MY WORK\AutomationAPI\AutomationAPI
+ 2026-07-13 15:33:11,345  INFO Hangfire.Server.BackgroundServerProcess.Server destiny-elitebo:25200:2607e669 successfully announced in 25.4549 ms [?] - MESSAGE: Server destiny-elitebo:25200:2607e669 successfully announced in 25.4549 ms
+ 2026-07-13 15:33:11,350  INFO Hangfire.Server.BackgroundServerProcess.Server destiny-elitebo:25200:2607e669 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, SqlServerHeartbeatProcess, ExpirationManager, CountersAggregator, Worker, DelayedJobScheduler, RecurringJobScheduler... [?] - MESSAGE: Server destiny-elitebo:25200:2607e669 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, SqlServerHeartbeatProcess, ExpirationManager, CountersAggregator, Worker, DelayedJobScheduler, RecurringJobScheduler...
+ 2026-07-13 15:33:11,371  INFO Hangfire.Server.BackgroundServerProcess.Server destiny-elitebo:25200:2607e669 all the dispatchers started [?] - MESSAGE: Server destiny-elitebo:25200:2607e669 all the dispatchers started
+ 2026-07-13 15:33:11,591  WARN Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware.Failed to determine the https port for redirect. [?] - MESSAGE: Failed to determine the https port for redirect.
+ 2026-07-13 15:33:14,258  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (37ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[Provider], [c].[IsActive], [c].[ConnectedAt], [c].[ExternalAccountEmail], [c].[ExternalAccountId], [c].[MetaDataJson], [c].[ExpiresAt], [c].[LastSyncCursor]
+FROM [ConnectedApps] AS [c]
+WHERE [c].[UserId] = @__userId_0 [?] - MESSAGE: Executed DbCommand (37ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[Provider], [c].[IsActive], [c].[ConnectedAt], [c].[ExternalAccountEmail], [c].[ExternalAccountId], [c].[MetaDataJson], [c].[ExpiresAt], [c].[LastSyncCursor]
+FROM [ConnectedApps] AS [c]
+WHERE [c].[UserId] = @__userId_0
+ 2026-07-13 15:33:14,295 ERROR AutomationAPI.SERVICES.ConnectAppsService.[ERROR]: [ERROR] User USER-2026-04-68155150 has not connected with any apps. [117] - MESSAGE: [ERROR]: [ERROR] User USER-2026-04-68155150 has not connected with any apps.
+ 2026-07-13 15:33:14,309 ERROR Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.An unhandled exception has occurred while executing the request. [?] - MESSAGE: An unhandled exception has occurred while executing the request.
+ System.Exception: [ERROR] User USER-2026-04-68155150 has not connected with any apps.
+   at AutomationAPI.SERVICES.ConnectAppsService.GetConnectedAppsAsync() in C:\Sample Files\MY WORK\AutomationAPI\AutomationAPI\SERVICES\ConnectAppsService.cs:line 117
+   at AutomationAPI.Controllers.MyAppsController.GetMyApps() in C:\Sample Files\MY WORK\AutomationAPI\AutomationAPI\Controllers\MyAppsController.cs:line 23
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2026-07-13 15:33:23,101  INFO AutomationAPI.SERVICES.OAuthService.[INFO] Generated GitHub OAuth URL: https://github.com/login/oauth/authorize?client_id=Ov23lisSiT0ZwLPBi3ti&redirect_uri=http://localhost:5050/api/OAuth/github/callback&scope=repo%20user%3Aemail&state=USER-2026-04-68155150 [319] - MESSAGE: [INFO] Generated GitHub OAuth URL: https://github.com/login/oauth/authorize?client_id=Ov23lisSiT0ZwLPBi3ti&redirect_uri=http://localhost:5050/api/OAuth/github/callback&scope=repo%20user%3Aemail&state=USER-2026-04-68155150
+ 2026-07-13 15:33:24,420  INFO System.Net.Http.HttpClient.Default.LogicalHandler.Start processing HTTP request POST https://github.com/login/oauth/access_token [?] - MESSAGE: Start processing HTTP request POST https://github.com/login/oauth/access_token
+ 2026-07-13 15:33:24,427  INFO System.Net.Http.HttpClient.Default.ClientHandler.Sending HTTP request POST https://github.com/login/oauth/access_token [?] - MESSAGE: Sending HTTP request POST https://github.com/login/oauth/access_token
+ 2026-07-13 15:33:25,750  INFO System.Net.Http.HttpClient.Default.ClientHandler.Received HTTP response headers after 1299.6671ms - 200 [?] - MESSAGE: Received HTTP response headers after 1299.6671ms - 200
+ 2026-07-13 15:33:25,766  INFO System.Net.Http.HttpClient.Default.LogicalHandler.End processing HTTP request after 1351.3462ms - 200 [?] - MESSAGE: End processing HTTP request after 1351.3462ms - 200
+ 2026-07-13 15:33:26,157  INFO System.Net.Http.HttpClient.GitHubService.LogicalHandler.Start processing HTTP request GET https://api.github.com/user [?] - MESSAGE: Start processing HTTP request GET https://api.github.com/user
+ 2026-07-13 15:33:26,160  INFO System.Net.Http.HttpClient.GitHubService.ClientHandler.Sending HTTP request GET https://api.github.com/user [?] - MESSAGE: Sending HTTP request GET https://api.github.com/user
+ 2026-07-13 15:33:27,130  INFO System.Net.Http.HttpClient.GitHubService.ClientHandler.Received HTTP response headers after 968.2822ms - 200 [?] - MESSAGE: Received HTTP response headers after 968.2822ms - 200
+ 2026-07-13 15:33:27,132  INFO System.Net.Http.HttpClient.GitHubService.LogicalHandler.End processing HTTP request after 975.3354ms - 200 [?] - MESSAGE: End processing HTTP request after 975.3354ms - 200
+ 2026-07-13 15:33:27,206  INFO System.Net.Http.HttpClient.GitHubService.LogicalHandler.Start processing HTTP request GET https://api.github.com/user/emails [?] - MESSAGE: Start processing HTTP request GET https://api.github.com/user/emails
+ 2026-07-13 15:33:27,210  INFO System.Net.Http.HttpClient.GitHubService.ClientHandler.Sending HTTP request GET https://api.github.com/user/emails [?] - MESSAGE: Sending HTTP request GET https://api.github.com/user/emails
+ 2026-07-13 15:33:27,740  INFO System.Net.Http.HttpClient.GitHubService.ClientHandler.Received HTTP response headers after 527.0306ms - 200 [?] - MESSAGE: Received HTTP response headers after 527.0306ms - 200
+ 2026-07-13 15:33:27,742  INFO System.Net.Http.HttpClient.GitHubService.LogicalHandler.End processing HTTP request after 536.061ms - 200 [?] - MESSAGE: End processing HTTP request after 536.061ms - 200
+ 2026-07-13 15:33:28,023  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (18ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[AccessToken], [c].[ConnectedAt], [c].[ExpiresAt], [c].[ExternalAccountEmail], [c].[ExternalAccountId], [c].[IsActive], [c].[LastSyncCursor], [c].[MetaDataJson], [c].[Provider], [c].[RefreshToken], [c].[UserId]
+FROM [ConnectedApps] AS [c]
+WHERE [c].[UserId] = @__userId_0 AND [c].[Provider] = N'github' [?] - MESSAGE: Executed DbCommand (18ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[AccessToken], [c].[ConnectedAt], [c].[ExpiresAt], [c].[ExternalAccountEmail], [c].[ExternalAccountId], [c].[IsActive], [c].[LastSyncCursor], [c].[MetaDataJson], [c].[Provider], [c].[RefreshToken], [c].[UserId]
+FROM [ConnectedApps] AS [c]
+WHERE [c].[UserId] = @__userId_0 AND [c].[Provider] = N'github'
+ 2026-07-13 15:33:28,253  INFO AutomationAPI.SERVICES.OAuthService.[INFO] New GitHub ConnectedApp created for user: USER-2026-04-68155150. [403] - MESSAGE: [INFO] New GitHub ConnectedApp created for user: USER-2026-04-68155150.
+ 2026-07-13 15:33:28,563  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (13ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = DateTime2), @p2='?' (DbType = DateTime2), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (DbType = Boolean), @p6='?' (Size = 4000), @p7='?' (Size = 4000), @p8='?' (Size = 4000), @p9='?' (Size = 4000), @p10='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [ConnectedApps] ([AccessToken], [ConnectedAt], [ExpiresAt], [ExternalAccountEmail], [ExternalAccountId], [IsActive], [LastSyncCursor], [MetaDataJson], [Provider], [RefreshToken], [UserId])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10); [?] - MESSAGE: Executed DbCommand (13ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = DateTime2), @p2='?' (DbType = DateTime2), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (DbType = Boolean), @p6='?' (Size = 4000), @p7='?' (Size = 4000), @p8='?' (Size = 4000), @p9='?' (Size = 4000), @p10='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [ConnectedApps] ([AccessToken], [ConnectedAt], [ExpiresAt], [ExternalAccountEmail], [ExternalAccountId], [IsActive], [LastSyncCursor], [MetaDataJson], [Provider], [RefreshToken], [UserId])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10);
+ 2026-07-13 15:33:29,379  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (3ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[Provider], [c].[IsActive], [c].[ConnectedAt], [c].[ExternalAccountEmail], [c].[ExternalAccountId], [c].[MetaDataJson], [c].[ExpiresAt], [c].[LastSyncCursor]
+FROM [ConnectedApps] AS [c]
+WHERE [c].[UserId] = @__userId_0 [?] - MESSAGE: Executed DbCommand (3ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[Provider], [c].[IsActive], [c].[ConnectedAt], [c].[ExternalAccountEmail], [c].[ExternalAccountId], [c].[MetaDataJson], [c].[ExpiresAt], [c].[LastSyncCursor]
+FROM [ConnectedApps] AS [c]
+WHERE [c].[UserId] = @__userId_0
+ 2026-07-13 15:33:29,385  INFO AutomationAPI.SERVICES.ConnectAppsService.[INFO] User USER-2026-04-68155150 retrieved connected apps successfully. [135] - MESSAGE: [INFO] User USER-2026-04-68155150 retrieved connected apps successfully.
+ 2026-07-13 15:33:29,463  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[Provider], [c].[IsActive], [c].[ConnectedAt], [c].[ExternalAccountEmail], [c].[ExternalAccountId], [c].[MetaDataJson], [c].[ExpiresAt], [c].[LastSyncCursor]
+FROM [ConnectedApps] AS [c]
+WHERE [c].[UserId] = @__userId_0 [?] - MESSAGE: Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[Provider], [c].[IsActive], [c].[ConnectedAt], [c].[ExternalAccountEmail], [c].[ExternalAccountId], [c].[MetaDataJson], [c].[ExpiresAt], [c].[LastSyncCursor]
+FROM [ConnectedApps] AS [c]
+WHERE [c].[UserId] = @__userId_0
+ 2026-07-13 15:33:29,464  INFO AutomationAPI.SERVICES.ConnectAppsService.[INFO] User USER-2026-04-68155150 retrieved connected apps successfully. [135] - MESSAGE: [INFO] User USER-2026-04-68155150 retrieved connected apps successfully.
+ 2026-07-13 15:33:35,899  INFO AutomationAPI.SERVICES.OAuthService.[INFO] Generated Slack OAuth URL: https://slack.com/oauth/v2/authorize?client_id=11195556848982.11201237144836&scope=chat:write,channels:read&redirect_uri=http://localhost:5050/api/OAuth/slack/callback&user_scope=identity.basic,identity.email,identity.team&state=USER-2026-04-68155150 [184] - MESSAGE: [INFO] Generated Slack OAuth URL: https://slack.com/oauth/v2/authorize?client_id=11195556848982.11201237144836&scope=chat:write,channels:read&redirect_uri=http://localhost:5050/api/OAuth/slack/callback&user_scope=identity.basic,identity.email,identity.team&state=USER-2026-04-68155150
+ 2026-07-13 15:33:41,234 ERROR AutomationAPI.SERVICES.FormWatcherService.FormWatcherService outer loop error [35] - MESSAGE: FormWatcherService outer loop error
+ System.InvalidOperationException: No service for type 'AutomationAPI.MODEL.Interface.IGoogleSheetsService' has been registered.
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at AutomationAPI.SERVICES.FormWatcherService.ExecuteAsync(CancellationToken stoppingToken) in C:\Sample Files\MY WORK\AutomationAPI\AutomationAPI\SERVICES\FormWatcherService.cs:line 35
+2026-07-13 15:33:50,647  INFO System.Net.Http.HttpClient.Default.LogicalHandler.Start processing HTTP request POST https://slack.com/api/oauth.v2.access [?] - MESSAGE: Start processing HTTP request POST https://slack.com/api/oauth.v2.access
+ 2026-07-13 15:33:50,653  INFO System.Net.Http.HttpClient.Default.ClientHandler.Sending HTTP request POST https://slack.com/api/oauth.v2.access [?] - MESSAGE: Sending HTTP request POST https://slack.com/api/oauth.v2.access
+ 2026-07-13 15:33:51,768  INFO System.Net.Http.HttpClient.Default.ClientHandler.Received HTTP response headers after 1112.7612ms - 200 [?] - MESSAGE: Received HTTP response headers after 1112.7612ms - 200
+ 2026-07-13 15:33:51,770  INFO System.Net.Http.HttpClient.Default.LogicalHandler.End processing HTTP request after 1122.7505ms - 200 [?] - MESSAGE: End processing HTTP request after 1122.7505ms - 200
+ 2026-07-13 15:33:51,854  INFO System.Net.Http.HttpClient.SlackService.LogicalHandler.Start processing HTTP request GET https://slack.com/api/users.identity [?] - MESSAGE: Start processing HTTP request GET https://slack.com/api/users.identity
+ 2026-07-13 15:33:51,865  INFO System.Net.Http.HttpClient.SlackService.ClientHandler.Sending HTTP request GET https://slack.com/api/users.identity [?] - MESSAGE: Sending HTTP request GET https://slack.com/api/users.identity
+ 2026-07-13 15:33:52,537  INFO System.Net.Http.HttpClient.SlackService.ClientHandler.Received HTTP response headers after 669.0748ms - 200 [?] - MESSAGE: Received HTTP response headers after 669.0748ms - 200
+ 2026-07-13 15:33:52,539  INFO System.Net.Http.HttpClient.SlackService.LogicalHandler.End processing HTTP request after 685.4951ms - 200 [?] - MESSAGE: End processing HTTP request after 685.4951ms - 200
+ 2026-07-13 15:33:52,580  INFO AutomationAPI.SERVICES.OAuthService.[INFO] Slack OAuth token exchange successful for user: USER-2026-04-68155150. [252] - MESSAGE: [INFO] Slack OAuth token exchange successful for user: USER-2026-04-68155150.
+ 2026-07-13 15:33:52,610  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (9ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[AccessToken], [c].[ConnectedAt], [c].[ExpiresAt], [c].[ExternalAccountEmail], [c].[ExternalAccountId], [c].[IsActive], [c].[LastSyncCursor], [c].[MetaDataJson], [c].[Provider], [c].[RefreshToken], [c].[UserId]
+FROM [ConnectedApps] AS [c]
+WHERE [c].[UserId] = @__userId_0 AND [c].[Provider] = N'slack' [?] - MESSAGE: Executed DbCommand (9ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[AccessToken], [c].[ConnectedAt], [c].[ExpiresAt], [c].[ExternalAccountEmail], [c].[ExternalAccountId], [c].[IsActive], [c].[LastSyncCursor], [c].[MetaDataJson], [c].[Provider], [c].[RefreshToken], [c].[UserId]
+FROM [ConnectedApps] AS [c]
+WHERE [c].[UserId] = @__userId_0 AND [c].[Provider] = N'slack'
+ 2026-07-13 15:33:52,616  INFO AutomationAPI.SERVICES.OAuthService.[INFO] New Slack ConnectApp created for user: USER-2026-04-68155150. [289] - MESSAGE: [INFO] New Slack ConnectApp created for user: USER-2026-04-68155150.
+ 2026-07-13 15:33:52,625  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (2ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = DateTime2), @p2='?' (DbType = DateTime2), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (DbType = Boolean), @p6='?' (Size = 4000), @p7='?' (Size = 4000), @p8='?' (Size = 4000), @p9='?' (Size = 4000), @p10='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [ConnectedApps] ([AccessToken], [ConnectedAt], [ExpiresAt], [ExternalAccountEmail], [ExternalAccountId], [IsActive], [LastSyncCursor], [MetaDataJson], [Provider], [RefreshToken], [UserId])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10); [?] - MESSAGE: Executed DbCommand (2ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = DateTime2), @p2='?' (DbType = DateTime2), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (DbType = Boolean), @p6='?' (Size = 4000), @p7='?' (Size = 4000), @p8='?' (Size = 4000), @p9='?' (Size = 4000), @p10='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [ConnectedApps] ([AccessToken], [ConnectedAt], [ExpiresAt], [ExternalAccountEmail], [ExternalAccountId], [IsActive], [LastSyncCursor], [MetaDataJson], [Provider], [RefreshToken], [UserId])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10);
+ 2026-07-13 15:33:53,718  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (3ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[Provider], [c].[IsActive], [c].[ConnectedAt], [c].[ExternalAccountEmail], [c].[ExternalAccountId], [c].[MetaDataJson], [c].[ExpiresAt], [c].[LastSyncCursor]
+FROM [ConnectedApps] AS [c]
+WHERE [c].[UserId] = @__userId_0 [?] - MESSAGE: Executed DbCommand (3ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[Provider], [c].[IsActive], [c].[ConnectedAt], [c].[ExternalAccountEmail], [c].[ExternalAccountId], [c].[MetaDataJson], [c].[ExpiresAt], [c].[LastSyncCursor]
+FROM [ConnectedApps] AS [c]
+WHERE [c].[UserId] = @__userId_0
+ 2026-07-13 15:33:53,721  INFO AutomationAPI.SERVICES.ConnectAppsService.[INFO] User USER-2026-04-68155150 retrieved connected apps successfully. [135] - MESSAGE: [INFO] User USER-2026-04-68155150 retrieved connected apps successfully.
+ 2026-07-13 15:33:53,745  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (2ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[Provider], [c].[IsActive], [c].[ConnectedAt], [c].[ExternalAccountEmail], [c].[ExternalAccountId], [c].[MetaDataJson], [c].[ExpiresAt], [c].[LastSyncCursor]
+FROM [ConnectedApps] AS [c]
+WHERE [c].[UserId] = @__userId_0 [?] - MESSAGE: Executed DbCommand (2ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[Provider], [c].[IsActive], [c].[ConnectedAt], [c].[ExternalAccountEmail], [c].[ExternalAccountId], [c].[MetaDataJson], [c].[ExpiresAt], [c].[LastSyncCursor]
+FROM [ConnectedApps] AS [c]
+WHERE [c].[UserId] = @__userId_0
+ 2026-07-13 15:33:53,748  INFO AutomationAPI.SERVICES.ConnectAppsService.[INFO] User USER-2026-04-68155150 retrieved connected apps successfully. [135] - MESSAGE: [INFO] User USER-2026-04-68155150 retrieved connected apps successfully.
+ 2026-07-13 15:34:11,435 ERROR AutomationAPI.SERVICES.FormWatcherService.FormWatcherService outer loop error [35] - MESSAGE: FormWatcherService outer loop error
+ System.InvalidOperationException: No service for type 'AutomationAPI.MODEL.Interface.IGoogleSheetsService' has been registered.
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at AutomationAPI.SERVICES.FormWatcherService.ExecuteAsync(CancellationToken stoppingToken) in C:\Sample Files\MY WORK\AutomationAPI\AutomationAPI\SERVICES\FormWatcherService.cs:line 35
+2026-07-13 15:34:41,484 ERROR AutomationAPI.SERVICES.FormWatcherService.FormWatcherService outer loop error [35] - MESSAGE: FormWatcherService outer loop error
+ System.InvalidOperationException: No service for type 'AutomationAPI.MODEL.Interface.IGoogleSheetsService' has been registered.
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at AutomationAPI.SERVICES.FormWatcherService.ExecuteAsync(CancellationToken stoppingToken) in C:\Sample Files\MY WORK\AutomationAPI\AutomationAPI\SERVICES\FormWatcherService.cs:line 35
+2026-07-13 15:35:11,504 ERROR AutomationAPI.SERVICES.FormWatcherService.FormWatcherService outer loop error [35] - MESSAGE: FormWatcherService outer loop error
+ System.InvalidOperationException: No service for type 'AutomationAPI.MODEL.Interface.IGoogleSheetsService' has been registered.
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at AutomationAPI.SERVICES.FormWatcherService.ExecuteAsync(CancellationToken stoppingToken) in C:\Sample Files\MY WORK\AutomationAPI\AutomationAPI\SERVICES\FormWatcherService.cs:line 35
+2026-07-13 15:35:11,958  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (6ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[AccessToken], [c].[ConnectedAt], [c].[ExpiresAt], [c].[ExternalAccountEmail], [c].[ExternalAccountId], [c].[IsActive], [c].[LastSyncCursor], [c].[MetaDataJson], [c].[Provider], [c].[RefreshToken], [c].[UserId]
+FROM [ConnectedApps] AS [c]
+WHERE [c].[Provider] = N'google' [?] - MESSAGE: Executed DbCommand (6ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[AccessToken], [c].[ConnectedAt], [c].[ExpiresAt], [c].[ExternalAccountEmail], [c].[ExternalAccountId], [c].[IsActive], [c].[LastSyncCursor], [c].[MetaDataJson], [c].[Provider], [c].[RefreshToken], [c].[UserId]
+FROM [ConnectedApps] AS [c]
+WHERE [c].[Provider] = N'google'
+ 2026-07-13 15:35:41,515 ERROR AutomationAPI.SERVICES.FormWatcherService.FormWatcherService outer loop error [35] - MESSAGE: FormWatcherService outer loop error
+ System.InvalidOperationException: No service for type 'AutomationAPI.MODEL.Interface.IGoogleSheetsService' has been registered.
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at AutomationAPI.SERVICES.FormWatcherService.ExecuteAsync(CancellationToken stoppingToken) in C:\Sample Files\MY WORK\AutomationAPI\AutomationAPI\SERVICES\FormWatcherService.cs:line 35
+2026-07-13 15:36:11,525 ERROR AutomationAPI.SERVICES.FormWatcherService.FormWatcherService outer loop error [35] - MESSAGE: FormWatcherService outer loop error
+ System.InvalidOperationException: No service for type 'AutomationAPI.MODEL.Interface.IGoogleSheetsService' has been registered.
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at AutomationAPI.SERVICES.FormWatcherService.ExecuteAsync(CancellationToken stoppingToken) in C:\Sample Files\MY WORK\AutomationAPI\AutomationAPI\SERVICES\FormWatcherService.cs:line 35
+2026-07-13 15:36:41,530 ERROR AutomationAPI.SERVICES.FormWatcherService.FormWatcherService outer loop error [35] - MESSAGE: FormWatcherService outer loop error
+ System.InvalidOperationException: No service for type 'AutomationAPI.MODEL.Interface.IGoogleSheetsService' has been registered.
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at AutomationAPI.SERVICES.FormWatcherService.ExecuteAsync(CancellationToken stoppingToken) in C:\Sample Files\MY WORK\AutomationAPI\AutomationAPI\SERVICES\FormWatcherService.cs:line 35
+2026-07-13 15:37:11,544 ERROR AutomationAPI.SERVICES.FormWatcherService.FormWatcherService outer loop error [35] - MESSAGE: FormWatcherService outer loop error
+ System.InvalidOperationException: No service for type 'AutomationAPI.MODEL.Interface.IGoogleSheetsService' has been registered.
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at AutomationAPI.SERVICES.FormWatcherService.ExecuteAsync(CancellationToken stoppingToken) in C:\Sample Files\MY WORK\AutomationAPI\AutomationAPI\SERVICES\FormWatcherService.cs:line 35
+2026-07-13 15:37:13,645  INFO Hangfire.Server.BackgroundServerProcess.Server destiny-elitebo:25200:2607e669 caught stopping signal... [?] - MESSAGE: Server destiny-elitebo:25200:2607e669 caught stopping signal...
+ 2026-07-13 15:37:13,658  INFO Microsoft.Hosting.Lifetime.Application is shutting down... [0] - MESSAGE: Application is shutting down...
+ 2026-07-13 15:37:14,208  INFO Hangfire.Server.BackgroundServerProcess.Server destiny-elitebo:25200:2607e669 caught stopped signal... [?] - MESSAGE: Server destiny-elitebo:25200:2607e669 caught stopped signal...
+ 2026-07-13 15:37:14,442  INFO Hangfire.Server.BackgroundServerProcess.Server destiny-elitebo:25200:2607e669 All dispatchers stopped [?] - MESSAGE: Server destiny-elitebo:25200:2607e669 All dispatchers stopped
+ 2026-07-13 15:37:14,478  INFO Hangfire.Server.BackgroundServerProcess.Server destiny-elitebo:25200:2607e669 successfully reported itself as stopped in 27.1605 ms [?] - MESSAGE: Server destiny-elitebo:25200:2607e669 successfully reported itself as stopped in 27.1605 ms
+ 2026-07-13 15:37:14,480  INFO Hangfire.Server.BackgroundServerProcess.Server destiny-elitebo:25200:2607e669 has been stopped in total 821.9529 ms [?] - MESSAGE: Server destiny-elitebo:25200:2607e669 has been stopped in total 821.9529 ms
+ 

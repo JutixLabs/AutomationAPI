@@ -1,0 +1,1121 @@
+2026-04-30 03:42:59,228  INFO Hangfire.SqlServer.SqlServerObjectsInstaller.Start installing Hangfire SQL objects... [?] - MESSAGE: Start installing Hangfire SQL objects...
+ 2026-04-30 03:43:01,661  INFO Hangfire.SqlServer.SqlServerObjectsInstaller.Hangfire SQL objects installed. [?] - MESSAGE: Hangfire SQL objects installed.
+ 2026-04-30 03:43:02,649  INFO Microsoft.Hosting.Lifetime.Now listening on: https://localhost:7100 [?] - MESSAGE: Now listening on: https://localhost:7100
+ 2026-04-30 03:43:02,659  INFO Microsoft.Hosting.Lifetime.Now listening on: http://localhost:5050 [?] - MESSAGE: Now listening on: http://localhost:5050
+ 2026-04-30 03:43:02,813  INFO Hangfire.BackgroundJobServer.Starting Hangfire Server using job storage: 'SQL Server: DESTINY-ELITEBO@JUTIX_AutomationAPI_DB' [?] - MESSAGE: Starting Hangfire Server using job storage: 'SQL Server: DESTINY-ELITEBO@JUTIX_AutomationAPI_DB'
+ 2026-04-30 03:43:02,821  INFO Hangfire.BackgroundJobServer.Using the following options for SQL Server job storage: Queue poll interval: 00:00:00. [?] - MESSAGE: Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+ 2026-04-30 03:43:02,830  INFO Hangfire.BackgroundJobServer.Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15 [?] - MESSAGE: Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+ 2026-04-30 03:43:02,913  INFO Microsoft.Hosting.Lifetime.Application started. Press Ctrl+C to shut down. [0] - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2026-04-30 03:43:02,957  INFO Microsoft.Hosting.Lifetime.Hosting environment: Development [0] - MESSAGE: Hosting environment: Development
+ 2026-04-30 03:43:02,966  INFO Microsoft.Hosting.Lifetime.Content root path: C:\Sample Files\MY WORK\AutomationAPI\AutomationAPI [0] - MESSAGE: Content root path: C:\Sample Files\MY WORK\AutomationAPI\AutomationAPI
+ 2026-04-30 03:43:03,279  INFO Hangfire.Server.BackgroundServerProcess.Server destiny-elitebo:54256:3f700b22 successfully announced in 365.5264 ms [?] - MESSAGE: Server destiny-elitebo:54256:3f700b22 successfully announced in 365.5264 ms
+ 2026-04-30 03:43:03,297  INFO Hangfire.Server.BackgroundServerProcess.Server destiny-elitebo:54256:3f700b22 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, SqlServerHeartbeatProcess, ExpirationManager, CountersAggregator, Worker, DelayedJobScheduler, RecurringJobScheduler... [?] - MESSAGE: Server destiny-elitebo:54256:3f700b22 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, SqlServerHeartbeatProcess, ExpirationManager, CountersAggregator, Worker, DelayedJobScheduler, RecurringJobScheduler...
+ 2026-04-30 03:43:03,738  INFO Hangfire.Server.BackgroundServerProcess.Server destiny-elitebo:54256:3f700b22 all the dispatchers started [?] - MESSAGE: Server destiny-elitebo:54256:3f700b22 all the dispatchers started
+ 2026-04-30 03:44:49,088  INFO Hangfire.SqlServer.SqlServerObjectsInstaller.Start installing Hangfire SQL objects... [?] - MESSAGE: Start installing Hangfire SQL objects...
+ 2026-04-30 03:44:51,107  INFO Hangfire.SqlServer.SqlServerObjectsInstaller.Hangfire SQL objects installed. [?] - MESSAGE: Hangfire SQL objects installed.
+ 2026-04-30 03:44:51,443  INFO Microsoft.Hosting.Lifetime.Now listening on: http://localhost:5050 [?] - MESSAGE: Now listening on: http://localhost:5050
+ 2026-04-30 03:44:51,458  INFO Hangfire.BackgroundJobServer.Starting Hangfire Server using job storage: 'SQL Server: DESTINY-ELITEBO@JUTIX_AutomationAPI_DB' [?] - MESSAGE: Starting Hangfire Server using job storage: 'SQL Server: DESTINY-ELITEBO@JUTIX_AutomationAPI_DB'
+ 2026-04-30 03:44:51,460  INFO Hangfire.BackgroundJobServer.Using the following options for SQL Server job storage: Queue poll interval: 00:00:00. [?] - MESSAGE: Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+ 2026-04-30 03:44:51,462  INFO Hangfire.BackgroundJobServer.Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15 [?] - MESSAGE: Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+ 2026-04-30 03:44:51,486  INFO Microsoft.Hosting.Lifetime.Application started. Press Ctrl+C to shut down. [0] - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2026-04-30 03:44:51,490  INFO Microsoft.Hosting.Lifetime.Hosting environment: Development [0] - MESSAGE: Hosting environment: Development
+ 2026-04-30 03:44:51,491  INFO Microsoft.Hosting.Lifetime.Content root path: C:\Sample Files\MY WORK\AutomationAPI\AutomationAPI [0] - MESSAGE: Content root path: C:\Sample Files\MY WORK\AutomationAPI\AutomationAPI
+ 2026-04-30 03:44:51,663  INFO Hangfire.Server.BackgroundServerProcess.Server destiny-elitebo:7556:fffd6d75 successfully announced in 172.9755 ms [?] - MESSAGE: Server destiny-elitebo:7556:fffd6d75 successfully announced in 172.9755 ms
+ 2026-04-30 03:44:51,668  INFO Hangfire.Server.BackgroundServerProcess.Server destiny-elitebo:7556:fffd6d75 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, SqlServerHeartbeatProcess, ExpirationManager, CountersAggregator, Worker, DelayedJobScheduler, RecurringJobScheduler... [?] - MESSAGE: Server destiny-elitebo:7556:fffd6d75 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, SqlServerHeartbeatProcess, ExpirationManager, CountersAggregator, Worker, DelayedJobScheduler, RecurringJobScheduler...
+ 2026-04-30 03:44:51,693  INFO Hangfire.Server.BackgroundServerProcess.Server destiny-elitebo:7556:fffd6d75 all the dispatchers started [?] - MESSAGE: Server destiny-elitebo:7556:fffd6d75 all the dispatchers started
+ 2026-04-30 03:44:58,173  WARN Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware.Failed to determine the https port for redirect. [?] - MESSAGE: Failed to determine the https port for redirect.
+ 2026-04-30 03:44:59,572  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (31ms) [Parameters=[@__model_Email_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[ID], [u].[CreatedAt], [u].[Email], [u].[FullName], [u].[PasswordHash]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__model_Email_0 [?] - MESSAGE: Executed DbCommand (31ms) [Parameters=[@__model_Email_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[ID], [u].[CreatedAt], [u].[Email], [u].[FullName], [u].[PasswordHash]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__model_Email_0
+ 2026-04-30 03:45:00,322  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (3ms) [Parameters=[@__userModel_Email_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[ID], [u].[CreatedAt], [u].[Email], [u].[FullName], [u].[PasswordHash]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__userModel_Email_0 [?] - MESSAGE: Executed DbCommand (3ms) [Parameters=[@__userModel_Email_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[ID], [u].[CreatedAt], [u].[Email], [u].[FullName], [u].[PasswordHash]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__userModel_Email_0
+ 2026-04-30 03:45:01,332  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (5ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC [?] - MESSAGE: Executed DbCommand (5ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC
+ 2026-04-30 03:45:01,338  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (6ms) [Parameters=[@__userId_0='?' (Size = 4000), @__startDate_1='?' (DbType = DateTime2)], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+WHERE [e].[UserId] = @__userId_0 AND [e].[ExecutedAt] >= @__startDate_1 [?] - MESSAGE: Executed DbCommand (6ms) [Parameters=[@__userId_0='?' (Size = 4000), @__startDate_1='?' (DbType = DateTime2)], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+WHERE [e].[UserId] = @__userId_0 AND [e].[ExecutedAt] >= @__startDate_1
+ 2026-04-30 03:45:01,407  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (2ms) [Parameters=[@__userId_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [AutomationRules] AS [a]
+WHERE [a].[UserID] = @__userId_0 [?] - MESSAGE: Executed DbCommand (2ms) [Parameters=[@__userId_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [AutomationRules] AS [a]
+WHERE [a].[UserID] = @__userId_0
+ 2026-04-30 03:45:01,413  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (8ms) [Parameters=[@__p_1='?' (DbType = Int32), @__userId_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(@__p_1) [e].[Trigger] AS [trigger], [e].[Action] AS [action], COUNT(*) AS [count]
+FROM [ExecutionLogs] AS [e]
+WHERE [e].[UserId] = @__userId_0
+GROUP BY [e].[Trigger], [e].[Action]
+ORDER BY COUNT(*) DESC [?] - MESSAGE: Executed DbCommand (8ms) [Parameters=[@__p_1='?' (DbType = Int32), @__userId_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(@__p_1) [e].[Trigger] AS [trigger], [e].[Action] AS [action], COUNT(*) AS [count]
+FROM [ExecutionLogs] AS [e]
+WHERE [e].[UserId] = @__userId_0
+GROUP BY [e].[Trigger], [e].[Action]
+ORDER BY COUNT(*) DESC
+ 2026-04-30 03:45:01,419  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (4ms) [Parameters=[@__userId_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [ExecutionLogs] AS [e]
+WHERE [e].[UserId] = @__userId_0 [?] - MESSAGE: Executed DbCommand (4ms) [Parameters=[@__userId_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [ExecutionLogs] AS [e]
+WHERE [e].[UserId] = @__userId_0
+ 2026-04-30 03:45:01,442  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (6ms) [Parameters=[@__userId_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [ExecutionLogs] AS [e]
+WHERE [e].[UserId] = @__userId_0 AND [e].[Status] = N'Success' [?] - MESSAGE: Executed DbCommand (6ms) [Parameters=[@__userId_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [ExecutionLogs] AS [e]
+WHERE [e].[UserId] = @__userId_0 AND [e].[Status] = N'Success'
+ 2026-04-30 03:45:06,292  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC [?] - MESSAGE: Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC
+ 2026-04-30 03:45:11,165  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC [?] - MESSAGE: Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC
+ 2026-04-30 03:45:16,125  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (5ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC [?] - MESSAGE: Executed DbCommand (5ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC
+ 2026-04-30 03:45:21,158  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (6ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC [?] - MESSAGE: Executed DbCommand (6ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC
+ 2026-04-30 03:45:26,130  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC [?] - MESSAGE: Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC
+ 2026-04-30 03:45:31,152  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC [?] - MESSAGE: Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC
+ 2026-04-30 03:45:36,124  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC [?] - MESSAGE: Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC
+ 2026-04-30 03:45:41,167  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (7ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC [?] - MESSAGE: Executed DbCommand (7ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC
+ 2026-04-30 03:45:46,169  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (14ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC [?] - MESSAGE: Executed DbCommand (14ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC
+ 2026-04-30 03:45:51,131  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC [?] - MESSAGE: Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC
+ 2026-04-30 03:45:56,139  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC [?] - MESSAGE: Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC
+ 2026-04-30 03:46:01,112  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC [?] - MESSAGE: Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC
+ 2026-04-30 03:46:06,153  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC [?] - MESSAGE: Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC
+ 2026-04-30 03:46:11,112  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC [?] - MESSAGE: Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC
+ 2026-04-30 03:46:16,160  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (6ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC [?] - MESSAGE: Executed DbCommand (6ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC
+ 2026-04-30 03:46:21,134  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (15ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC [?] - MESSAGE: Executed DbCommand (15ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC
+ 2026-04-30 03:46:26,139  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (5ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC [?] - MESSAGE: Executed DbCommand (5ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC
+ 2026-04-30 03:46:31,122  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC [?] - MESSAGE: Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC
+ 2026-04-30 03:46:35,224  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (7ms) [Parameters=[@__trigger_0='?' (Size = 4000), @__userId_1='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT [a].[ID], [a].[Action], [a].[CreatedAt], [a].[Target], [a].[Trigger], [a].[UserID]
+FROM [AutomationRules] AS [a]
+WHERE [a].[Trigger] = @__trigger_0 AND [a].[UserID] = @__userId_1 [?] - MESSAGE: Executed DbCommand (7ms) [Parameters=[@__trigger_0='?' (Size = 4000), @__userId_1='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT [a].[ID], [a].[Action], [a].[CreatedAt], [a].[Target], [a].[Trigger], [a].[UserID]
+FROM [AutomationRules] AS [a]
+WHERE [a].[Trigger] = @__trigger_0 AND [a].[UserID] = @__userId_1
+ 2026-04-30 03:46:35,227  INFO AutomationAPI.SERVICES.AutomationService.[INFO] ExecutionLog added successfully [128] - MESSAGE: [INFO] ExecutionLog added successfully
+ 2026-04-30 03:46:36,128  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (12ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC [?] - MESSAGE: Executed DbCommand (12ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC
+ 2026-04-30 03:46:38,987  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (5ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC [?] - MESSAGE: Executed DbCommand (5ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC
+ 2026-04-30 03:46:41,119  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC [?] - MESSAGE: Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC
+ 2026-04-30 03:46:41,315  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC [?] - MESSAGE: Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC
+ 2026-04-30 03:46:42,865  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC [?] - MESSAGE: Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC
+ 2026-04-30 03:46:45,386  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (4ms) [Parameters=[@__trigger_0='?' (Size = 4000), @__userId_1='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT [a].[ID], [a].[Action], [a].[CreatedAt], [a].[Target], [a].[Trigger], [a].[UserID]
+FROM [AutomationRules] AS [a]
+WHERE [a].[Trigger] = @__trigger_0 AND [a].[UserID] = @__userId_1 [?] - MESSAGE: Executed DbCommand (4ms) [Parameters=[@__trigger_0='?' (Size = 4000), @__userId_1='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT [a].[ID], [a].[Action], [a].[CreatedAt], [a].[Target], [a].[Trigger], [a].[UserID]
+FROM [AutomationRules] AS [a]
+WHERE [a].[Trigger] = @__trigger_0 AND [a].[UserID] = @__userId_1
+ 2026-04-30 03:46:45,389  INFO AutomationAPI.SERVICES.AutomationService.[INFO] ExecutionLog added successfully [128] - MESSAGE: [INFO] ExecutionLog added successfully
+ 2026-04-30 03:46:46,127  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (12ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC [?] - MESSAGE: Executed DbCommand (12ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC
+ 2026-04-30 03:46:51,153  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (9ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC [?] - MESSAGE: Executed DbCommand (9ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC
+ 2026-04-30 03:46:56,128  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC [?] - MESSAGE: Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC
+ 2026-04-30 03:47:01,153  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (7ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC [?] - MESSAGE: Executed DbCommand (7ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC
+ 2026-04-30 03:47:06,124  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (5ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC [?] - MESSAGE: Executed DbCommand (5ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC
+ 2026-04-30 03:47:11,118  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC [?] - MESSAGE: Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC
+ 2026-04-30 03:47:16,140  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC [?] - MESSAGE: Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC
+ 2026-04-30 03:47:21,118  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC [?] - MESSAGE: Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC
+ 2026-04-30 03:47:26,110  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC [?] - MESSAGE: Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC
+ 2026-04-30 03:47:31,163  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (14ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC [?] - MESSAGE: Executed DbCommand (14ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC
+ 2026-04-30 03:47:36,151  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (27ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC [?] - MESSAGE: Executed DbCommand (27ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC
+ 2026-04-30 03:47:41,124  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (10ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC [?] - MESSAGE: Executed DbCommand (10ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC
+ 2026-04-30 03:47:46,146  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (6ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC [?] - MESSAGE: Executed DbCommand (6ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC
+ 2026-04-30 03:47:51,126  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (5ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC [?] - MESSAGE: Executed DbCommand (5ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC
+ 2026-04-30 03:47:56,167  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (21ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC [?] - MESSAGE: Executed DbCommand (21ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC
+ 2026-04-30 03:48:01,127  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (8ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC [?] - MESSAGE: Executed DbCommand (8ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC
+ 2026-04-30 03:48:06,127  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC [?] - MESSAGE: Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC
+ 2026-04-30 03:48:11,142  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC [?] - MESSAGE: Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC
+ 2026-04-30 03:48:16,156  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC [?] - MESSAGE: Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC
+ 2026-04-30 03:48:21,107  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC [?] - MESSAGE: Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC
+ 2026-04-30 03:48:26,151  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC [?] - MESSAGE: Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC
+ 2026-04-30 03:48:31,114  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC [?] - MESSAGE: Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC
+ 2026-04-30 03:48:36,129  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC [?] - MESSAGE: Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC
+ 2026-04-30 03:48:41,121  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC [?] - MESSAGE: Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC
+ 2026-04-30 03:48:46,141  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (6ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC [?] - MESSAGE: Executed DbCommand (6ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC
+ 2026-04-30 03:48:52,060  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC [?] - MESSAGE: Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC
+ 2026-04-30 03:48:56,115  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC [?] - MESSAGE: Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC
+ 2026-04-30 03:49:01,119  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC [?] - MESSAGE: Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC
+ 2026-04-30 03:49:06,155  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC [?] - MESSAGE: Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC
+ 2026-04-30 03:49:11,114  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC [?] - MESSAGE: Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC
+ 2026-04-30 03:49:16,150  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC [?] - MESSAGE: Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC
+ 2026-04-30 03:49:21,120  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (5ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC [?] - MESSAGE: Executed DbCommand (5ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC
+ 2026-04-30 03:49:26,175  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC [?] - MESSAGE: Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC
+ 2026-04-30 03:49:31,119  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC [?] - MESSAGE: Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC
+ 2026-04-30 03:49:36,130  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC [?] - MESSAGE: Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC
+ 2026-04-30 03:49:41,128  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC [?] - MESSAGE: Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC
+ 2026-04-30 03:49:46,146  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC [?] - MESSAGE: Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC
+ 2026-04-30 03:49:51,126  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC [?] - MESSAGE: Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC
+ 2026-04-30 03:49:51,710  INFO Hangfire.Server.ServerWatchdog.2 servers were removed due to timeout [?] - MESSAGE: 2 servers were removed due to timeout
+ 2026-04-30 03:49:56,152  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (16ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC [?] - MESSAGE: Executed DbCommand (16ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC
+ 2026-04-30 03:50:01,134  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (15ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC [?] - MESSAGE: Executed DbCommand (15ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC
+ 2026-04-30 03:50:06,149  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (19ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC [?] - MESSAGE: Executed DbCommand (19ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC
+ 2026-04-30 03:50:11,161  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (8ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC [?] - MESSAGE: Executed DbCommand (8ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC
+ 2026-04-30 03:50:16,105  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC [?] - MESSAGE: Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC
+ 2026-04-30 03:50:21,146  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC [?] - MESSAGE: Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC
+ 2026-04-30 03:50:26,113  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC [?] - MESSAGE: Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC
+ 2026-04-30 03:50:31,157  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC [?] - MESSAGE: Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC
+ 2026-04-30 03:50:36,128  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC [?] - MESSAGE: Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC
+ 2026-04-30 03:50:41,126  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC [?] - MESSAGE: Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC
+ 2026-04-30 03:50:46,159  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC [?] - MESSAGE: Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC
+ 2026-04-30 03:50:52,078  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC [?] - MESSAGE: Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC
+ 2026-04-30 03:50:57,073  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (5ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC [?] - MESSAGE: Executed DbCommand (5ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC
+ 2026-04-30 03:51:02,072  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC [?] - MESSAGE: Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC
+ 2026-04-30 03:51:07,065  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC [?] - MESSAGE: Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC
+ 2026-04-30 03:51:12,077  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (6ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC [?] - MESSAGE: Executed DbCommand (6ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC
+ 2026-04-30 03:51:17,056  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC [?] - MESSAGE: Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC
+ 2026-04-30 03:51:22,075  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC [?] - MESSAGE: Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC
+ 2026-04-30 03:51:27,055  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC [?] - MESSAGE: Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC
+ 2026-04-30 03:51:32,070  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC [?] - MESSAGE: Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC
+ 2026-04-30 03:51:36,124  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC [?] - MESSAGE: Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC
+ 2026-04-30 03:52:29,818  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (113ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC [?] - MESSAGE: Executed DbCommand (113ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC
+ 2026-04-30 03:52:31,372  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (128ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC [?] - MESSAGE: Executed DbCommand (128ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC
+ 2026-04-30 03:52:36,125  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC [?] - MESSAGE: Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC
+ 2026-04-30 03:52:42,178  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC [?] - MESSAGE: Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC
+ 2026-04-30 03:52:47,242  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC [?] - MESSAGE: Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC
+ 2026-04-30 03:52:52,068  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC [?] - MESSAGE: Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC
+ 2026-04-30 03:52:57,068  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC [?] - MESSAGE: Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC
+ 2026-04-30 03:53:01,132  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC [?] - MESSAGE: Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC
+ 2026-04-30 03:53:06,128  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC [?] - MESSAGE: Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC
+ 2026-04-30 03:53:11,208  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC [?] - MESSAGE: Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC
+ 2026-04-30 03:53:16,131  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC [?] - MESSAGE: Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC
+ 2026-04-30 03:53:21,130  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC [?] - MESSAGE: Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC
+ 2026-04-30 03:53:26,143  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC [?] - MESSAGE: Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC
+ 2026-04-30 03:53:31,117  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC [?] - MESSAGE: Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC
+ 2026-04-30 03:53:36,187  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (26ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC [?] - MESSAGE: Executed DbCommand (26ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC
+ 2026-04-30 03:53:41,136  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (15ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC [?] - MESSAGE: Executed DbCommand (15ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC
+ 2026-04-30 03:53:46,119  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC [?] - MESSAGE: Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC
+ 2026-04-30 03:53:51,783  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (9ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC [?] - MESSAGE: Executed DbCommand (9ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC
+ 2026-04-30 03:53:56,148  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC [?] - MESSAGE: Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC
+ 2026-04-30 03:54:01,838  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (180ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC [?] - MESSAGE: Executed DbCommand (180ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC
+ 2026-04-30 03:54:15,288  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (75ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC [?] - MESSAGE: Executed DbCommand (75ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC
+ 2026-04-30 03:54:15,960  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (82ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC [?] - MESSAGE: Executed DbCommand (82ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC
+ 2026-04-30 03:54:17,113  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (80ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC [?] - MESSAGE: Executed DbCommand (80ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC
+ 2026-04-30 03:54:18,738  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (118ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC [?] - MESSAGE: Executed DbCommand (118ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC
+ 2026-04-30 03:54:19,241  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (622ms) [Parameters=[@__userId_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [AutomationRules] AS [a]
+WHERE [a].[UserID] = @__userId_0 [?] - MESSAGE: Executed DbCommand (622ms) [Parameters=[@__userId_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [AutomationRules] AS [a]
+WHERE [a].[UserID] = @__userId_0
+ 2026-04-30 03:54:19,529  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (61ms) [Parameters=[@__p_1='?' (DbType = Int32), @__userId_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(@__p_1) [e].[Trigger] AS [trigger], [e].[Action] AS [action], COUNT(*) AS [count]
+FROM [ExecutionLogs] AS [e]
+WHERE [e].[UserId] = @__userId_0
+GROUP BY [e].[Trigger], [e].[Action]
+ORDER BY COUNT(*) DESC [?] - MESSAGE: Executed DbCommand (61ms) [Parameters=[@__p_1='?' (DbType = Int32), @__userId_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(@__p_1) [e].[Trigger] AS [trigger], [e].[Action] AS [action], COUNT(*) AS [count]
+FROM [ExecutionLogs] AS [e]
+WHERE [e].[UserId] = @__userId_0
+GROUP BY [e].[Trigger], [e].[Action]
+ORDER BY COUNT(*) DESC
+ 2026-04-30 03:54:19,660  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (318ms) [Parameters=[@__userId_0='?' (Size = 4000), @__startDate_1='?' (DbType = DateTime2)], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+WHERE [e].[UserId] = @__userId_0 AND [e].[ExecutedAt] >= @__startDate_1 [?] - MESSAGE: Executed DbCommand (318ms) [Parameters=[@__userId_0='?' (Size = 4000), @__startDate_1='?' (DbType = DateTime2)], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+WHERE [e].[UserId] = @__userId_0 AND [e].[ExecutedAt] >= @__startDate_1
+ 2026-04-30 03:54:20,921  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (413ms) [Parameters=[@__userId_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [ExecutionLogs] AS [e]
+WHERE [e].[UserId] = @__userId_0 [?] - MESSAGE: Executed DbCommand (413ms) [Parameters=[@__userId_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [ExecutionLogs] AS [e]
+WHERE [e].[UserId] = @__userId_0
+ 2026-04-30 03:54:21,326  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (90ms) [Parameters=[@__userId_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [ExecutionLogs] AS [e]
+WHERE [e].[UserId] = @__userId_0 AND [e].[Status] = N'Success' [?] - MESSAGE: Executed DbCommand (90ms) [Parameters=[@__userId_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [ExecutionLogs] AS [e]
+WHERE [e].[UserId] = @__userId_0 AND [e].[Status] = N'Success'
+ 2026-04-30 03:54:23,649  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (120ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC [?] - MESSAGE: Executed DbCommand (120ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC
+ 2026-04-30 03:54:28,276  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (35ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC [?] - MESSAGE: Executed DbCommand (35ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC
+ 2026-04-30 03:54:33,224  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC [?] - MESSAGE: Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC
+ 2026-04-30 03:54:38,216  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC [?] - MESSAGE: Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC
+ 2026-04-30 03:54:43,413  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (104ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC [?] - MESSAGE: Executed DbCommand (104ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC
+ 2026-04-30 03:54:48,231  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (8ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC [?] - MESSAGE: Executed DbCommand (8ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC
+ 2026-04-30 03:54:53,230  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC [?] - MESSAGE: Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC
+ 2026-04-30 03:54:58,206  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC [?] - MESSAGE: Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC
+ 2026-04-30 03:55:03,224  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC [?] - MESSAGE: Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC
+ 2026-04-30 03:55:08,209  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC [?] - MESSAGE: Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC
+ 2026-04-30 03:55:13,221  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC [?] - MESSAGE: Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC
+ 2026-04-30 03:55:18,215  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC [?] - MESSAGE: Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC
+ 2026-04-30 03:55:23,219  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC [?] - MESSAGE: Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC
+ 2026-04-30 03:55:28,218  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC [?] - MESSAGE: Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC
+ 2026-04-30 03:55:33,216  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC [?] - MESSAGE: Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC
+ 2026-04-30 03:55:38,207  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC [?] - MESSAGE: Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC
+ 2026-04-30 03:55:38,516  WARN Hangfire.AutomaticRetryAttribute.Failed to process the job '54': an exception occurred. Retry attempt 8 of 10 will be performed in 00:43:44. [?] - MESSAGE: Failed to process the job '54': an exception occurred. Retry attempt 8 of 10 will be performed in 00:43:44.
+ System.NullReferenceException: Object reference not set to an instance of an object.
+   at AutomationAPI.SERVICES.AutomationService.ExecuteTrigger(String trigger) in C:\Sample Files\MY WORK\AutomationAPI\AutomationAPI\SERVICES\AutomationService.cs:line 88
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+2026-04-30 03:55:43,225  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC [?] - MESSAGE: Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC
+ 2026-04-30 03:55:48,222  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (12ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC [?] - MESSAGE: Executed DbCommand (12ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC
+ 2026-04-30 03:55:53,218  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (6ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC [?] - MESSAGE: Executed DbCommand (6ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC
+ 2026-04-30 03:55:58,231  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC [?] - MESSAGE: Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC
+ 2026-04-30 03:56:04,060  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC [?] - MESSAGE: Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC
+ 2026-04-30 03:56:09,066  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC [?] - MESSAGE: Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC
+ 2026-04-30 03:56:13,227  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC [?] - MESSAGE: Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC
+ 2026-04-30 03:56:18,211  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC [?] - MESSAGE: Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC
+ 2026-04-30 03:56:23,206  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC [?] - MESSAGE: Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC
+ 2026-04-30 19:31:21,463  INFO Hangfire.SqlServer.SqlServerObjectsInstaller.Start installing Hangfire SQL objects... [?] - MESSAGE: Start installing Hangfire SQL objects...
+ 2026-04-30 19:31:24,969  INFO Hangfire.SqlServer.SqlServerObjectsInstaller.Hangfire SQL objects installed. [?] - MESSAGE: Hangfire SQL objects installed.
+ 2026-04-30 19:31:25,793  INFO Microsoft.Hosting.Lifetime.Now listening on: http://localhost:5050 [?] - MESSAGE: Now listening on: http://localhost:5050
+ 2026-04-30 19:31:25,819  INFO Hangfire.BackgroundJobServer.Starting Hangfire Server using job storage: 'SQL Server: DESTINY-ELITEBO@JUTIX_AutomationAPI_DB' [?] - MESSAGE: Starting Hangfire Server using job storage: 'SQL Server: DESTINY-ELITEBO@JUTIX_AutomationAPI_DB'
+ 2026-04-30 19:31:25,822  INFO Hangfire.BackgroundJobServer.Using the following options for SQL Server job storage: Queue poll interval: 00:00:00. [?] - MESSAGE: Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+ 2026-04-30 19:31:25,824  INFO Hangfire.BackgroundJobServer.Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15 [?] - MESSAGE: Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+ 2026-04-30 19:31:25,862  INFO Microsoft.Hosting.Lifetime.Application started. Press Ctrl+C to shut down. [0] - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2026-04-30 19:31:25,870  INFO Microsoft.Hosting.Lifetime.Hosting environment: Development [0] - MESSAGE: Hosting environment: Development
+ 2026-04-30 19:31:25,871  INFO Microsoft.Hosting.Lifetime.Content root path: C:\Sample Files\MY WORK\AutomationAPI\AutomationAPI [0] - MESSAGE: Content root path: C:\Sample Files\MY WORK\AutomationAPI\AutomationAPI
+ 2026-04-30 19:31:26,329  INFO Hangfire.Server.BackgroundServerProcess.Server destiny-elitebo:27704:9f1e8f10 successfully announced in 459.2483 ms [?] - MESSAGE: Server destiny-elitebo:27704:9f1e8f10 successfully announced in 459.2483 ms
+ 2026-04-30 19:31:26,338  INFO Hangfire.Server.BackgroundServerProcess.Server destiny-elitebo:27704:9f1e8f10 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, SqlServerHeartbeatProcess, ExpirationManager, CountersAggregator, Worker, DelayedJobScheduler, RecurringJobScheduler... [?] - MESSAGE: Server destiny-elitebo:27704:9f1e8f10 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, SqlServerHeartbeatProcess, ExpirationManager, CountersAggregator, Worker, DelayedJobScheduler, RecurringJobScheduler...
+ 2026-04-30 19:31:26,376  INFO Hangfire.Server.ServerWatchdog.1 servers were removed due to timeout [?] - MESSAGE: 1 servers were removed due to timeout
+ 2026-04-30 19:31:26,423  INFO Hangfire.Server.BackgroundServerProcess.Server destiny-elitebo:27704:9f1e8f10 all the dispatchers started [?] - MESSAGE: Server destiny-elitebo:27704:9f1e8f10 all the dispatchers started
+ 2026-04-30 19:31:29,339  WARN Hangfire.AutomaticRetryAttribute.Failed to process the job '53': an exception occurred. Retry attempt 8 of 10 will be performed in 00:41:20. [?] - MESSAGE: Failed to process the job '53': an exception occurred. Retry attempt 8 of 10 will be performed in 00:41:20.
+ System.NullReferenceException: Object reference not set to an instance of an object.
+   at AutomationAPI.SERVICES.AutomationService.ExecuteTrigger(String trigger) in C:\Sample Files\MY WORK\AutomationAPI\AutomationAPI\SERVICES\AutomationService.cs:line 88
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+2026-04-30 19:31:29,366  WARN Hangfire.AutomaticRetryAttribute.Failed to process the job '54': an exception occurred. Retry attempt 9 of 10 will be performed in 01:11:13. [?] - MESSAGE: Failed to process the job '54': an exception occurred. Retry attempt 9 of 10 will be performed in 01:11:13.
+ System.NullReferenceException: Object reference not set to an instance of an object.
+   at AutomationAPI.SERVICES.AutomationService.ExecuteTrigger(String trigger) in C:\Sample Files\MY WORK\AutomationAPI\AutomationAPI\SERVICES\AutomationService.cs:line 88
+   at InvokeStub_TaskAwaiter.GetResult(Object, Object, IntPtr*)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+2026-04-30 19:31:29,378  WARN Hangfire.AutomaticRetryAttribute.Failed to process the job '55': an exception occurred. Retry attempt 8 of 10 will be performed in 00:40:40. [?] - MESSAGE: Failed to process the job '55': an exception occurred. Retry attempt 8 of 10 will be performed in 00:40:40.
+ System.NullReferenceException: Object reference not set to an instance of an object.
+   at AutomationAPI.SERVICES.AutomationService.ExecuteTrigger(String trigger) in C:\Sample Files\MY WORK\AutomationAPI\AutomationAPI\SERVICES\AutomationService.cs:line 88
+   at InvokeStub_TaskAwaiter.GetResult(Object, Object, IntPtr*)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+2026-04-30 19:31:30,108  WARN Hangfire.AutomaticRetryAttribute.Failed to process the job '52': an exception occurred. Retry attempt 8 of 10 will be performed in 00:42:08. [?] - MESSAGE: Failed to process the job '52': an exception occurred. Retry attempt 8 of 10 will be performed in 00:42:08.
+ System.NullReferenceException: Object reference not set to an instance of an object.
+   at AutomationAPI.SERVICES.AutomationService.ExecuteTrigger(String trigger) in C:\Sample Files\MY WORK\AutomationAPI\AutomationAPI\SERVICES\AutomationService.cs:line 88
+   at InvokeStub_TaskAwaiter.GetResult(Object, Object, IntPtr*)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)

@@ -1,0 +1,21 @@
+2026-07-29 17:28:15,063  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (488ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT 1 [?] - MESSAGE: Executed DbCommand (488ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT 1
+ 2026-07-29 17:28:15,664  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (498ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]'); [?] - MESSAGE: Executed DbCommand (498ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+ 2026-07-29 17:28:16,036  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (368ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT 1 [?] - MESSAGE: Executed DbCommand (368ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT 1
+ 2026-07-29 17:28:16,460  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (423ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]'); [?] - MESSAGE: Executed DbCommand (423ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+ 2026-07-29 17:28:16,969  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (429ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId]; [?] - MESSAGE: Executed DbCommand (429ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+ 2026-07-29 17:28:16,997  INFO Microsoft.EntityFrameworkCore.Migrations.No migrations were applied. The database is already up to date. [?] - MESSAGE: No migrations were applied. The database is already up to date.
+ 

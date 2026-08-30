@@ -1,0 +1,86 @@
+2026-08-28 09:55:09,577  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (769ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT 1 [?] - MESSAGE: Executed DbCommand (769ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT 1
+ 2026-08-28 09:55:10,082  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (357ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]'); [?] - MESSAGE: Executed DbCommand (357ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+ 2026-08-28 09:55:10,541  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (410ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId]; [?] - MESSAGE: Executed DbCommand (410ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+ 2026-08-28 12:07:13,755  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (335ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT 1 [?] - MESSAGE: Executed DbCommand (335ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT 1
+ 2026-08-28 12:07:14,260  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (341ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]'); [?] - MESSAGE: Executed DbCommand (341ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+ 2026-08-28 12:07:14,576  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (302ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT 1 [?] - MESSAGE: Executed DbCommand (302ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT 1
+ 2026-08-28 12:07:14,871  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (288ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]'); [?] - MESSAGE: Executed DbCommand (288ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+ 2026-08-28 12:07:15,293  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (322ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId]; [?] - MESSAGE: Executed DbCommand (322ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+ 2026-08-28 12:07:15,466  INFO Microsoft.EntityFrameworkCore.Migrations.No migrations were applied. The database is already up to date. [?] - MESSAGE: No migrations were applied. The database is already up to date.
+ 2026-08-28 12:07:15,573  INFO Hangfire.SqlServer.SqlServerObjectsInstaller.Start installing Hangfire SQL objects... [?] - MESSAGE: Start installing Hangfire SQL objects...
+ 2026-08-28 12:07:17,021  INFO Hangfire.SqlServer.SqlServerObjectsInstaller.Hangfire SQL objects installed. [?] - MESSAGE: Hangfire SQL objects installed.
+ 2026-08-28 12:07:22,786  INFO Microsoft.Hosting.Lifetime.Now listening on: https://localhost:7100 [?] - MESSAGE: Now listening on: https://localhost:7100
+ 2026-08-28 12:07:22,795  INFO Microsoft.Hosting.Lifetime.Now listening on: http://localhost:5050 [?] - MESSAGE: Now listening on: http://localhost:5050
+ 2026-08-28 12:07:23,115  INFO Hangfire.BackgroundJobServer.Starting Hangfire Server using job storage: 'SQL Server: SQL5111.site4now.net@db_acc790_automationapidb' [?] - MESSAGE: Starting Hangfire Server using job storage: 'SQL Server: SQL5111.site4now.net@db_acc790_automationapidb'
+ 2026-08-28 12:07:23,122  INFO Hangfire.BackgroundJobServer.Using the following options for SQL Server job storage: Queue poll interval: 00:00:00. [?] - MESSAGE: Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+ 2026-08-28 12:07:23,128  INFO Hangfire.BackgroundJobServer.Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15 [?] - MESSAGE: Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+ 2026-08-28 12:07:23,239  INFO Microsoft.Hosting.Lifetime.Application started. Press Ctrl+C to shut down. [0] - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2026-08-28 12:07:23,254  INFO Microsoft.Hosting.Lifetime.Hosting environment: Development [0] - MESSAGE: Hosting environment: Development
+ 2026-08-28 12:07:23,259  INFO Microsoft.Hosting.Lifetime.Content root path: C:\Sample Files\MY WORK\AutomationAPI\AutomationAPI [0] - MESSAGE: Content root path: C:\Sample Files\MY WORK\AutomationAPI\AutomationAPI
+ 2026-08-28 12:07:23,590  INFO Hangfire.Server.BackgroundServerProcess.Server destiny-elitebo:1724:28612b71 successfully announced in 341.8674 ms [?] - MESSAGE: Server destiny-elitebo:1724:28612b71 successfully announced in 341.8674 ms
+ 2026-08-28 12:07:23,599  INFO Hangfire.Server.BackgroundServerProcess.Server destiny-elitebo:1724:28612b71 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, SqlServerHeartbeatProcess, ExpirationManager, CountersAggregator, Worker, DelayedJobScheduler, RecurringJobScheduler... [?] - MESSAGE: Server destiny-elitebo:1724:28612b71 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, SqlServerHeartbeatProcess, ExpirationManager, CountersAggregator, Worker, DelayedJobScheduler, RecurringJobScheduler...
+ 2026-08-28 12:07:23,748  INFO Hangfire.Server.BackgroundServerProcess.Server destiny-elitebo:1724:28612b71 all the dispatchers started [?] - MESSAGE: Server destiny-elitebo:1724:28612b71 all the dispatchers started
+ 2026-08-28 12:07:38,427  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (341ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[AccessToken], [c].[ConnectedAt], [c].[ExpiresAt], [c].[ExternalAccountEmail], [c].[ExternalAccountId], [c].[IsActive], [c].[LastSyncCursor], [c].[MetaDataJson], [c].[Provider], [c].[RefreshToken], [c].[UserId]
+FROM [ConnectedApps] AS [c]
+WHERE [c].[Provider] = N'google' [?] - MESSAGE: Executed DbCommand (341ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[AccessToken], [c].[ConnectedAt], [c].[ExpiresAt], [c].[ExternalAccountEmail], [c].[ExternalAccountId], [c].[IsActive], [c].[LastSyncCursor], [c].[MetaDataJson], [c].[Provider], [c].[RefreshToken], [c].[UserId]
+FROM [ConnectedApps] AS [c]
+WHERE [c].[Provider] = N'google'
+ 2026-08-28 12:07:42,766  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (359ms) [Parameters=[@__triggerEvent_TriggerName_0='?' (Size = 4000), @__triggerEvent_UserId_1='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT [a].[ID], [a].[CreatedAt], [a].[FolderId], [a].[IsActive], [a].[IsWorkflow], [a].[Trigger], [a].[UserID], [a].[WebhookKey], [w].[Id], [w].[Action], [w].[AutomationRuleId], [w].[ConfigurationJson], [w].[DelayAmount], [w].[DelayUnit], [w].[FalseStepId], [w].[IsBranchStep], [w].[IsLoopStep], [w].[LoopField], [w].[Order], [w].[ResourceId], [w].[RetryCount], [w].[RetryDelaySeconds], [w].[Target], [w].[TrueStepId]
+FROM [AutomationRules] AS [a]
+LEFT JOIN [WorkFlowSteps] AS [w] ON [a].[ID] = [w].[AutomationRuleId]
+WHERE [a].[Trigger] = @__triggerEvent_TriggerName_0 AND [a].[IsActive] = CAST(1 AS bit) AND [a].[UserID] = @__triggerEvent_UserId_1
+ORDER BY [a].[ID] [?] - MESSAGE: Executed DbCommand (359ms) [Parameters=[@__triggerEvent_TriggerName_0='?' (Size = 4000), @__triggerEvent_UserId_1='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT [a].[ID], [a].[CreatedAt], [a].[FolderId], [a].[IsActive], [a].[IsWorkflow], [a].[Trigger], [a].[UserID], [a].[WebhookKey], [w].[Id], [w].[Action], [w].[AutomationRuleId], [w].[ConfigurationJson], [w].[DelayAmount], [w].[DelayUnit], [w].[FalseStepId], [w].[IsBranchStep], [w].[IsLoopStep], [w].[LoopField], [w].[Order], [w].[ResourceId], [w].[RetryCount], [w].[RetryDelaySeconds], [w].[Target], [w].[TrueStepId]
+FROM [AutomationRules] AS [a]
+LEFT JOIN [WorkFlowSteps] AS [w] ON [a].[ID] = [w].[AutomationRuleId]
+WHERE [a].[Trigger] = @__triggerEvent_TriggerName_0 AND [a].[IsActive] = CAST(1 AS bit) AND [a].[UserID] = @__triggerEvent_UserId_1
+ORDER BY [a].[ID]
+ 2026-08-28 12:07:42,776  INFO AutomationAPI.SERVICES.TriggerEngineService.Trigger Executed Successfully. [34] - MESSAGE: Trigger Executed Successfully.
+ 2026-08-28 12:07:47,547  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (296ms) [Parameters=[@__triggerEvent_TriggerName_0='?' (Size = 4000), @__triggerEvent_UserId_1='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT [a].[ID], [a].[CreatedAt], [a].[FolderId], [a].[IsActive], [a].[IsWorkflow], [a].[Trigger], [a].[UserID], [a].[WebhookKey], [w].[Id], [w].[Action], [w].[AutomationRuleId], [w].[ConfigurationJson], [w].[DelayAmount], [w].[DelayUnit], [w].[FalseStepId], [w].[IsBranchStep], [w].[IsLoopStep], [w].[LoopField], [w].[Order], [w].[ResourceId], [w].[RetryCount], [w].[RetryDelaySeconds], [w].[Target], [w].[TrueStepId]
+FROM [AutomationRules] AS [a]
+LEFT JOIN [WorkFlowSteps] AS [w] ON [a].[ID] = [w].[AutomationRuleId]
+WHERE [a].[Trigger] = @__triggerEvent_TriggerName_0 AND [a].[IsActive] = CAST(1 AS bit) AND [a].[UserID] = @__triggerEvent_UserId_1
+ORDER BY [a].[ID] [?] - MESSAGE: Executed DbCommand (296ms) [Parameters=[@__triggerEvent_TriggerName_0='?' (Size = 4000), @__triggerEvent_UserId_1='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT [a].[ID], [a].[CreatedAt], [a].[FolderId], [a].[IsActive], [a].[IsWorkflow], [a].[Trigger], [a].[UserID], [a].[WebhookKey], [w].[Id], [w].[Action], [w].[AutomationRuleId], [w].[ConfigurationJson], [w].[DelayAmount], [w].[DelayUnit], [w].[FalseStepId], [w].[IsBranchStep], [w].[IsLoopStep], [w].[LoopField], [w].[Order], [w].[ResourceId], [w].[RetryCount], [w].[RetryDelaySeconds], [w].[Target], [w].[TrueStepId]
+FROM [AutomationRules] AS [a]
+LEFT JOIN [WorkFlowSteps] AS [w] ON [a].[ID] = [w].[AutomationRuleId]
+WHERE [a].[Trigger] = @__triggerEvent_TriggerName_0 AND [a].[IsActive] = CAST(1 AS bit) AND [a].[UserID] = @__triggerEvent_UserId_1
+ORDER BY [a].[ID]
+ 2026-08-28 12:07:47,563  INFO AutomationAPI.SERVICES.TriggerEngineService.Trigger Executed Successfully. [34] - MESSAGE: Trigger Executed Successfully.
+ 

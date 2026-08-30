@@ -1,0 +1,118 @@
+2026-07-07 03:57:26,849 ERROR AutomationAPI.SERVICES.FormWatcherService.FormWatcherService outer loop error [35] - MESSAGE: FormWatcherService outer loop error
+ System.InvalidOperationException: No service for type 'AutomationAPI.MODEL.Interface.IGoogleSheetsService' has been registered.
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at AutomationAPI.SERVICES.FormWatcherService.ExecuteAsync(CancellationToken stoppingToken) in C:\Sample Files\MY WORK\AutomationAPI\AutomationAPI\SERVICES\FormWatcherService.cs:line 35
+2026-07-07 03:57:39,255  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (192ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[AccessToken], [c].[ConnectedAt], [c].[ExpiresAt], [c].[ExternalAccountEmail], [c].[ExternalAccountId], [c].[IsActive], [c].[LastSyncCursor], [c].[MetaDataJson], [c].[Provider], [c].[RefreshToken], [c].[UserId]
+FROM [ConnectedApps] AS [c]
+WHERE [c].[Provider] = N'google' [?] - MESSAGE: Executed DbCommand (192ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[AccessToken], [c].[ConnectedAt], [c].[ExpiresAt], [c].[ExternalAccountEmail], [c].[ExternalAccountId], [c].[IsActive], [c].[LastSyncCursor], [c].[MetaDataJson], [c].[Provider], [c].[RefreshToken], [c].[UserId]
+FROM [ConnectedApps] AS [c]
+WHERE [c].[Provider] = N'google'
+ 2026-07-07 03:57:40,009  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (276ms) [Parameters=[@__triggerEvent_TriggerName_0='?' (Size = 4000), @__triggerEvent_UserId_1='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT [a].[ID], [a].[CreatedAt], [a].[FolderId], [a].[IsActive], [a].[IsWorkflow], [a].[Trigger], [a].[UserID], [a].[WebhookKey], [w].[Id], [w].[Action], [w].[AutomationRuleId], [w].[ConfigurationJson], [w].[DelayAmount], [w].[DelayUnit], [w].[FalseStepId], [w].[IsBranchStep], [w].[IsLoopStep], [w].[LoopField], [w].[Order], [w].[Provider], [w].[ResourceId], [w].[ResourceName], [w].[RetryCount], [w].[RetryDelaySeconds], [w].[Target], [w].[TrueStepId]
+FROM [AutomationRules] AS [a]
+LEFT JOIN [WorkFlowSteps] AS [w] ON [a].[ID] = [w].[AutomationRuleId]
+WHERE [a].[Trigger] = @__triggerEvent_TriggerName_0 AND [a].[IsActive] = CAST(1 AS bit) AND [a].[UserID] = @__triggerEvent_UserId_1
+ORDER BY [a].[ID] [?] - MESSAGE: Executed DbCommand (276ms) [Parameters=[@__triggerEvent_TriggerName_0='?' (Size = 4000), @__triggerEvent_UserId_1='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT [a].[ID], [a].[CreatedAt], [a].[FolderId], [a].[IsActive], [a].[IsWorkflow], [a].[Trigger], [a].[UserID], [a].[WebhookKey], [w].[Id], [w].[Action], [w].[AutomationRuleId], [w].[ConfigurationJson], [w].[DelayAmount], [w].[DelayUnit], [w].[FalseStepId], [w].[IsBranchStep], [w].[IsLoopStep], [w].[LoopField], [w].[Order], [w].[Provider], [w].[ResourceId], [w].[ResourceName], [w].[RetryCount], [w].[RetryDelaySeconds], [w].[Target], [w].[TrueStepId]
+FROM [AutomationRules] AS [a]
+LEFT JOIN [WorkFlowSteps] AS [w] ON [a].[ID] = [w].[AutomationRuleId]
+WHERE [a].[Trigger] = @__triggerEvent_TriggerName_0 AND [a].[IsActive] = CAST(1 AS bit) AND [a].[UserID] = @__triggerEvent_UserId_1
+ORDER BY [a].[ID]
+ 2026-07-07 03:57:40,057  INFO AutomationAPI.SERVICES.TriggerEngineService.Trigger Executed Successfully. [34] - MESSAGE: Trigger Executed Successfully.
+ 2026-07-07 03:57:41,891  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (1,996ms) [Parameters=[@__triggerEvent_TriggerName_0='?' (Size = 4000), @__triggerEvent_UserId_1='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT [a].[ID], [a].[CreatedAt], [a].[FolderId], [a].[IsActive], [a].[IsWorkflow], [a].[Trigger], [a].[UserID], [a].[WebhookKey], [w].[Id], [w].[Action], [w].[AutomationRuleId], [w].[ConfigurationJson], [w].[DelayAmount], [w].[DelayUnit], [w].[FalseStepId], [w].[IsBranchStep], [w].[IsLoopStep], [w].[LoopField], [w].[Order], [w].[Provider], [w].[ResourceId], [w].[ResourceName], [w].[RetryCount], [w].[RetryDelaySeconds], [w].[Target], [w].[TrueStepId]
+FROM [AutomationRules] AS [a]
+LEFT JOIN [WorkFlowSteps] AS [w] ON [a].[ID] = [w].[AutomationRuleId]
+WHERE [a].[Trigger] = @__triggerEvent_TriggerName_0 AND [a].[IsActive] = CAST(1 AS bit) AND [a].[UserID] = @__triggerEvent_UserId_1
+ORDER BY [a].[ID] [?] - MESSAGE: Executed DbCommand (1,996ms) [Parameters=[@__triggerEvent_TriggerName_0='?' (Size = 4000), @__triggerEvent_UserId_1='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT [a].[ID], [a].[CreatedAt], [a].[FolderId], [a].[IsActive], [a].[IsWorkflow], [a].[Trigger], [a].[UserID], [a].[WebhookKey], [w].[Id], [w].[Action], [w].[AutomationRuleId], [w].[ConfigurationJson], [w].[DelayAmount], [w].[DelayUnit], [w].[FalseStepId], [w].[IsBranchStep], [w].[IsLoopStep], [w].[LoopField], [w].[Order], [w].[Provider], [w].[ResourceId], [w].[ResourceName], [w].[RetryCount], [w].[RetryDelaySeconds], [w].[Target], [w].[TrueStepId]
+FROM [AutomationRules] AS [a]
+LEFT JOIN [WorkFlowSteps] AS [w] ON [a].[ID] = [w].[AutomationRuleId]
+WHERE [a].[Trigger] = @__triggerEvent_TriggerName_0 AND [a].[IsActive] = CAST(1 AS bit) AND [a].[UserID] = @__triggerEvent_UserId_1
+ORDER BY [a].[ID]
+ 2026-07-07 03:57:41,913  INFO AutomationAPI.SERVICES.TriggerEngineService.Trigger Executed Successfully. [34] - MESSAGE: Trigger Executed Successfully.
+ 2026-07-07 10:15:41,815  WARN Microsoft.AspNetCore.Server.Kestrel.As of "07/07/2026 09:15:25 +00:00", the heartbeat has been running for "00:00:01.5412350" which is longer than "00:00:01". This could be caused by thread pool starvation. [?] - MESSAGE: As of "07/07/2026 09:15:25 +00:00", the heartbeat has been running for "00:00:01.5412350" which is longer than "00:00:01". This could be caused by thread pool starvation.
+ 2026-07-07 10:15:42,199 ERROR AutomationAPI.SERVICES.FormWatcherService.FormWatcherService outer loop error [35] - MESSAGE: FormWatcherService outer loop error
+ System.InvalidOperationException: No service for type 'AutomationAPI.MODEL.Interface.IGoogleSheetsService' has been registered.
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at AutomationAPI.SERVICES.FormWatcherService.ExecuteAsync(CancellationToken stoppingToken) in C:\Sample Files\MY WORK\AutomationAPI\AutomationAPI\SERVICES\FormWatcherService.cs:line 35
+2026-07-07 10:15:58,391  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (36ms) [Parameters=[@__triggerEvent_TriggerName_0='?' (Size = 4000), @__triggerEvent_UserId_1='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT [a].[ID], [a].[CreatedAt], [a].[FolderId], [a].[IsActive], [a].[IsWorkflow], [a].[Trigger], [a].[UserID], [a].[WebhookKey], [w].[Id], [w].[Action], [w].[AutomationRuleId], [w].[ConfigurationJson], [w].[DelayAmount], [w].[DelayUnit], [w].[FalseStepId], [w].[IsBranchStep], [w].[IsLoopStep], [w].[LoopField], [w].[Order], [w].[Provider], [w].[ResourceId], [w].[ResourceName], [w].[RetryCount], [w].[RetryDelaySeconds], [w].[Target], [w].[TrueStepId]
+FROM [AutomationRules] AS [a]
+LEFT JOIN [WorkFlowSteps] AS [w] ON [a].[ID] = [w].[AutomationRuleId]
+WHERE [a].[Trigger] = @__triggerEvent_TriggerName_0 AND [a].[IsActive] = CAST(1 AS bit) AND [a].[UserID] = @__triggerEvent_UserId_1
+ORDER BY [a].[ID] [?] - MESSAGE: Executed DbCommand (36ms) [Parameters=[@__triggerEvent_TriggerName_0='?' (Size = 4000), @__triggerEvent_UserId_1='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT [a].[ID], [a].[CreatedAt], [a].[FolderId], [a].[IsActive], [a].[IsWorkflow], [a].[Trigger], [a].[UserID], [a].[WebhookKey], [w].[Id], [w].[Action], [w].[AutomationRuleId], [w].[ConfigurationJson], [w].[DelayAmount], [w].[DelayUnit], [w].[FalseStepId], [w].[IsBranchStep], [w].[IsLoopStep], [w].[LoopField], [w].[Order], [w].[Provider], [w].[ResourceId], [w].[ResourceName], [w].[RetryCount], [w].[RetryDelaySeconds], [w].[Target], [w].[TrueStepId]
+FROM [AutomationRules] AS [a]
+LEFT JOIN [WorkFlowSteps] AS [w] ON [a].[ID] = [w].[AutomationRuleId]
+WHERE [a].[Trigger] = @__triggerEvent_TriggerName_0 AND [a].[IsActive] = CAST(1 AS bit) AND [a].[UserID] = @__triggerEvent_UserId_1
+ORDER BY [a].[ID]
+ 2026-07-07 10:15:59,453  INFO AutomationAPI.SERVICES.TriggerEngineService.Trigger Executed Successfully. [34] - MESSAGE: Trigger Executed Successfully.
+ 2026-07-07 10:16:14,138  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (45ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[AccessToken], [c].[ConnectedAt], [c].[ExpiresAt], [c].[ExternalAccountEmail], [c].[ExternalAccountId], [c].[IsActive], [c].[LastSyncCursor], [c].[MetaDataJson], [c].[Provider], [c].[RefreshToken], [c].[UserId]
+FROM [ConnectedApps] AS [c]
+WHERE [c].[Provider] = N'google' [?] - MESSAGE: Executed DbCommand (45ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[AccessToken], [c].[ConnectedAt], [c].[ExpiresAt], [c].[ExternalAccountEmail], [c].[ExternalAccountId], [c].[IsActive], [c].[LastSyncCursor], [c].[MetaDataJson], [c].[Provider], [c].[RefreshToken], [c].[UserId]
+FROM [ConnectedApps] AS [c]
+WHERE [c].[Provider] = N'google'
+ 2026-07-07 10:16:15,176 ERROR AutomationAPI.SERVICES.FormWatcherService.FormWatcherService outer loop error [35] - MESSAGE: FormWatcherService outer loop error
+ System.InvalidOperationException: No service for type 'AutomationAPI.MODEL.Interface.IGoogleSheetsService' has been registered.
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at AutomationAPI.SERVICES.FormWatcherService.ExecuteAsync(CancellationToken stoppingToken) in C:\Sample Files\MY WORK\AutomationAPI\AutomationAPI\SERVICES\FormWatcherService.cs:line 35
+2026-07-07 10:16:51,466 ERROR AutomationAPI.SERVICES.FormWatcherService.FormWatcherService outer loop error [35] - MESSAGE: FormWatcherService outer loop error
+ System.InvalidOperationException: No service for type 'AutomationAPI.MODEL.Interface.IGoogleSheetsService' has been registered.
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at AutomationAPI.SERVICES.FormWatcherService.ExecuteAsync(CancellationToken stoppingToken) in C:\Sample Files\MY WORK\AutomationAPI\AutomationAPI\SERVICES\FormWatcherService.cs:line 35
+2026-07-07 10:17:21,501 ERROR AutomationAPI.SERVICES.FormWatcherService.FormWatcherService outer loop error [35] - MESSAGE: FormWatcherService outer loop error
+ System.InvalidOperationException: No service for type 'AutomationAPI.MODEL.Interface.IGoogleSheetsService' has been registered.
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at AutomationAPI.SERVICES.FormWatcherService.ExecuteAsync(CancellationToken stoppingToken) in C:\Sample Files\MY WORK\AutomationAPI\AutomationAPI\SERVICES\FormWatcherService.cs:line 35
+2026-07-07 10:17:51,511 ERROR AutomationAPI.SERVICES.FormWatcherService.FormWatcherService outer loop error [35] - MESSAGE: FormWatcherService outer loop error
+ System.InvalidOperationException: No service for type 'AutomationAPI.MODEL.Interface.IGoogleSheetsService' has been registered.
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at AutomationAPI.SERVICES.FormWatcherService.ExecuteAsync(CancellationToken stoppingToken) in C:\Sample Files\MY WORK\AutomationAPI\AutomationAPI\SERVICES\FormWatcherService.cs:line 35
+2026-07-07 10:18:21,526 ERROR AutomationAPI.SERVICES.FormWatcherService.FormWatcherService outer loop error [35] - MESSAGE: FormWatcherService outer loop error
+ System.InvalidOperationException: No service for type 'AutomationAPI.MODEL.Interface.IGoogleSheetsService' has been registered.
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at AutomationAPI.SERVICES.FormWatcherService.ExecuteAsync(CancellationToken stoppingToken) in C:\Sample Files\MY WORK\AutomationAPI\AutomationAPI\SERVICES\FormWatcherService.cs:line 35
+2026-07-07 10:22:30,020 ERROR AutomationAPI.SERVICES.FormWatcherService.FormWatcherService outer loop error [35] - MESSAGE: FormWatcherService outer loop error
+ System.InvalidOperationException: No service for type 'AutomationAPI.MODEL.Interface.IGoogleSheetsService' has been registered.
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at AutomationAPI.SERVICES.FormWatcherService.ExecuteAsync(CancellationToken stoppingToken) in C:\Sample Files\MY WORK\AutomationAPI\AutomationAPI\SERVICES\FormWatcherService.cs:line 35
+2026-07-07 10:23:00,094 ERROR AutomationAPI.SERVICES.FormWatcherService.FormWatcherService outer loop error [35] - MESSAGE: FormWatcherService outer loop error
+ System.InvalidOperationException: No service for type 'AutomationAPI.MODEL.Interface.IGoogleSheetsService' has been registered.
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at AutomationAPI.SERVICES.FormWatcherService.ExecuteAsync(CancellationToken stoppingToken) in C:\Sample Files\MY WORK\AutomationAPI\AutomationAPI\SERVICES\FormWatcherService.cs:line 35
+2026-07-07 10:23:09,226  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (49ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[AccessToken], [c].[ConnectedAt], [c].[ExpiresAt], [c].[ExternalAccountEmail], [c].[ExternalAccountId], [c].[IsActive], [c].[LastSyncCursor], [c].[MetaDataJson], [c].[Provider], [c].[RefreshToken], [c].[UserId]
+FROM [ConnectedApps] AS [c]
+WHERE [c].[Provider] = N'google' [?] - MESSAGE: Executed DbCommand (49ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[AccessToken], [c].[ConnectedAt], [c].[ExpiresAt], [c].[ExternalAccountEmail], [c].[ExternalAccountId], [c].[IsActive], [c].[LastSyncCursor], [c].[MetaDataJson], [c].[Provider], [c].[RefreshToken], [c].[UserId]
+FROM [ConnectedApps] AS [c]
+WHERE [c].[Provider] = N'google'
+ 2026-07-07 10:23:30,131 ERROR AutomationAPI.SERVICES.FormWatcherService.FormWatcherService outer loop error [35] - MESSAGE: FormWatcherService outer loop error
+ System.InvalidOperationException: No service for type 'AutomationAPI.MODEL.Interface.IGoogleSheetsService' has been registered.
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at AutomationAPI.SERVICES.FormWatcherService.ExecuteAsync(CancellationToken stoppingToken) in C:\Sample Files\MY WORK\AutomationAPI\AutomationAPI\SERVICES\FormWatcherService.cs:line 35
+2026-07-07 10:24:00,145 ERROR AutomationAPI.SERVICES.FormWatcherService.FormWatcherService outer loop error [35] - MESSAGE: FormWatcherService outer loop error
+ System.InvalidOperationException: No service for type 'AutomationAPI.MODEL.Interface.IGoogleSheetsService' has been registered.
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at AutomationAPI.SERVICES.FormWatcherService.ExecuteAsync(CancellationToken stoppingToken) in C:\Sample Files\MY WORK\AutomationAPI\AutomationAPI\SERVICES\FormWatcherService.cs:line 35
+2026-07-07 10:24:30,156 ERROR AutomationAPI.SERVICES.FormWatcherService.FormWatcherService outer loop error [35] - MESSAGE: FormWatcherService outer loop error
+ System.InvalidOperationException: No service for type 'AutomationAPI.MODEL.Interface.IGoogleSheetsService' has been registered.
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at AutomationAPI.SERVICES.FormWatcherService.ExecuteAsync(CancellationToken stoppingToken) in C:\Sample Files\MY WORK\AutomationAPI\AutomationAPI\SERVICES\FormWatcherService.cs:line 35

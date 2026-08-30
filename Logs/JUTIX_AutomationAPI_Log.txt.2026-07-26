@@ -1,0 +1,804 @@
+2026-07-26 14:28:16,159  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (557ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT 1 [?] - MESSAGE: Executed DbCommand (557ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT 1
+ 2026-07-26 14:28:16,754  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (454ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]'); [?] - MESSAGE: Executed DbCommand (454ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+ 2026-07-26 14:28:17,141  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (382ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT 1 [?] - MESSAGE: Executed DbCommand (382ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT 1
+ 2026-07-26 14:28:17,755  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (454ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE [__EFMigrationsHistory] (
+    [MigrationId] nvarchar(150) NOT NULL,
+    [ProductVersion] nvarchar(32) NOT NULL,
+    CONSTRAINT [PK___EFMigrationsHistory] PRIMARY KEY ([MigrationId])
+); [?] - MESSAGE: Executed DbCommand (454ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE [__EFMigrationsHistory] (
+    [MigrationId] nvarchar(150) NOT NULL,
+    [ProductVersion] nvarchar(32) NOT NULL,
+    CONSTRAINT [PK___EFMigrationsHistory] PRIMARY KEY ([MigrationId])
+);
+ 2026-07-26 14:28:18,083  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (326ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT 1 [?] - MESSAGE: Executed DbCommand (326ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT 1
+ 2026-07-26 14:28:18,383  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (297ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]'); [?] - MESSAGE: Executed DbCommand (297ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+ 2026-07-26 14:28:18,782  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (394ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId]; [?] - MESSAGE: Executed DbCommand (394ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+ 2026-07-26 14:28:18,823  INFO Microsoft.EntityFrameworkCore.Migrations.Applying migration '20260419225152_Initial'. [?] - MESSAGE: Applying migration '20260419225152_Initial'.
+ 2026-07-26 14:28:19,974  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (678ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE [AutomationRules] (
+    [ID] int NOT NULL IDENTITY,
+    [Trigger] nvarchar(max) NOT NULL,
+    [Action] nvarchar(max) NOT NULL,
+    [Target] nvarchar(max) NOT NULL,
+    [CreatedAt] datetime2 NOT NULL,
+    CONSTRAINT [PK_AutomationRules] PRIMARY KEY ([ID])
+); [?] - MESSAGE: Executed DbCommand (678ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE [AutomationRules] (
+    [ID] int NOT NULL IDENTITY,
+    [Trigger] nvarchar(max) NOT NULL,
+    [Action] nvarchar(max) NOT NULL,
+    [Target] nvarchar(max) NOT NULL,
+    [CreatedAt] datetime2 NOT NULL,
+    CONSTRAINT [PK_AutomationRules] PRIMARY KEY ([ID])
+);
+ 2026-07-26 14:28:20,315  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (339ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20260419225152_Initial', N'8.0.5'); [?] - MESSAGE: Executed DbCommand (339ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20260419225152_Initial', N'8.0.5');
+ 2026-07-26 14:28:20,655  INFO Microsoft.EntityFrameworkCore.Migrations.Applying migration '20260420123703_Add_ExecutionLogs'. [?] - MESSAGE: Applying migration '20260420123703_Add_ExecutionLogs'.
+ 2026-07-26 14:28:21,844  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (812ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE [ExecutionLogs] (
+    [ID] int NOT NULL IDENTITY,
+    [Trigger] nvarchar(max) NOT NULL,
+    [Action] nvarchar(max) NOT NULL,
+    [Target] nvarchar(max) NOT NULL,
+    [ExecutedAt] datetime2 NOT NULL,
+    CONSTRAINT [PK_ExecutionLogs] PRIMARY KEY ([ID])
+); [?] - MESSAGE: Executed DbCommand (812ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE [ExecutionLogs] (
+    [ID] int NOT NULL IDENTITY,
+    [Trigger] nvarchar(max) NOT NULL,
+    [Action] nvarchar(max) NOT NULL,
+    [Target] nvarchar(max) NOT NULL,
+    [ExecutedAt] datetime2 NOT NULL,
+    CONSTRAINT [PK_ExecutionLogs] PRIMARY KEY ([ID])
+);
+ 2026-07-26 14:28:22,177  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (331ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20260420123703_Add_ExecutionLogs', N'8.0.5'); [?] - MESSAGE: Executed DbCommand (331ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20260420123703_Add_ExecutionLogs', N'8.0.5');
+ 2026-07-26 14:28:22,568  INFO Microsoft.EntityFrameworkCore.Migrations.Applying migration '20260421175937_UpdateExecLogsTab'. [?] - MESSAGE: Applying migration '20260421175937_UpdateExecLogsTab'.
+ 2026-07-26 14:28:23,592  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (373ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+ALTER TABLE [ExecutionLogs] ADD [Status] nvarchar(max) NOT NULL DEFAULT N''; [?] - MESSAGE: Executed DbCommand (373ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+ALTER TABLE [ExecutionLogs] ADD [Status] nvarchar(max) NOT NULL DEFAULT N'';
+ 2026-07-26 14:28:24,001  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (408ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20260421175937_UpdateExecLogsTab', N'8.0.5'); [?] - MESSAGE: Executed DbCommand (408ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20260421175937_UpdateExecLogsTab', N'8.0.5');
+ 2026-07-26 14:28:24,410  INFO Microsoft.EntityFrameworkCore.Migrations.Applying migration '20260423091036_UpdateExecLogs2'. [?] - MESSAGE: Applying migration '20260423091036_UpdateExecLogs2'.
+ 2026-07-26 14:28:25,230  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (410ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+ALTER TABLE [ExecutionLogs] ADD [ErrorMessage] nvarchar(max) NOT NULL DEFAULT N''; [?] - MESSAGE: Executed DbCommand (410ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+ALTER TABLE [ExecutionLogs] ADD [ErrorMessage] nvarchar(max) NOT NULL DEFAULT N'';
+ 2026-07-26 14:28:25,575  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (344ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+ALTER TABLE [ExecutionLogs] ADD [RetryCount] int NOT NULL DEFAULT 0; [?] - MESSAGE: Executed DbCommand (344ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+ALTER TABLE [ExecutionLogs] ADD [RetryCount] int NOT NULL DEFAULT 0;
+ 2026-07-26 14:28:26,186  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (608ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20260423091036_UpdateExecLogs2', N'8.0.5'); [?] - MESSAGE: Executed DbCommand (608ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20260423091036_UpdateExecLogs2', N'8.0.5');
+ 2026-07-26 14:28:26,493  INFO Microsoft.EntityFrameworkCore.Migrations.Applying migration '20260423170927_AllowErrorMsg_Null'. [?] - MESSAGE: Applying migration '20260423170927_AllowErrorMsg_Null'.
+ 2026-07-26 14:28:27,278  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (409ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+DECLARE @var0 sysname;
+SELECT @var0 = [d].[name]
+FROM [sys].[default_constraints] [d]
+INNER JOIN [sys].[columns] [c] ON [d].[parent_column_id] = [c].[column_id] AND [d].[parent_object_id] = [c].[object_id]
+WHERE ([d].[parent_object_id] = OBJECT_ID(N'[ExecutionLogs]') AND [c].[name] = N'ErrorMessage');
+IF @var0 IS NOT NULL EXEC(N'ALTER TABLE [ExecutionLogs] DROP CONSTRAINT [' + @var0 + '];');
+ALTER TABLE [ExecutionLogs] ALTER COLUMN [ErrorMessage] nvarchar(max) NULL; [?] - MESSAGE: Executed DbCommand (409ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+DECLARE @var0 sysname;
+SELECT @var0 = [d].[name]
+FROM [sys].[default_constraints] [d]
+INNER JOIN [sys].[columns] [c] ON [d].[parent_column_id] = [c].[column_id] AND [d].[parent_object_id] = [c].[object_id]
+WHERE ([d].[parent_object_id] = OBJECT_ID(N'[ExecutionLogs]') AND [c].[name] = N'ErrorMessage');
+IF @var0 IS NOT NULL EXEC(N'ALTER TABLE [ExecutionLogs] DROP CONSTRAINT [' + @var0 + '];');
+ALTER TABLE [ExecutionLogs] ALTER COLUMN [ErrorMessage] nvarchar(max) NULL;
+ 2026-07-26 14:28:27,588  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (309ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20260423170927_AllowErrorMsg_Null', N'8.0.5'); [?] - MESSAGE: Executed DbCommand (309ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20260423170927_AllowErrorMsg_Null', N'8.0.5');
+ 2026-07-26 14:28:28,002  INFO Microsoft.EntityFrameworkCore.Migrations.Applying migration '20260424001809_AddUser_Table'. [?] - MESSAGE: Applying migration '20260424001809_AddUser_Table'.
+ 2026-07-26 14:28:28,650  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (322ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE [Users] (
+    [ID] nvarchar(450) NOT NULL,
+    [FullName] nvarchar(max) NOT NULL,
+    [Email] nvarchar(max) NOT NULL,
+    [PasswordHash] nvarchar(max) NOT NULL,
+    CONSTRAINT [PK_Users] PRIMARY KEY ([ID])
+); [?] - MESSAGE: Executed DbCommand (322ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE [Users] (
+    [ID] nvarchar(450) NOT NULL,
+    [FullName] nvarchar(max) NOT NULL,
+    [Email] nvarchar(max) NOT NULL,
+    [PasswordHash] nvarchar(max) NOT NULL,
+    CONSTRAINT [PK_Users] PRIMARY KEY ([ID])
+);
+ 2026-07-26 14:28:29,002  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (351ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20260424001809_AddUser_Table', N'8.0.5'); [?] - MESSAGE: Executed DbCommand (351ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20260424001809_AddUser_Table', N'8.0.5');
+ 2026-07-26 14:28:29,329  INFO Microsoft.EntityFrameworkCore.Migrations.Applying migration '20260424011735_UpdateAutoRule_Table'. [?] - MESSAGE: Applying migration '20260424011735_UpdateAutoRule_Table'.
+ 2026-07-26 14:28:29,968  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (323ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+ALTER TABLE [AutomationRules] ADD [UserID] nvarchar(max) NOT NULL DEFAULT N''; [?] - MESSAGE: Executed DbCommand (323ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+ALTER TABLE [AutomationRules] ADD [UserID] nvarchar(max) NOT NULL DEFAULT N'';
+ 2026-07-26 14:28:30,292  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (323ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20260424011735_UpdateAutoRule_Table', N'8.0.5'); [?] - MESSAGE: Executed DbCommand (323ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20260424011735_UpdateAutoRule_Table', N'8.0.5');
+ 2026-07-26 14:28:30,667  INFO Microsoft.EntityFrameworkCore.Migrations.Applying migration '20260425101244_UpdateExecLogs_Table_3'. [?] - MESSAGE: Applying migration '20260425101244_UpdateExecLogs_Table_3'.
+ 2026-07-26 14:28:31,899  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (422ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+ALTER TABLE [ExecutionLogs] ADD [UserId] nvarchar(max) NOT NULL DEFAULT N''; [?] - MESSAGE: Executed DbCommand (422ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+ALTER TABLE [ExecutionLogs] ADD [UserId] nvarchar(max) NOT NULL DEFAULT N'';
+ 2026-07-26 14:28:32,486  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (586ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20260425101244_UpdateExecLogs_Table_3', N'8.0.5'); [?] - MESSAGE: Executed DbCommand (586ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20260425101244_UpdateExecLogs_Table_3', N'8.0.5');
+ 2026-07-26 14:28:32,824  INFO Microsoft.EntityFrameworkCore.Migrations.Applying migration '20260425223527_UpdateUser_Table'. [?] - MESSAGE: Applying migration '20260425223527_UpdateUser_Table'.
+ 2026-07-26 14:28:33,627  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (409ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+ALTER TABLE [Users] ADD [EmailVerificationToken] nvarchar(max) NOT NULL DEFAULT N''; [?] - MESSAGE: Executed DbCommand (409ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+ALTER TABLE [Users] ADD [EmailVerificationToken] nvarchar(max) NOT NULL DEFAULT N'';
+ 2026-07-26 14:28:34,139  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (511ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+ALTER TABLE [Users] ADD [IsEmailVerified] bit NOT NULL DEFAULT CAST(0 AS bit); [?] - MESSAGE: Executed DbCommand (511ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+ALTER TABLE [Users] ADD [IsEmailVerified] bit NOT NULL DEFAULT CAST(0 AS bit);
+ 2026-07-26 14:28:34,466  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (327ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20260425223527_UpdateUser_Table', N'8.0.5'); [?] - MESSAGE: Executed DbCommand (327ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20260425223527_UpdateUser_Table', N'8.0.5');
+ 2026-07-26 14:28:34,962  INFO Microsoft.EntityFrameworkCore.Migrations.Applying migration '20260425231928_EditUserTable'. [?] - MESSAGE: Applying migration '20260425231928_EditUserTable'.
+ 2026-07-26 14:28:35,879  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (595ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+DECLARE @var1 sysname;
+SELECT @var1 = [d].[name]
+FROM [sys].[default_constraints] [d]
+INNER JOIN [sys].[columns] [c] ON [d].[parent_column_id] = [c].[column_id] AND [d].[parent_object_id] = [c].[object_id]
+WHERE ([d].[parent_object_id] = OBJECT_ID(N'[Users]') AND [c].[name] = N'EmailVerificationToken');
+IF @var1 IS NOT NULL EXEC(N'ALTER TABLE [Users] DROP CONSTRAINT [' + @var1 + '];');
+ALTER TABLE [Users] DROP COLUMN [EmailVerificationToken]; [?] - MESSAGE: Executed DbCommand (595ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+DECLARE @var1 sysname;
+SELECT @var1 = [d].[name]
+FROM [sys].[default_constraints] [d]
+INNER JOIN [sys].[columns] [c] ON [d].[parent_column_id] = [c].[column_id] AND [d].[parent_object_id] = [c].[object_id]
+WHERE ([d].[parent_object_id] = OBJECT_ID(N'[Users]') AND [c].[name] = N'EmailVerificationToken');
+IF @var1 IS NOT NULL EXEC(N'ALTER TABLE [Users] DROP CONSTRAINT [' + @var1 + '];');
+ALTER TABLE [Users] DROP COLUMN [EmailVerificationToken];
+ 2026-07-26 14:28:36,257  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (376ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+DECLARE @var2 sysname;
+SELECT @var2 = [d].[name]
+FROM [sys].[default_constraints] [d]
+INNER JOIN [sys].[columns] [c] ON [d].[parent_column_id] = [c].[column_id] AND [d].[parent_object_id] = [c].[object_id]
+WHERE ([d].[parent_object_id] = OBJECT_ID(N'[Users]') AND [c].[name] = N'IsEmailVerified');
+IF @var2 IS NOT NULL EXEC(N'ALTER TABLE [Users] DROP CONSTRAINT [' + @var2 + '];');
+ALTER TABLE [Users] DROP COLUMN [IsEmailVerified]; [?] - MESSAGE: Executed DbCommand (376ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+DECLARE @var2 sysname;
+SELECT @var2 = [d].[name]
+FROM [sys].[default_constraints] [d]
+INNER JOIN [sys].[columns] [c] ON [d].[parent_column_id] = [c].[column_id] AND [d].[parent_object_id] = [c].[object_id]
+WHERE ([d].[parent_object_id] = OBJECT_ID(N'[Users]') AND [c].[name] = N'IsEmailVerified');
+IF @var2 IS NOT NULL EXEC(N'ALTER TABLE [Users] DROP CONSTRAINT [' + @var2 + '];');
+ALTER TABLE [Users] DROP COLUMN [IsEmailVerified];
+ 2026-07-26 14:28:36,596  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (338ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20260425231928_EditUserTable', N'8.0.5'); [?] - MESSAGE: Executed DbCommand (338ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20260425231928_EditUserTable', N'8.0.5');
+ 2026-07-26 14:28:37,006  INFO Microsoft.EntityFrameworkCore.Migrations.Applying migration '20260430022001_UpdateUser_Table_2'. [?] - MESSAGE: Applying migration '20260430022001_UpdateUser_Table_2'.
+ 2026-07-26 14:28:38,086  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (670ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+ALTER TABLE [Users] ADD [CreatedAt] datetime2 NOT NULL DEFAULT '0001-01-01T00:00:00.0000000'; [?] - MESSAGE: Executed DbCommand (670ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+ALTER TABLE [Users] ADD [CreatedAt] datetime2 NOT NULL DEFAULT '0001-01-01T00:00:00.0000000';
+ 2026-07-26 14:28:38,644  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (557ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20260430022001_UpdateUser_Table_2', N'8.0.5'); [?] - MESSAGE: Executed DbCommand (557ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20260430022001_UpdateUser_Table_2', N'8.0.5');
+ 2026-07-26 14:28:41,307  INFO Microsoft.EntityFrameworkCore.Migrations.Applying migration '20260507110500_AddToggleRule'. [?] - MESSAGE: Applying migration '20260507110500_AddToggleRule'.
+ 2026-07-26 14:28:42,536  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (370ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+ALTER TABLE [AutomationRules] ADD [IsActive] bit NOT NULL DEFAULT CAST(0 AS bit); [?] - MESSAGE: Executed DbCommand (370ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+ALTER TABLE [AutomationRules] ADD [IsActive] bit NOT NULL DEFAULT CAST(0 AS bit);
+ 2026-07-26 14:28:42,945  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (408ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20260507110500_AddToggleRule', N'8.0.5'); [?] - MESSAGE: Executed DbCommand (408ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20260507110500_AddToggleRule', N'8.0.5');
+ 2026-07-26 14:28:44,117  INFO Microsoft.EntityFrameworkCore.Migrations.Applying migration '20260507235152_AddWorkFlow'. [?] - MESSAGE: Applying migration '20260507235152_AddWorkFlow'.
+ 2026-07-26 14:28:46,222  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (1,023ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+ALTER TABLE [AutomationRules] ADD [IsWorkflow] bit NOT NULL DEFAULT CAST(0 AS bit); [?] - MESSAGE: Executed DbCommand (1,023ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+ALTER TABLE [AutomationRules] ADD [IsWorkflow] bit NOT NULL DEFAULT CAST(0 AS bit);
+ 2026-07-26 14:28:48,166  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (1,944ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE [WorkFlowSteps] (
+    [Id] int NOT NULL IDENTITY,
+    [AutomationRuleId] int NOT NULL,
+    [Order] int NOT NULL,
+    [Action] nvarchar(max) NOT NULL,
+    [Target] nvarchar(max) NOT NULL,
+    CONSTRAINT [PK_WorkFlowSteps] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_WorkFlowSteps_AutomationRules_AutomationRuleId] FOREIGN KEY ([AutomationRuleId]) REFERENCES [AutomationRules] ([ID])
+); [?] - MESSAGE: Executed DbCommand (1,944ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE [WorkFlowSteps] (
+    [Id] int NOT NULL IDENTITY,
+    [AutomationRuleId] int NOT NULL,
+    [Order] int NOT NULL,
+    [Action] nvarchar(max) NOT NULL,
+    [Target] nvarchar(max) NOT NULL,
+    CONSTRAINT [PK_WorkFlowSteps] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_WorkFlowSteps_AutomationRules_AutomationRuleId] FOREIGN KEY ([AutomationRuleId]) REFERENCES [AutomationRules] ([ID])
+);
+ 2026-07-26 14:28:48,580  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (412ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE INDEX [IX_WorkFlowSteps_AutomationRuleId] ON [WorkFlowSteps] ([AutomationRuleId]); [?] - MESSAGE: Executed DbCommand (412ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE INDEX [IX_WorkFlowSteps_AutomationRuleId] ON [WorkFlowSteps] ([AutomationRuleId]);
+ 2026-07-26 14:28:48,910  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (329ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20260507235152_AddWorkFlow', N'8.0.5'); [?] - MESSAGE: Executed DbCommand (329ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20260507235152_AddWorkFlow', N'8.0.5');
+ 2026-07-26 14:28:49,242  INFO Microsoft.EntityFrameworkCore.Migrations.Applying migration '20260508032535_updateWorkFlow'. [?] - MESSAGE: Applying migration '20260508032535_updateWorkFlow'.
+ 2026-07-26 14:28:50,113  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (550ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+DECLARE @var3 sysname;
+SELECT @var3 = [d].[name]
+FROM [sys].[default_constraints] [d]
+INNER JOIN [sys].[columns] [c] ON [d].[parent_column_id] = [c].[column_id] AND [d].[parent_object_id] = [c].[object_id]
+WHERE ([d].[parent_object_id] = OBJECT_ID(N'[AutomationRules]') AND [c].[name] = N'Action');
+IF @var3 IS NOT NULL EXEC(N'ALTER TABLE [AutomationRules] DROP CONSTRAINT [' + @var3 + '];');
+ALTER TABLE [AutomationRules] DROP COLUMN [Action]; [?] - MESSAGE: Executed DbCommand (550ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+DECLARE @var3 sysname;
+SELECT @var3 = [d].[name]
+FROM [sys].[default_constraints] [d]
+INNER JOIN [sys].[columns] [c] ON [d].[parent_column_id] = [c].[column_id] AND [d].[parent_object_id] = [c].[object_id]
+WHERE ([d].[parent_object_id] = OBJECT_ID(N'[AutomationRules]') AND [c].[name] = N'Action');
+IF @var3 IS NOT NULL EXEC(N'ALTER TABLE [AutomationRules] DROP CONSTRAINT [' + @var3 + '];');
+ALTER TABLE [AutomationRules] DROP COLUMN [Action];
+ 2026-07-26 14:28:50,523  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (408ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+DECLARE @var4 sysname;
+SELECT @var4 = [d].[name]
+FROM [sys].[default_constraints] [d]
+INNER JOIN [sys].[columns] [c] ON [d].[parent_column_id] = [c].[column_id] AND [d].[parent_object_id] = [c].[object_id]
+WHERE ([d].[parent_object_id] = OBJECT_ID(N'[AutomationRules]') AND [c].[name] = N'Target');
+IF @var4 IS NOT NULL EXEC(N'ALTER TABLE [AutomationRules] DROP CONSTRAINT [' + @var4 + '];');
+ALTER TABLE [AutomationRules] DROP COLUMN [Target]; [?] - MESSAGE: Executed DbCommand (408ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+DECLARE @var4 sysname;
+SELECT @var4 = [d].[name]
+FROM [sys].[default_constraints] [d]
+INNER JOIN [sys].[columns] [c] ON [d].[parent_column_id] = [c].[column_id] AND [d].[parent_object_id] = [c].[object_id]
+WHERE ([d].[parent_object_id] = OBJECT_ID(N'[AutomationRules]') AND [c].[name] = N'Target');
+IF @var4 IS NOT NULL EXEC(N'ALTER TABLE [AutomationRules] DROP CONSTRAINT [' + @var4 + '];');
+ALTER TABLE [AutomationRules] DROP COLUMN [Target];
+ 2026-07-26 14:28:50,932  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (408ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20260508032535_updateWorkFlow', N'8.0.5'); [?] - MESSAGE: Executed DbCommand (408ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20260508032535_updateWorkFlow', N'8.0.5');
+ 2026-07-26 14:28:51,342  INFO Microsoft.EntityFrameworkCore.Migrations.Applying migration '20260509161245_AddWorkSpace'. [?] - MESSAGE: Applying migration '20260509161245_AddWorkSpace'.
+ 2026-07-26 14:28:52,286  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (432ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+ALTER TABLE [AutomationRules] ADD [FolderId] int NULL; [?] - MESSAGE: Executed DbCommand (432ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+ALTER TABLE [AutomationRules] ADD [FolderId] int NULL;
+ 2026-07-26 14:28:52,673  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (386ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE [WorkSpaces] (
+    [ID] int NOT NULL IDENTITY,
+    [Name] nvarchar(max) NOT NULL,
+    [Color] nvarchar(max) NOT NULL,
+    [Icon] nvarchar(max) NOT NULL,
+    [UserId] nvarchar(450) NOT NULL,
+    CONSTRAINT [PK_WorkSpaces] PRIMARY KEY ([ID]),
+    CONSTRAINT [FK_WorkSpaces_Users_UserId] FOREIGN KEY ([UserId]) REFERENCES [Users] ([ID]) ON DELETE CASCADE
+); [?] - MESSAGE: Executed DbCommand (386ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE [WorkSpaces] (
+    [ID] int NOT NULL IDENTITY,
+    [Name] nvarchar(max) NOT NULL,
+    [Color] nvarchar(max) NOT NULL,
+    [Icon] nvarchar(max) NOT NULL,
+    [UserId] nvarchar(450) NOT NULL,
+    CONSTRAINT [PK_WorkSpaces] PRIMARY KEY ([ID]),
+    CONSTRAINT [FK_WorkSpaces_Users_UserId] FOREIGN KEY ([UserId]) REFERENCES [Users] ([ID]) ON DELETE CASCADE
+);
+ 2026-07-26 14:28:53,082  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (408ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE [Folders] (
+    [ID] int NOT NULL IDENTITY,
+    [Name] nvarchar(max) NOT NULL,
+    [WorkSpaceId] int NOT NULL,
+    CONSTRAINT [PK_Folders] PRIMARY KEY ([ID]),
+    CONSTRAINT [FK_Folders_WorkSpaces_WorkSpaceId] FOREIGN KEY ([WorkSpaceId]) REFERENCES [WorkSpaces] ([ID]) ON DELETE CASCADE
+); [?] - MESSAGE: Executed DbCommand (408ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE [Folders] (
+    [ID] int NOT NULL IDENTITY,
+    [Name] nvarchar(max) NOT NULL,
+    [WorkSpaceId] int NOT NULL,
+    CONSTRAINT [PK_Folders] PRIMARY KEY ([ID]),
+    CONSTRAINT [FK_Folders_WorkSpaces_WorkSpaceId] FOREIGN KEY ([WorkSpaceId]) REFERENCES [WorkSpaces] ([ID]) ON DELETE CASCADE
+);
+ 2026-07-26 14:28:53,492  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (409ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE INDEX [IX_AutomationRules_FolderId] ON [AutomationRules] ([FolderId]); [?] - MESSAGE: Executed DbCommand (409ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE INDEX [IX_AutomationRules_FolderId] ON [AutomationRules] ([FolderId]);
+ 2026-07-26 14:28:53,902  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (409ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE INDEX [IX_Folders_WorkSpaceId] ON [Folders] ([WorkSpaceId]); [?] - MESSAGE: Executed DbCommand (409ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE INDEX [IX_Folders_WorkSpaceId] ON [Folders] ([WorkSpaceId]);
+ 2026-07-26 14:28:54,464  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (560ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE INDEX [IX_WorkSpaces_UserId] ON [WorkSpaces] ([UserId]); [?] - MESSAGE: Executed DbCommand (560ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE INDEX [IX_WorkSpaces_UserId] ON [WorkSpaces] ([UserId]);
+ 2026-07-26 14:28:54,926  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (461ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+ALTER TABLE [AutomationRules] ADD CONSTRAINT [FK_AutomationRules_Folders_FolderId] FOREIGN KEY ([FolderId]) REFERENCES [Folders] ([ID]); [?] - MESSAGE: Executed DbCommand (461ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+ALTER TABLE [AutomationRules] ADD CONSTRAINT [FK_AutomationRules_Folders_FolderId] FOREIGN KEY ([FolderId]) REFERENCES [Folders] ([ID]);
+ 2026-07-26 14:28:55,335  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (408ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20260509161245_AddWorkSpace', N'8.0.5'); [?] - MESSAGE: Executed DbCommand (408ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20260509161245_AddWorkSpace', N'8.0.5');
+ 2026-07-26 14:28:55,745  INFO Microsoft.EntityFrameworkCore.Migrations.Applying migration '20260512181725_AddConnectAppTablr'. [?] - MESSAGE: Applying migration '20260512181725_AddConnectAppTablr'.
+ 2026-07-26 14:28:56,564  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (410ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE [ConnectApps] (
+    [Id] int NOT NULL IDENTITY,
+    [UserId] nvarchar(450) NOT NULL,
+    [Provider] nvarchar(max) NOT NULL,
+    [AccessToken] nvarchar(max) NOT NULL,
+    [RefreshToken] nvarchar(max) NOT NULL,
+    [ExpiresAt] datetime2 NULL,
+    [IsActive] bit NOT NULL,
+    [ConnectedAt] datetime2 NOT NULL,
+    CONSTRAINT [PK_ConnectApps] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_ConnectApps_Users_UserId] FOREIGN KEY ([UserId]) REFERENCES [Users] ([ID]) ON DELETE CASCADE
+); [?] - MESSAGE: Executed DbCommand (410ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE [ConnectApps] (
+    [Id] int NOT NULL IDENTITY,
+    [UserId] nvarchar(450) NOT NULL,
+    [Provider] nvarchar(max) NOT NULL,
+    [AccessToken] nvarchar(max) NOT NULL,
+    [RefreshToken] nvarchar(max) NOT NULL,
+    [ExpiresAt] datetime2 NULL,
+    [IsActive] bit NOT NULL,
+    [ConnectedAt] datetime2 NOT NULL,
+    CONSTRAINT [PK_ConnectApps] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_ConnectApps_Users_UserId] FOREIGN KEY ([UserId]) REFERENCES [Users] ([ID]) ON DELETE CASCADE
+);
+ 2026-07-26 14:28:56,974  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (409ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE INDEX [IX_ConnectApps_UserId] ON [ConnectApps] ([UserId]); [?] - MESSAGE: Executed DbCommand (409ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE INDEX [IX_ConnectApps_UserId] ON [ConnectApps] ([UserId]);
+ 2026-07-26 14:28:57,383  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (409ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20260512181725_AddConnectAppTablr', N'8.0.5'); [?] - MESSAGE: Executed DbCommand (409ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20260512181725_AddConnectAppTablr', N'8.0.5');
+ 2026-07-26 14:28:58,076  INFO Microsoft.EntityFrameworkCore.Migrations.Applying migration '20260516130217_AddWebhookKey'. [?] - MESSAGE: Applying migration '20260516130217_AddWebhookKey'.
+ 2026-07-26 14:28:58,817  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (418ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+ALTER TABLE [AutomationRules] ADD [WebhookKey] nvarchar(max) NOT NULL DEFAULT N''; [?] - MESSAGE: Executed DbCommand (418ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+ALTER TABLE [AutomationRules] ADD [WebhookKey] nvarchar(max) NOT NULL DEFAULT N'';
+ 2026-07-26 14:28:59,139  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (322ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20260516130217_AddWebhookKey', N'8.0.5'); [?] - MESSAGE: Executed DbCommand (322ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20260516130217_AddWebhookKey', N'8.0.5');
+ 2026-07-26 14:28:59,450  INFO Microsoft.EntityFrameworkCore.Migrations.Applying migration '20260523202859_WorkflowExecution'. [?] - MESSAGE: Applying migration '20260523202859_WorkflowExecution'.
+ 2026-07-26 14:29:00,250  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (433ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE [WorkflowExecutions] (
+    [Id] int NOT NULL IDENTITY,
+    [RuleId] int NOT NULL,
+    [Payload] nvarchar(max) NOT NULL,
+    [Success] bit NOT NULL,
+    [Error] nvarchar(max) NOT NULL,
+    [ExecutedAt] datetime2 NOT NULL,
+    CONSTRAINT [PK_WorkflowExecutions] PRIMARY KEY ([Id])
+); [?] - MESSAGE: Executed DbCommand (433ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE [WorkflowExecutions] (
+    [Id] int NOT NULL IDENTITY,
+    [RuleId] int NOT NULL,
+    [Payload] nvarchar(max) NOT NULL,
+    [Success] bit NOT NULL,
+    [Error] nvarchar(max) NOT NULL,
+    [ExecutedAt] datetime2 NOT NULL,
+    CONSTRAINT [PK_WorkflowExecutions] PRIMARY KEY ([Id])
+);
+ 2026-07-26 14:29:00,582  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (331ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20260523202859_WorkflowExecution', N'8.0.5'); [?] - MESSAGE: Executed DbCommand (331ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20260523202859_WorkflowExecution', N'8.0.5');
+ 2026-07-26 14:29:00,978  INFO Microsoft.EntityFrameworkCore.Migrations.Applying migration '20260526155830_updateTableName'. [?] - MESSAGE: Applying migration '20260526155830_updateTableName'.
+ 2026-07-26 14:29:01,786  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (396ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+DROP TABLE [ConnectApps]; [?] - MESSAGE: Executed DbCommand (396ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+DROP TABLE [ConnectApps];
+ 2026-07-26 14:29:02,100  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (313ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE [ConnectedApps] (
+    [Id] int NOT NULL IDENTITY,
+    [UserId] nvarchar(450) NOT NULL,
+    [Provider] nvarchar(max) NOT NULL,
+    [AccessToken] nvarchar(max) NOT NULL,
+    [RefreshToken] nvarchar(max) NOT NULL,
+    [ExpiresAt] datetime2 NULL,
+    [IsActive] bit NOT NULL,
+    [ConnectedAt] datetime2 NOT NULL,
+    CONSTRAINT [PK_ConnectedApps] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_ConnectedApps_Users_UserId] FOREIGN KEY ([UserId]) REFERENCES [Users] ([ID]) ON DELETE CASCADE
+); [?] - MESSAGE: Executed DbCommand (313ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE [ConnectedApps] (
+    [Id] int NOT NULL IDENTITY,
+    [UserId] nvarchar(450) NOT NULL,
+    [Provider] nvarchar(max) NOT NULL,
+    [AccessToken] nvarchar(max) NOT NULL,
+    [RefreshToken] nvarchar(max) NOT NULL,
+    [ExpiresAt] datetime2 NULL,
+    [IsActive] bit NOT NULL,
+    [ConnectedAt] datetime2 NOT NULL,
+    CONSTRAINT [PK_ConnectedApps] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_ConnectedApps_Users_UserId] FOREIGN KEY ([UserId]) REFERENCES [Users] ([ID]) ON DELETE CASCADE
+);
+ 2026-07-26 14:29:02,503  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (403ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE INDEX [IX_ConnectedApps_UserId] ON [ConnectedApps] ([UserId]); [?] - MESSAGE: Executed DbCommand (403ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE INDEX [IX_ConnectedApps_UserId] ON [ConnectedApps] ([UserId]);
+ 2026-07-26 14:29:03,012  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (508ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20260526155830_updateTableName', N'8.0.5'); [?] - MESSAGE: Executed DbCommand (508ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20260526155830_updateTableName', N'8.0.5');
+ 2026-07-26 14:29:03,424  INFO Microsoft.EntityFrameworkCore.Migrations.Applying migration '20260527005332_FormWatchTable'. [?] - MESSAGE: Applying migration '20260527005332_FormWatchTable'.
+ 2026-07-26 14:29:07,214  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (3,246ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE [FormWatches] (
+    [Id] int NOT NULL IDENTITY,
+    [UserId] nvarchar(max) NOT NULL,
+    [RuleId] int NOT NULL,
+    [SpreadSheetId] nvarchar(max) NOT NULL,
+    [SheetName] nvarchar(max) NOT NULL,
+    [LastProcessedRow] int NOT NULL,
+    [CreatedAt] datetime2 NOT NULL,
+    CONSTRAINT [PK_FormWatches] PRIMARY KEY ([Id])
+); [?] - MESSAGE: Executed DbCommand (3,246ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE [FormWatches] (
+    [Id] int NOT NULL IDENTITY,
+    [UserId] nvarchar(max) NOT NULL,
+    [RuleId] int NOT NULL,
+    [SpreadSheetId] nvarchar(max) NOT NULL,
+    [SheetName] nvarchar(max) NOT NULL,
+    [LastProcessedRow] int NOT NULL,
+    [CreatedAt] datetime2 NOT NULL,
+    CONSTRAINT [PK_FormWatches] PRIMARY KEY ([Id])
+);
+ 2026-07-26 14:29:07,921  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (707ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20260527005332_FormWatchTable', N'8.0.5'); [?] - MESSAGE: Executed DbCommand (707ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20260527005332_FormWatchTable', N'8.0.5');
+ 2026-07-26 14:29:08,340  INFO Microsoft.EntityFrameworkCore.Migrations.Applying migration '20260527235104_AddDelay'. [?] - MESSAGE: Applying migration '20260527235104_AddDelay'.
+ 2026-07-26 14:29:09,081  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (331ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+ALTER TABLE [WorkFlowSteps] ADD [DelayAmount] int NULL; [?] - MESSAGE: Executed DbCommand (331ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+ALTER TABLE [WorkFlowSteps] ADD [DelayAmount] int NULL;
+ 2026-07-26 14:29:09,466  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (385ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+ALTER TABLE [WorkFlowSteps] ADD [DelayUnit] nvarchar(max) NOT NULL DEFAULT N''; [?] - MESSAGE: Executed DbCommand (385ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+ALTER TABLE [WorkFlowSteps] ADD [DelayUnit] nvarchar(max) NOT NULL DEFAULT N'';
+ 2026-07-26 14:29:09,822  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (355ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+ALTER TABLE [WorkFlowSteps] ADD [FalseStepId] int NULL; [?] - MESSAGE: Executed DbCommand (355ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+ALTER TABLE [WorkFlowSteps] ADD [FalseStepId] int NULL;
+ 2026-07-26 14:29:10,264  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (442ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+ALTER TABLE [WorkFlowSteps] ADD [IsBranchStep] bit NOT NULL DEFAULT CAST(0 AS bit); [?] - MESSAGE: Executed DbCommand (442ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+ALTER TABLE [WorkFlowSteps] ADD [IsBranchStep] bit NOT NULL DEFAULT CAST(0 AS bit);
+ 2026-07-26 14:29:10,610  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (345ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+ALTER TABLE [WorkFlowSteps] ADD [TrueStepId] int NULL; [?] - MESSAGE: Executed DbCommand (345ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+ALTER TABLE [WorkFlowSteps] ADD [TrueStepId] int NULL;
+ 2026-07-26 14:29:11,003  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (392ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE [RuleConditions] (
+    [Id] int NOT NULL IDENTITY,
+    [RuleStepId] int NOT NULL,
+    [Field] nvarchar(max) NOT NULL,
+    [Operator] nvarchar(max) NOT NULL,
+    [Value] nvarchar(max) NOT NULL,
+    CONSTRAINT [PK_RuleConditions] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_RuleConditions_WorkFlowSteps_RuleStepId] FOREIGN KEY ([RuleStepId]) REFERENCES [WorkFlowSteps] ([Id]) ON DELETE CASCADE
+); [?] - MESSAGE: Executed DbCommand (392ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE [RuleConditions] (
+    [Id] int NOT NULL IDENTITY,
+    [RuleStepId] int NOT NULL,
+    [Field] nvarchar(max) NOT NULL,
+    [Operator] nvarchar(max) NOT NULL,
+    [Value] nvarchar(max) NOT NULL,
+    CONSTRAINT [PK_RuleConditions] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_RuleConditions_WorkFlowSteps_RuleStepId] FOREIGN KEY ([RuleStepId]) REFERENCES [WorkFlowSteps] ([Id]) ON DELETE CASCADE
+);
+ 2026-07-26 14:29:11,313  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (309ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE INDEX [IX_RuleConditions_RuleStepId] ON [RuleConditions] ([RuleStepId]); [?] - MESSAGE: Executed DbCommand (309ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE INDEX [IX_RuleConditions_RuleStepId] ON [RuleConditions] ([RuleStepId]);
+ 2026-07-26 14:29:11,722  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (407ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20260527235104_AddDelay', N'8.0.5'); [?] - MESSAGE: Executed DbCommand (407ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20260527235104_AddDelay', N'8.0.5');
+ 2026-07-26 14:29:12,129  INFO Microsoft.EntityFrameworkCore.Migrations.Applying migration '20260531220639_UpgradeConnectedApps'. [?] - MESSAGE: Applying migration '20260531220639_UpgradeConnectedApps'.
+ 2026-07-26 14:29:12,915  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (371ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+ALTER TABLE [WorkFlowSteps] ADD [IsLoopStep] bit NOT NULL DEFAULT CAST(0 AS bit); [?] - MESSAGE: Executed DbCommand (371ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+ALTER TABLE [WorkFlowSteps] ADD [IsLoopStep] bit NOT NULL DEFAULT CAST(0 AS bit);
+ 2026-07-26 14:29:13,258  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (342ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+ALTER TABLE [WorkFlowSteps] ADD [LoopField] nvarchar(max) NOT NULL DEFAULT N''; [?] - MESSAGE: Executed DbCommand (342ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+ALTER TABLE [WorkFlowSteps] ADD [LoopField] nvarchar(max) NOT NULL DEFAULT N'';
+ 2026-07-26 14:29:13,568  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (309ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+ALTER TABLE [WorkFlowSteps] ADD [Provider] nvarchar(max) NOT NULL DEFAULT N''; [?] - MESSAGE: Executed DbCommand (309ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+ALTER TABLE [WorkFlowSteps] ADD [Provider] nvarchar(max) NOT NULL DEFAULT N'';
+ 2026-07-26 14:29:13,972  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (403ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+ALTER TABLE [WorkFlowSteps] ADD [RetryCount] int NOT NULL DEFAULT 0; [?] - MESSAGE: Executed DbCommand (403ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+ALTER TABLE [WorkFlowSteps] ADD [RetryCount] int NOT NULL DEFAULT 0;
+ 2026-07-26 14:29:14,484  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (512ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+ALTER TABLE [WorkFlowSteps] ADD [RetryDelaySeconds] int NOT NULL DEFAULT 0; [?] - MESSAGE: Executed DbCommand (512ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+ALTER TABLE [WorkFlowSteps] ADD [RetryDelaySeconds] int NOT NULL DEFAULT 0;
+ 2026-07-26 14:29:14,862  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (375ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+ALTER TABLE [ConnectedApps] ADD [ExternalAccountEmail] nvarchar(max) NOT NULL DEFAULT N''; [?] - MESSAGE: Executed DbCommand (375ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+ALTER TABLE [ConnectedApps] ADD [ExternalAccountEmail] nvarchar(max) NOT NULL DEFAULT N'';
+ 2026-07-26 14:29:15,160  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (298ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+ALTER TABLE [ConnectedApps] ADD [ExternalAccountId] nvarchar(max) NOT NULL DEFAULT N''; [?] - MESSAGE: Executed DbCommand (298ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+ALTER TABLE [ConnectedApps] ADD [ExternalAccountId] nvarchar(max) NOT NULL DEFAULT N'';
+ 2026-07-26 14:29:15,481  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (320ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+ALTER TABLE [ConnectedApps] ADD [MetaDataJson] nvarchar(max) NOT NULL DEFAULT N''; [?] - MESSAGE: Executed DbCommand (320ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+ALTER TABLE [ConnectedApps] ADD [MetaDataJson] nvarchar(max) NOT NULL DEFAULT N'';
+ 2026-07-26 14:29:15,917  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (435ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE [WorkflowDeadLetters] (
+    [Id] int NOT NULL IDENTITY,
+    [RuleId] int NOT NULL,
+    [RuleStepId] int NOT NULL,
+    [PayloadJson] nvarchar(max) NOT NULL,
+    [ErrorMessage] nvarchar(max) NOT NULL,
+    [Attempts] int NOT NULL,
+    [Resolved] bit NOT NULL,
+    [CreatedAt] datetime2 NOT NULL,
+    CONSTRAINT [PK_WorkflowDeadLetters] PRIMARY KEY ([Id])
+); [?] - MESSAGE: Executed DbCommand (435ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE [WorkflowDeadLetters] (
+    [Id] int NOT NULL IDENTITY,
+    [RuleId] int NOT NULL,
+    [RuleStepId] int NOT NULL,
+    [PayloadJson] nvarchar(max) NOT NULL,
+    [ErrorMessage] nvarchar(max) NOT NULL,
+    [Attempts] int NOT NULL,
+    [Resolved] bit NOT NULL,
+    [CreatedAt] datetime2 NOT NULL,
+    CONSTRAINT [PK_WorkflowDeadLetters] PRIMARY KEY ([Id])
+);
+ 2026-07-26 14:29:16,327  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (409ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE [WorkflowExecutionLogs] (
+    [Id] int NOT NULL IDENTITY,
+    [RuleId] int NOT NULL,
+    [RuleStepId] int NOT NULL,
+    [Status] nvarchar(max) NOT NULL,
+    [Message] nvarchar(max) NOT NULL,
+    [Attempt] int NOT NULL,
+    [CreatedAt] datetime2 NOT NULL,
+    CONSTRAINT [PK_WorkflowExecutionLogs] PRIMARY KEY ([Id])
+); [?] - MESSAGE: Executed DbCommand (409ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE [WorkflowExecutionLogs] (
+    [Id] int NOT NULL IDENTITY,
+    [RuleId] int NOT NULL,
+    [RuleStepId] int NOT NULL,
+    [Status] nvarchar(max) NOT NULL,
+    [Message] nvarchar(max) NOT NULL,
+    [Attempt] int NOT NULL,
+    [CreatedAt] datetime2 NOT NULL,
+    CONSTRAINT [PK_WorkflowExecutionLogs] PRIMARY KEY ([Id])
+);
+ 2026-07-26 14:29:16,942  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (614ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE [WorkflowInstances] (
+    [Id] int NOT NULL IDENTITY,
+    [RuleId] int NOT NULL,
+    [CurrentStepId] int NOT NULL,
+    [Status] nvarchar(max) NOT NULL,
+    [PayloadJson] nvarchar(max) NOT NULL,
+    [StartedAt] datetime2 NOT NULL,
+    [CompletedAt] datetime2 NULL,
+    [LastExecutedAt] datetime2 NULL,
+    CONSTRAINT [PK_WorkflowInstances] PRIMARY KEY ([Id])
+); [?] - MESSAGE: Executed DbCommand (614ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE [WorkflowInstances] (
+    [Id] int NOT NULL IDENTITY,
+    [RuleId] int NOT NULL,
+    [CurrentStepId] int NOT NULL,
+    [Status] nvarchar(max) NOT NULL,
+    [PayloadJson] nvarchar(max) NOT NULL,
+    [StartedAt] datetime2 NOT NULL,
+    [CompletedAt] datetime2 NULL,
+    [LastExecutedAt] datetime2 NULL,
+    CONSTRAINT [PK_WorkflowInstances] PRIMARY KEY ([Id])
+);
+ 2026-07-26 14:29:17,352  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (408ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20260531220639_UpgradeConnectedApps', N'8.0.5'); [?] - MESSAGE: Executed DbCommand (408ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20260531220639_UpgradeConnectedApps', N'8.0.5');
+ 2026-07-26 14:29:17,718  INFO Microsoft.EntityFrameworkCore.Migrations.Applying migration '20260604182657_update-connectedApp'. [?] - MESSAGE: Applying migration '20260604182657_update-connectedApp'.
+ 2026-07-26 14:29:18,997  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (725ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+ALTER TABLE [ConnectedApps] ADD [LastSyncCursor] nvarchar(max) NOT NULL DEFAULT N''; [?] - MESSAGE: Executed DbCommand (725ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+ALTER TABLE [ConnectedApps] ADD [LastSyncCursor] nvarchar(max) NOT NULL DEFAULT N'';
+ 2026-07-26 14:29:19,301  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (302ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20260604182657_update-connectedApp', N'8.0.5'); [?] - MESSAGE: Executed DbCommand (302ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20260604182657_update-connectedApp', N'8.0.5');
+ 2026-07-26 14:29:19,706  INFO Microsoft.EntityFrameworkCore.Migrations.Applying migration '20260629041436_IntegrationCreden_Table'. [?] - MESSAGE: Applying migration '20260629041436_IntegrationCreden_Table'.
+ 2026-07-26 14:29:20,433  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (380ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+ALTER TABLE [WorkFlowSteps] ADD [ConfigurationJson] nvarchar(max) NOT NULL DEFAULT N''; [?] - MESSAGE: Executed DbCommand (380ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+ALTER TABLE [WorkFlowSteps] ADD [ConfigurationJson] nvarchar(max) NOT NULL DEFAULT N'';
+ 2026-07-26 14:29:20,753  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (319ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+ALTER TABLE [WorkFlowSteps] ADD [ResourceId] nvarchar(max) NOT NULL DEFAULT N''; [?] - MESSAGE: Executed DbCommand (319ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+ALTER TABLE [WorkFlowSteps] ADD [ResourceId] nvarchar(max) NOT NULL DEFAULT N'';
+ 2026-07-26 14:29:21,142  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (389ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+ALTER TABLE [WorkFlowSteps] ADD [ResourceName] nvarchar(max) NOT NULL DEFAULT N''; [?] - MESSAGE: Executed DbCommand (389ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+ALTER TABLE [WorkFlowSteps] ADD [ResourceName] nvarchar(max) NOT NULL DEFAULT N'';
+ 2026-07-26 14:29:21,549  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (406ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE [IntegrationCredentials] (
+    [Id] int NOT NULL IDENTITY,
+    [Provider] nvarchar(max) NOT NULL,
+    [Name] nvarchar(max) NOT NULL,
+    [CredentialType] nvarchar(max) NOT NULL,
+    [Value] nvarchar(max) NOT NULL,
+    [IsActive] bit NOT NULL,
+    [CreatedAt] datetime2 NOT NULL,
+    CONSTRAINT [PK_IntegrationCredentials] PRIMARY KEY ([Id])
+); [?] - MESSAGE: Executed DbCommand (406ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE [IntegrationCredentials] (
+    [Id] int NOT NULL IDENTITY,
+    [Provider] nvarchar(max) NOT NULL,
+    [Name] nvarchar(max) NOT NULL,
+    [CredentialType] nvarchar(max) NOT NULL,
+    [Value] nvarchar(max) NOT NULL,
+    [IsActive] bit NOT NULL,
+    [CreatedAt] datetime2 NOT NULL,
+    CONSTRAINT [PK_IntegrationCredentials] PRIMARY KEY ([Id])
+);
+ 2026-07-26 14:29:21,906  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (356ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20260629041436_IntegrationCreden_Table', N'8.0.5'); [?] - MESSAGE: Executed DbCommand (356ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20260629041436_IntegrationCreden_Table', N'8.0.5');
+ 2026-07-26 14:29:22,266  INFO Microsoft.EntityFrameworkCore.Migrations.Applying migration '20260714153724_updateWorkflowStep'. [?] - MESSAGE: Applying migration '20260714153724_updateWorkflowStep'.
+ 2026-07-26 14:29:23,086  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (410ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+DECLARE @var5 sysname;
+SELECT @var5 = [d].[name]
+FROM [sys].[default_constraints] [d]
+INNER JOIN [sys].[columns] [c] ON [d].[parent_column_id] = [c].[column_id] AND [d].[parent_object_id] = [c].[object_id]
+WHERE ([d].[parent_object_id] = OBJECT_ID(N'[WorkFlowSteps]') AND [c].[name] = N'DelayUnit');
+IF @var5 IS NOT NULL EXEC(N'ALTER TABLE [WorkFlowSteps] DROP CONSTRAINT [' + @var5 + '];');
+ALTER TABLE [WorkFlowSteps] ALTER COLUMN [DelayUnit] nvarchar(max) NULL; [?] - MESSAGE: Executed DbCommand (410ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+DECLARE @var5 sysname;
+SELECT @var5 = [d].[name]
+FROM [sys].[default_constraints] [d]
+INNER JOIN [sys].[columns] [c] ON [d].[parent_column_id] = [c].[column_id] AND [d].[parent_object_id] = [c].[object_id]
+WHERE ([d].[parent_object_id] = OBJECT_ID(N'[WorkFlowSteps]') AND [c].[name] = N'DelayUnit');
+IF @var5 IS NOT NULL EXEC(N'ALTER TABLE [WorkFlowSteps] DROP CONSTRAINT [' + @var5 + '];');
+ALTER TABLE [WorkFlowSteps] ALTER COLUMN [DelayUnit] nvarchar(max) NULL;
+ 2026-07-26 14:29:23,497  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (410ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20260714153724_updateWorkflowStep', N'8.0.5'); [?] - MESSAGE: Executed DbCommand (410ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20260714153724_updateWorkflowStep', N'8.0.5');
+ 2026-07-26 14:29:23,906  INFO Microsoft.EntityFrameworkCore.Migrations.Applying migration '20260714154303_updateWorkflowStep2'. [?] - MESSAGE: Applying migration '20260714154303_updateWorkflowStep2'.
+ 2026-07-26 14:29:24,964  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (400ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+DECLARE @var6 sysname;
+SELECT @var6 = [d].[name]
+FROM [sys].[default_constraints] [d]
+INNER JOIN [sys].[columns] [c] ON [d].[parent_column_id] = [c].[column_id] AND [d].[parent_object_id] = [c].[object_id]
+WHERE ([d].[parent_object_id] = OBJECT_ID(N'[WorkFlowSteps]') AND [c].[name] = N'Provider');
+IF @var6 IS NOT NULL EXEC(N'ALTER TABLE [WorkFlowSteps] DROP CONSTRAINT [' + @var6 + '];');
+ALTER TABLE [WorkFlowSteps] DROP COLUMN [Provider]; [?] - MESSAGE: Executed DbCommand (400ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+DECLARE @var6 sysname;
+SELECT @var6 = [d].[name]
+FROM [sys].[default_constraints] [d]
+INNER JOIN [sys].[columns] [c] ON [d].[parent_column_id] = [c].[column_id] AND [d].[parent_object_id] = [c].[object_id]
+WHERE ([d].[parent_object_id] = OBJECT_ID(N'[WorkFlowSteps]') AND [c].[name] = N'Provider');
+IF @var6 IS NOT NULL EXEC(N'ALTER TABLE [WorkFlowSteps] DROP CONSTRAINT [' + @var6 + '];');
+ALTER TABLE [WorkFlowSteps] DROP COLUMN [Provider];
+ 2026-07-26 14:29:25,517  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (551ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+DECLARE @var7 sysname;
+SELECT @var7 = [d].[name]
+FROM [sys].[default_constraints] [d]
+INNER JOIN [sys].[columns] [c] ON [d].[parent_column_id] = [c].[column_id] AND [d].[parent_object_id] = [c].[object_id]
+WHERE ([d].[parent_object_id] = OBJECT_ID(N'[WorkFlowSteps]') AND [c].[name] = N'ResourceName');
+IF @var7 IS NOT NULL EXEC(N'ALTER TABLE [WorkFlowSteps] DROP CONSTRAINT [' + @var7 + '];');
+ALTER TABLE [WorkFlowSteps] DROP COLUMN [ResourceName]; [?] - MESSAGE: Executed DbCommand (551ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+DECLARE @var7 sysname;
+SELECT @var7 = [d].[name]
+FROM [sys].[default_constraints] [d]
+INNER JOIN [sys].[columns] [c] ON [d].[parent_column_id] = [c].[column_id] AND [d].[parent_object_id] = [c].[object_id]
+WHERE ([d].[parent_object_id] = OBJECT_ID(N'[WorkFlowSteps]') AND [c].[name] = N'ResourceName');
+IF @var7 IS NOT NULL EXEC(N'ALTER TABLE [WorkFlowSteps] DROP CONSTRAINT [' + @var7 + '];');
+ALTER TABLE [WorkFlowSteps] DROP COLUMN [ResourceName];
+ 2026-07-26 14:29:26,062  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (544ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+DECLARE @var8 sysname;
+SELECT @var8 = [d].[name]
+FROM [sys].[default_constraints] [d]
+INNER JOIN [sys].[columns] [c] ON [d].[parent_column_id] = [c].[column_id] AND [d].[parent_object_id] = [c].[object_id]
+WHERE ([d].[parent_object_id] = OBJECT_ID(N'[WorkFlowSteps]') AND [c].[name] = N'LoopField');
+IF @var8 IS NOT NULL EXEC(N'ALTER TABLE [WorkFlowSteps] DROP CONSTRAINT [' + @var8 + '];');
+ALTER TABLE [WorkFlowSteps] ALTER COLUMN [LoopField] nvarchar(max) NULL; [?] - MESSAGE: Executed DbCommand (544ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+DECLARE @var8 sysname;
+SELECT @var8 = [d].[name]
+FROM [sys].[default_constraints] [d]
+INNER JOIN [sys].[columns] [c] ON [d].[parent_column_id] = [c].[column_id] AND [d].[parent_object_id] = [c].[object_id]
+WHERE ([d].[parent_object_id] = OBJECT_ID(N'[WorkFlowSteps]') AND [c].[name] = N'LoopField');
+IF @var8 IS NOT NULL EXEC(N'ALTER TABLE [WorkFlowSteps] DROP CONSTRAINT [' + @var8 + '];');
+ALTER TABLE [WorkFlowSteps] ALTER COLUMN [LoopField] nvarchar(max) NULL;
+ 2026-07-26 14:29:26,410  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (346ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20260714154303_updateWorkflowStep2', N'8.0.5'); [?] - MESSAGE: Executed DbCommand (346ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20260714154303_updateWorkflowStep2', N'8.0.5');
+ 2026-07-26 14:29:26,772  INFO Microsoft.EntityFrameworkCore.Migrations.Applying migration '20260714154946_updateWorkflowStep3'. [?] - MESSAGE: Applying migration '20260714154946_updateWorkflowStep3'.
+ 2026-07-26 14:29:27,597  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (363ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+DECLARE @var9 sysname;
+SELECT @var9 = [d].[name]
+FROM [sys].[default_constraints] [d]
+INNER JOIN [sys].[columns] [c] ON [d].[parent_column_id] = [c].[column_id] AND [d].[parent_object_id] = [c].[object_id]
+WHERE ([d].[parent_object_id] = OBJECT_ID(N'[WorkFlowSteps]') AND [c].[name] = N'Target');
+IF @var9 IS NOT NULL EXEC(N'ALTER TABLE [WorkFlowSteps] DROP CONSTRAINT [' + @var9 + '];');
+ALTER TABLE [WorkFlowSteps] ALTER COLUMN [Target] nvarchar(max) NULL; [?] - MESSAGE: Executed DbCommand (363ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+DECLARE @var9 sysname;
+SELECT @var9 = [d].[name]
+FROM [sys].[default_constraints] [d]
+INNER JOIN [sys].[columns] [c] ON [d].[parent_column_id] = [c].[column_id] AND [d].[parent_object_id] = [c].[object_id]
+WHERE ([d].[parent_object_id] = OBJECT_ID(N'[WorkFlowSteps]') AND [c].[name] = N'Target');
+IF @var9 IS NOT NULL EXEC(N'ALTER TABLE [WorkFlowSteps] DROP CONSTRAINT [' + @var9 + '];');
+ALTER TABLE [WorkFlowSteps] ALTER COLUMN [Target] nvarchar(max) NULL;
+ 2026-07-26 14:29:28,225  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (627ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+DECLARE @var10 sysname;
+SELECT @var10 = [d].[name]
+FROM [sys].[default_constraints] [d]
+INNER JOIN [sys].[columns] [c] ON [d].[parent_column_id] = [c].[column_id] AND [d].[parent_object_id] = [c].[object_id]
+WHERE ([d].[parent_object_id] = OBJECT_ID(N'[WorkFlowSteps]') AND [c].[name] = N'ResourceId');
+IF @var10 IS NOT NULL EXEC(N'ALTER TABLE [WorkFlowSteps] DROP CONSTRAINT [' + @var10 + '];');
+ALTER TABLE [WorkFlowSteps] ALTER COLUMN [ResourceId] nvarchar(max) NULL; [?] - MESSAGE: Executed DbCommand (627ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+DECLARE @var10 sysname;
+SELECT @var10 = [d].[name]
+FROM [sys].[default_constraints] [d]
+INNER JOIN [sys].[columns] [c] ON [d].[parent_column_id] = [c].[column_id] AND [d].[parent_object_id] = [c].[object_id]
+WHERE ([d].[parent_object_id] = OBJECT_ID(N'[WorkFlowSteps]') AND [c].[name] = N'ResourceId');
+IF @var10 IS NOT NULL EXEC(N'ALTER TABLE [WorkFlowSteps] DROP CONSTRAINT [' + @var10 + '];');
+ALTER TABLE [WorkFlowSteps] ALTER COLUMN [ResourceId] nvarchar(max) NULL;
+ 2026-07-26 14:29:28,565  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (340ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+DECLARE @var11 sysname;
+SELECT @var11 = [d].[name]
+FROM [sys].[default_constraints] [d]
+INNER JOIN [sys].[columns] [c] ON [d].[parent_column_id] = [c].[column_id] AND [d].[parent_object_id] = [c].[object_id]
+WHERE ([d].[parent_object_id] = OBJECT_ID(N'[WorkFlowSteps]') AND [c].[name] = N'ConfigurationJson');
+IF @var11 IS NOT NULL EXEC(N'ALTER TABLE [WorkFlowSteps] DROP CONSTRAINT [' + @var11 + '];');
+ALTER TABLE [WorkFlowSteps] ALTER COLUMN [ConfigurationJson] nvarchar(max) NULL; [?] - MESSAGE: Executed DbCommand (340ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+DECLARE @var11 sysname;
+SELECT @var11 = [d].[name]
+FROM [sys].[default_constraints] [d]
+INNER JOIN [sys].[columns] [c] ON [d].[parent_column_id] = [c].[column_id] AND [d].[parent_object_id] = [c].[object_id]
+WHERE ([d].[parent_object_id] = OBJECT_ID(N'[WorkFlowSteps]') AND [c].[name] = N'ConfigurationJson');
+IF @var11 IS NOT NULL EXEC(N'ALTER TABLE [WorkFlowSteps] DROP CONSTRAINT [' + @var11 + '];');
+ALTER TABLE [WorkFlowSteps] ALTER COLUMN [ConfigurationJson] nvarchar(max) NULL;
+ 2026-07-26 14:29:29,025  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (459ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+DECLARE @var12 sysname;
+SELECT @var12 = [d].[name]
+FROM [sys].[default_constraints] [d]
+INNER JOIN [sys].[columns] [c] ON [d].[parent_column_id] = [c].[column_id] AND [d].[parent_object_id] = [c].[object_id]
+WHERE ([d].[parent_object_id] = OBJECT_ID(N'[WorkFlowSteps]') AND [c].[name] = N'Action');
+IF @var12 IS NOT NULL EXEC(N'ALTER TABLE [WorkFlowSteps] DROP CONSTRAINT [' + @var12 + '];');
+ALTER TABLE [WorkFlowSteps] ALTER COLUMN [Action] nvarchar(max) NULL; [?] - MESSAGE: Executed DbCommand (459ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+DECLARE @var12 sysname;
+SELECT @var12 = [d].[name]
+FROM [sys].[default_constraints] [d]
+INNER JOIN [sys].[columns] [c] ON [d].[parent_column_id] = [c].[column_id] AND [d].[parent_object_id] = [c].[object_id]
+WHERE ([d].[parent_object_id] = OBJECT_ID(N'[WorkFlowSteps]') AND [c].[name] = N'Action');
+IF @var12 IS NOT NULL EXEC(N'ALTER TABLE [WorkFlowSteps] DROP CONSTRAINT [' + @var12 + '];');
+ALTER TABLE [WorkFlowSteps] ALTER COLUMN [Action] nvarchar(max) NULL;
+ 2026-07-26 14:29:29,365  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (339ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20260714154946_updateWorkflowStep3', N'8.0.5'); [?] - MESSAGE: Executed DbCommand (339ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20260714154946_updateWorkflowStep3', N'8.0.5');
+ 

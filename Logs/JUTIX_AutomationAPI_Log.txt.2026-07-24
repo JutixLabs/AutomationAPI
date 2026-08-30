@@ -1,0 +1,848 @@
+2026-07-24 12:54:13,651  INFO Hangfire.SqlServer.SqlServerObjectsInstaller.Start installing Hangfire SQL objects... [?] - MESSAGE: Start installing Hangfire SQL objects...
+ 2026-07-24 12:54:16,541  INFO Hangfire.SqlServer.SqlServerObjectsInstaller.Hangfire SQL objects installed. [?] - MESSAGE: Hangfire SQL objects installed.
+ 2026-07-24 12:54:19,706  INFO Microsoft.Hosting.Lifetime.Now listening on: http://localhost:5050 [?] - MESSAGE: Now listening on: http://localhost:5050
+ 2026-07-24 12:54:19,728  INFO Hangfire.BackgroundJobServer.Starting Hangfire Server using job storage: 'SQL Server: DESTINY-ELITEBO@JUTIX_AutomationAPI_DB' [?] - MESSAGE: Starting Hangfire Server using job storage: 'SQL Server: DESTINY-ELITEBO@JUTIX_AutomationAPI_DB'
+ 2026-07-24 12:54:19,737  INFO Hangfire.BackgroundJobServer.Using the following options for SQL Server job storage: Queue poll interval: 00:00:00. [?] - MESSAGE: Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+ 2026-07-24 12:54:19,739  INFO Hangfire.BackgroundJobServer.Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15 [?] - MESSAGE: Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+ 2026-07-24 12:54:19,774  INFO Microsoft.Hosting.Lifetime.Application started. Press Ctrl+C to shut down. [0] - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2026-07-24 12:54:19,783  INFO Microsoft.Hosting.Lifetime.Hosting environment: Development [0] - MESSAGE: Hosting environment: Development
+ 2026-07-24 12:54:19,785  INFO Microsoft.Hosting.Lifetime.Content root path: C:\Sample Files\MY WORK\AutomationAPI\AutomationAPI [0] - MESSAGE: Content root path: C:\Sample Files\MY WORK\AutomationAPI\AutomationAPI
+ 2026-07-24 12:54:19,861  INFO Hangfire.Server.BackgroundServerProcess.Server destiny-elitebo:27484:dc79bb6b successfully announced in 72.9939 ms [?] - MESSAGE: Server destiny-elitebo:27484:dc79bb6b successfully announced in 72.9939 ms
+ 2026-07-24 12:54:19,869  INFO Hangfire.Server.BackgroundServerProcess.Server destiny-elitebo:27484:dc79bb6b is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, SqlServerHeartbeatProcess, ExpirationManager, CountersAggregator, Worker, DelayedJobScheduler, RecurringJobScheduler... [?] - MESSAGE: Server destiny-elitebo:27484:dc79bb6b is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, SqlServerHeartbeatProcess, ExpirationManager, CountersAggregator, Worker, DelayedJobScheduler, RecurringJobScheduler...
+ 2026-07-24 12:54:19,912  INFO Hangfire.Server.BackgroundServerProcess.Server destiny-elitebo:27484:dc79bb6b all the dispatchers started [?] - MESSAGE: Server destiny-elitebo:27484:dc79bb6b all the dispatchers started
+ 2026-07-24 12:54:23,776  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (44ms) [Parameters=[@__triggerEvent_TriggerName_0='?' (Size = 4000), @__triggerEvent_UserId_1='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT [a].[ID], [a].[CreatedAt], [a].[FolderId], [a].[IsActive], [a].[IsWorkflow], [a].[Trigger], [a].[UserID], [a].[WebhookKey], [w].[Id], [w].[Action], [w].[AutomationRuleId], [w].[ConfigurationJson], [w].[DelayAmount], [w].[DelayUnit], [w].[FalseStepId], [w].[IsBranchStep], [w].[IsLoopStep], [w].[LoopField], [w].[Order], [w].[ResourceId], [w].[RetryCount], [w].[RetryDelaySeconds], [w].[Target], [w].[TrueStepId]
+FROM [AutomationRules] AS [a]
+LEFT JOIN [WorkFlowSteps] AS [w] ON [a].[ID] = [w].[AutomationRuleId]
+WHERE [a].[Trigger] = @__triggerEvent_TriggerName_0 AND [a].[IsActive] = CAST(1 AS bit) AND [a].[UserID] = @__triggerEvent_UserId_1
+ORDER BY [a].[ID] [?] - MESSAGE: Executed DbCommand (44ms) [Parameters=[@__triggerEvent_TriggerName_0='?' (Size = 4000), @__triggerEvent_UserId_1='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT [a].[ID], [a].[CreatedAt], [a].[FolderId], [a].[IsActive], [a].[IsWorkflow], [a].[Trigger], [a].[UserID], [a].[WebhookKey], [w].[Id], [w].[Action], [w].[AutomationRuleId], [w].[ConfigurationJson], [w].[DelayAmount], [w].[DelayUnit], [w].[FalseStepId], [w].[IsBranchStep], [w].[IsLoopStep], [w].[LoopField], [w].[Order], [w].[ResourceId], [w].[RetryCount], [w].[RetryDelaySeconds], [w].[Target], [w].[TrueStepId]
+FROM [AutomationRules] AS [a]
+LEFT JOIN [WorkFlowSteps] AS [w] ON [a].[ID] = [w].[AutomationRuleId]
+WHERE [a].[Trigger] = @__triggerEvent_TriggerName_0 AND [a].[IsActive] = CAST(1 AS bit) AND [a].[UserID] = @__triggerEvent_UserId_1
+ORDER BY [a].[ID]
+ 2026-07-24 12:54:23,776  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (44ms) [Parameters=[@__triggerEvent_TriggerName_0='?' (Size = 4000), @__triggerEvent_UserId_1='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT [a].[ID], [a].[CreatedAt], [a].[FolderId], [a].[IsActive], [a].[IsWorkflow], [a].[Trigger], [a].[UserID], [a].[WebhookKey], [w].[Id], [w].[Action], [w].[AutomationRuleId], [w].[ConfigurationJson], [w].[DelayAmount], [w].[DelayUnit], [w].[FalseStepId], [w].[IsBranchStep], [w].[IsLoopStep], [w].[LoopField], [w].[Order], [w].[ResourceId], [w].[RetryCount], [w].[RetryDelaySeconds], [w].[Target], [w].[TrueStepId]
+FROM [AutomationRules] AS [a]
+LEFT JOIN [WorkFlowSteps] AS [w] ON [a].[ID] = [w].[AutomationRuleId]
+WHERE [a].[Trigger] = @__triggerEvent_TriggerName_0 AND [a].[IsActive] = CAST(1 AS bit) AND [a].[UserID] = @__triggerEvent_UserId_1
+ORDER BY [a].[ID] [?] - MESSAGE: Executed DbCommand (44ms) [Parameters=[@__triggerEvent_TriggerName_0='?' (Size = 4000), @__triggerEvent_UserId_1='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT [a].[ID], [a].[CreatedAt], [a].[FolderId], [a].[IsActive], [a].[IsWorkflow], [a].[Trigger], [a].[UserID], [a].[WebhookKey], [w].[Id], [w].[Action], [w].[AutomationRuleId], [w].[ConfigurationJson], [w].[DelayAmount], [w].[DelayUnit], [w].[FalseStepId], [w].[IsBranchStep], [w].[IsLoopStep], [w].[LoopField], [w].[Order], [w].[ResourceId], [w].[RetryCount], [w].[RetryDelaySeconds], [w].[Target], [w].[TrueStepId]
+FROM [AutomationRules] AS [a]
+LEFT JOIN [WorkFlowSteps] AS [w] ON [a].[ID] = [w].[AutomationRuleId]
+WHERE [a].[Trigger] = @__triggerEvent_TriggerName_0 AND [a].[IsActive] = CAST(1 AS bit) AND [a].[UserID] = @__triggerEvent_UserId_1
+ORDER BY [a].[ID]
+ 2026-07-24 12:54:23,817  INFO AutomationAPI.SERVICES.TriggerEngineService.Trigger Executed Successfully. [34] - MESSAGE: Trigger Executed Successfully.
+ 2026-07-24 12:54:23,817  INFO AutomationAPI.SERVICES.TriggerEngineService.Trigger Executed Successfully. [34] - MESSAGE: Trigger Executed Successfully.
+ 2026-07-24 12:54:24,550  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (12ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[AccessToken], [c].[ConnectedAt], [c].[ExpiresAt], [c].[ExternalAccountEmail], [c].[ExternalAccountId], [c].[IsActive], [c].[LastSyncCursor], [c].[MetaDataJson], [c].[Provider], [c].[RefreshToken], [c].[UserId]
+FROM [ConnectedApps] AS [c]
+WHERE [c].[Provider] = N'google' [?] - MESSAGE: Executed DbCommand (12ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[AccessToken], [c].[ConnectedAt], [c].[ExpiresAt], [c].[ExternalAccountEmail], [c].[ExternalAccountId], [c].[IsActive], [c].[LastSyncCursor], [c].[MetaDataJson], [c].[Provider], [c].[RefreshToken], [c].[UserId]
+FROM [ConnectedApps] AS [c]
+WHERE [c].[Provider] = N'google'
+ 2026-07-24 12:55:05,962  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[AccessToken], [c].[ConnectedAt], [c].[ExpiresAt], [c].[ExternalAccountEmail], [c].[ExternalAccountId], [c].[IsActive], [c].[LastSyncCursor], [c].[MetaDataJson], [c].[Provider], [c].[RefreshToken], [c].[UserId]
+FROM [ConnectedApps] AS [c]
+WHERE [c].[Provider] = N'google' [?] - MESSAGE: Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[AccessToken], [c].[ConnectedAt], [c].[ExpiresAt], [c].[ExternalAccountEmail], [c].[ExternalAccountId], [c].[IsActive], [c].[LastSyncCursor], [c].[MetaDataJson], [c].[Provider], [c].[RefreshToken], [c].[UserId]
+FROM [ConnectedApps] AS [c]
+WHERE [c].[Provider] = N'google'
+ 2026-07-24 12:55:10,525  WARN Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware.Failed to determine the https port for redirect. [?] - MESSAGE: Failed to determine the https port for redirect.
+ 2026-07-24 12:55:10,864  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (4ms) [Parameters=[@__model_Email_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[ID], [u].[CreatedAt], [u].[Email], [u].[FullName], [u].[PasswordHash]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__model_Email_0 [?] - MESSAGE: Executed DbCommand (4ms) [Parameters=[@__model_Email_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[ID], [u].[CreatedAt], [u].[Email], [u].[FullName], [u].[PasswordHash]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__model_Email_0
+ 2026-07-24 12:55:11,650  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (2ms) [Parameters=[@__userModel_Email_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[ID], [u].[CreatedAt], [u].[Email], [u].[FullName], [u].[PasswordHash]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__userModel_Email_0 [?] - MESSAGE: Executed DbCommand (2ms) [Parameters=[@__userModel_Email_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[ID], [u].[CreatedAt], [u].[Email], [u].[FullName], [u].[PasswordHash]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__userModel_Email_0
+ 2026-07-24 12:55:12,404  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (9ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC [?] - MESSAGE: Executed DbCommand (9ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC
+ 2026-07-24 12:55:12,412  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (7ms) [Parameters=[@__userId_0='?' (Size = 4000), @__startDate_1='?' (DbType = DateTime2)], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+WHERE [e].[UserId] = @__userId_0 AND [e].[ExecutedAt] >= @__startDate_1 [?] - MESSAGE: Executed DbCommand (7ms) [Parameters=[@__userId_0='?' (Size = 4000), @__startDate_1='?' (DbType = DateTime2)], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+WHERE [e].[UserId] = @__userId_0 AND [e].[ExecutedAt] >= @__startDate_1
+ 2026-07-24 12:55:12,473  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (5ms) [Parameters=[@__userId_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [AutomationRules] AS [a]
+WHERE [a].[UserID] = @__userId_0 [?] - MESSAGE: Executed DbCommand (5ms) [Parameters=[@__userId_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [AutomationRules] AS [a]
+WHERE [a].[UserID] = @__userId_0
+ 2026-07-24 12:55:12,476  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (9ms) [Parameters=[@__p_1='?' (DbType = Int32), @__userId_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(@__p_1) [e].[Trigger] AS [trigger], [e].[Action] AS [action], COUNT(*) AS [count]
+FROM [ExecutionLogs] AS [e]
+WHERE [e].[UserId] = @__userId_0
+GROUP BY [e].[Trigger], [e].[Action]
+ORDER BY COUNT(*) DESC [?] - MESSAGE: Executed DbCommand (9ms) [Parameters=[@__p_1='?' (DbType = Int32), @__userId_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(@__p_1) [e].[Trigger] AS [trigger], [e].[Action] AS [action], COUNT(*) AS [count]
+FROM [ExecutionLogs] AS [e]
+WHERE [e].[UserId] = @__userId_0
+GROUP BY [e].[Trigger], [e].[Action]
+ORDER BY COUNT(*) DESC
+ 2026-07-24 12:55:12,491  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (6ms) [Parameters=[@__userId_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [ExecutionLogs] AS [e]
+WHERE [e].[UserId] = @__userId_0 [?] - MESSAGE: Executed DbCommand (6ms) [Parameters=[@__userId_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [ExecutionLogs] AS [e]
+WHERE [e].[UserId] = @__userId_0
+ 2026-07-24 12:55:12,503  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (5ms) [Parameters=[@__userId_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [ExecutionLogs] AS [e]
+WHERE [e].[UserId] = @__userId_0 AND [e].[Status] = N'Success' [?] - MESSAGE: Executed DbCommand (5ms) [Parameters=[@__userId_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [ExecutionLogs] AS [e]
+WHERE [e].[UserId] = @__userId_0 AND [e].[Status] = N'Success'
+ 2026-07-24 12:55:13,112  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (12ms) [Parameters=[@__userId_0='?' (Size = 4000), @__startDate_1='?' (DbType = DateTime2)], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+WHERE [e].[UserId] = @__userId_0 AND [e].[ExecutedAt] >= @__startDate_1 [?] - MESSAGE: Executed DbCommand (12ms) [Parameters=[@__userId_0='?' (Size = 4000), @__startDate_1='?' (DbType = DateTime2)], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+WHERE [e].[UserId] = @__userId_0 AND [e].[ExecutedAt] >= @__startDate_1
+ 2026-07-24 12:55:13,118  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (16ms) [Parameters=[@__p_1='?' (DbType = Int32), @__userId_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(@__p_1) [e].[Trigger] AS [trigger], [e].[Action] AS [action], COUNT(*) AS [count]
+FROM [ExecutionLogs] AS [e]
+WHERE [e].[UserId] = @__userId_0
+GROUP BY [e].[Trigger], [e].[Action]
+ORDER BY COUNT(*) DESC [?] - MESSAGE: Executed DbCommand (16ms) [Parameters=[@__p_1='?' (DbType = Int32), @__userId_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(@__p_1) [e].[Trigger] AS [trigger], [e].[Action] AS [action], COUNT(*) AS [count]
+FROM [ExecutionLogs] AS [e]
+WHERE [e].[UserId] = @__userId_0
+GROUP BY [e].[Trigger], [e].[Action]
+ORDER BY COUNT(*) DESC
+ 2026-07-24 12:55:13,119  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (7ms) [Parameters=[@__userId_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [AutomationRules] AS [a]
+WHERE [a].[UserID] = @__userId_0 [?] - MESSAGE: Executed DbCommand (7ms) [Parameters=[@__userId_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [AutomationRules] AS [a]
+WHERE [a].[UserID] = @__userId_0
+ 2026-07-24 12:55:13,136  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (5ms) [Parameters=[@__userId_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [ExecutionLogs] AS [e]
+WHERE [e].[UserId] = @__userId_0 [?] - MESSAGE: Executed DbCommand (5ms) [Parameters=[@__userId_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [ExecutionLogs] AS [e]
+WHERE [e].[UserId] = @__userId_0
+ 2026-07-24 12:55:13,148  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (6ms) [Parameters=[@__userId_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [ExecutionLogs] AS [e]
+WHERE [e].[UserId] = @__userId_0 AND [e].[Status] = N'Success' [?] - MESSAGE: Executed DbCommand (6ms) [Parameters=[@__userId_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [ExecutionLogs] AS [e]
+WHERE [e].[UserId] = @__userId_0 AND [e].[Status] = N'Success'
+ 2026-07-24 12:55:14,390  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC [?] - MESSAGE: Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC
+ 2026-07-24 12:55:16,214  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (16ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT [w].[ID], [w].[Name], [w].[Color], [w].[Icon], (
+    SELECT COUNT(*)
+    FROM [Folders] AS [f]
+    WHERE [w].[ID] = [f].[WorkSpaceId]) AS [Folders]
+FROM [WorkSpaces] AS [w]
+WHERE [w].[UserId] = @__userId_0 [?] - MESSAGE: Executed DbCommand (16ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT [w].[ID], [w].[Name], [w].[Color], [w].[Icon], (
+    SELECT COUNT(*)
+    FROM [Folders] AS [f]
+    WHERE [w].[ID] = [f].[WorkSpaceId]) AS [Folders]
+FROM [WorkSpaces] AS [w]
+WHERE [w].[UserId] = @__userId_0
+ 2026-07-24 12:55:16,220  INFO AutomationAPI.SERVICES.WorkSpaceService.[INFO] Retrieved 2 workspaces for user USER-2026-04-68155150. [53] - MESSAGE: [INFO] Retrieved 2 workspaces for user USER-2026-04-68155150.
+ 2026-07-24 12:55:16,366  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (5ms) [Parameters=[@__workSpaceId_0='?' (DbType = Int32), @__userId_1='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT [f].[ID], [f].[Name], [f].[WorkSpaceId]
+FROM [Folders] AS [f]
+INNER JOIN [WorkSpaces] AS [w] ON [f].[WorkSpaceId] = [w].[ID]
+WHERE [f].[WorkSpaceId] = @__workSpaceId_0 AND [w].[UserId] = @__userId_1 [?] - MESSAGE: Executed DbCommand (5ms) [Parameters=[@__workSpaceId_0='?' (DbType = Int32), @__userId_1='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT [f].[ID], [f].[Name], [f].[WorkSpaceId]
+FROM [Folders] AS [f]
+INNER JOIN [WorkSpaces] AS [w] ON [f].[WorkSpaceId] = [w].[ID]
+WHERE [f].[WorkSpaceId] = @__workSpaceId_0 AND [w].[UserId] = @__userId_1
+ 2026-07-24 12:55:16,369  INFO AutomationAPI.SERVICES.WorkSpaceService.[INFO] Retrieved 3 folders for workspace ID 2 and user USER-2026-04-68155150. [142] - MESSAGE: [INFO] Retrieved 3 folders for workspace ID 2 and user USER-2026-04-68155150.
+ 2026-07-24 12:55:18,102  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (5ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC [?] - MESSAGE: Executed DbCommand (5ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC
+ 2026-07-24 12:55:23,092  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC [?] - MESSAGE: Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC
+ 2026-07-24 12:55:26,930  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (18ms) [Parameters=[@__userId_0='?' (Size = 450), @__provider_1='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[AccessToken], [c].[ConnectedAt], [c].[ExpiresAt], [c].[ExternalAccountEmail], [c].[ExternalAccountId], [c].[IsActive], [c].[LastSyncCursor], [c].[MetaDataJson], [c].[Provider], [c].[RefreshToken], [c].[UserId]
+FROM [ConnectedApps] AS [c]
+WHERE [c].[UserId] = @__userId_0 AND [c].[Provider] = @__provider_1 AND [c].[IsActive] = CAST(1 AS bit) [?] - MESSAGE: Executed DbCommand (18ms) [Parameters=[@__userId_0='?' (Size = 450), @__provider_1='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[AccessToken], [c].[ConnectedAt], [c].[ExpiresAt], [c].[ExternalAccountEmail], [c].[ExternalAccountId], [c].[IsActive], [c].[LastSyncCursor], [c].[MetaDataJson], [c].[Provider], [c].[RefreshToken], [c].[UserId]
+FROM [ConnectedApps] AS [c]
+WHERE [c].[UserId] = @__userId_0 AND [c].[Provider] = @__provider_1 AND [c].[IsActive] = CAST(1 AS bit)
+ 2026-07-24 12:55:27,039  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (2ms) [Parameters=[@__userId_0='?' (Size = 450), @__provider_1='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[AccessToken], [c].[ConnectedAt], [c].[ExpiresAt], [c].[ExternalAccountEmail], [c].[ExternalAccountId], [c].[IsActive], [c].[LastSyncCursor], [c].[MetaDataJson], [c].[Provider], [c].[RefreshToken], [c].[UserId]
+FROM [ConnectedApps] AS [c]
+WHERE [c].[UserId] = @__userId_0 AND [c].[Provider] = @__provider_1 AND [c].[IsActive] = CAST(1 AS bit) [?] - MESSAGE: Executed DbCommand (2ms) [Parameters=[@__userId_0='?' (Size = 450), @__provider_1='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[AccessToken], [c].[ConnectedAt], [c].[ExpiresAt], [c].[ExternalAccountEmail], [c].[ExternalAccountId], [c].[IsActive], [c].[LastSyncCursor], [c].[MetaDataJson], [c].[Provider], [c].[RefreshToken], [c].[UserId]
+FROM [ConnectedApps] AS [c]
+WHERE [c].[UserId] = @__userId_0 AND [c].[Provider] = @__provider_1 AND [c].[IsActive] = CAST(1 AS bit)
+ 2026-07-24 12:55:27,047  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (2ms) [Parameters=[@__userId_0='?' (Size = 450), @__provider_1='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[AccessToken], [c].[ConnectedAt], [c].[ExpiresAt], [c].[ExternalAccountEmail], [c].[ExternalAccountId], [c].[IsActive], [c].[LastSyncCursor], [c].[MetaDataJson], [c].[Provider], [c].[RefreshToken], [c].[UserId]
+FROM [ConnectedApps] AS [c]
+WHERE [c].[UserId] = @__userId_0 AND [c].[Provider] = @__provider_1 AND [c].[IsActive] = CAST(1 AS bit) [?] - MESSAGE: Executed DbCommand (2ms) [Parameters=[@__userId_0='?' (Size = 450), @__provider_1='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[AccessToken], [c].[ConnectedAt], [c].[ExpiresAt], [c].[ExternalAccountEmail], [c].[ExternalAccountId], [c].[IsActive], [c].[LastSyncCursor], [c].[MetaDataJson], [c].[Provider], [c].[RefreshToken], [c].[UserId]
+FROM [ConnectedApps] AS [c]
+WHERE [c].[UserId] = @__userId_0 AND [c].[Provider] = @__provider_1 AND [c].[IsActive] = CAST(1 AS bit)
+ 2026-07-24 12:55:27,085  INFO System.Net.Http.HttpClient.Default.LogicalHandler.Start processing HTTP request GET https://api.github.com/user/repos [?] - MESSAGE: Start processing HTTP request GET https://api.github.com/user/repos
+ 2026-07-24 12:55:27,092  INFO System.Net.Http.HttpClient.Default.ClientHandler.Sending HTTP request GET https://api.github.com/user/repos [?] - MESSAGE: Sending HTTP request GET https://api.github.com/user/repos
+ 2026-07-24 12:55:28,094  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC [?] - MESSAGE: Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC
+ 2026-07-24 12:55:28,607  INFO System.Net.Http.HttpClient.Default.ClientHandler.Received HTTP response headers after 1500.0457ms - 200 [?] - MESSAGE: Received HTTP response headers after 1500.0457ms - 200
+ 2026-07-24 12:55:28,614  INFO System.Net.Http.HttpClient.Default.LogicalHandler.End processing HTTP request after 1543.5906ms - 200 [?] - MESSAGE: End processing HTTP request after 1543.5906ms - 200
+ 2026-07-24 12:55:33,089  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC [?] - MESSAGE: Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC
+ 2026-07-24 12:55:38,151  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (8ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC [?] - MESSAGE: Executed DbCommand (8ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC
+ 2026-07-24 12:55:38,727  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (5ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[Provider], [c].[IsActive], [c].[ConnectedAt], [c].[ExternalAccountEmail], [c].[ExternalAccountId], [c].[MetaDataJson], [c].[ExpiresAt], [c].[LastSyncCursor]
+FROM [ConnectedApps] AS [c]
+WHERE [c].[UserId] = @__userId_0 [?] - MESSAGE: Executed DbCommand (5ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[Provider], [c].[IsActive], [c].[ConnectedAt], [c].[ExternalAccountEmail], [c].[ExternalAccountId], [c].[MetaDataJson], [c].[ExpiresAt], [c].[LastSyncCursor]
+FROM [ConnectedApps] AS [c]
+WHERE [c].[UserId] = @__userId_0
+ 2026-07-24 12:55:38,732  INFO AutomationAPI.SERVICES.ConnectAppsService.[INFO] User USER-2026-04-68155150 retrieved connected apps successfully. [135] - MESSAGE: [INFO] User USER-2026-04-68155150 retrieved connected apps successfully.
+ 2026-07-24 12:58:03,343  INFO Hangfire.Server.BackgroundServerProcess.Server destiny-elitebo:27484:dc79bb6b caught stopping signal... [?] - MESSAGE: Server destiny-elitebo:27484:dc79bb6b caught stopping signal...
+ 2026-07-24 12:58:03,349  INFO Microsoft.Hosting.Lifetime.Application is shutting down... [0] - MESSAGE: Application is shutting down...
+ 2026-07-24 12:58:03,397  INFO Hangfire.Server.BackgroundServerProcess.Server destiny-elitebo:27484:dc79bb6b All dispatchers stopped [?] - MESSAGE: Server destiny-elitebo:27484:dc79bb6b All dispatchers stopped
+ 2026-07-24 12:58:03,411  INFO Hangfire.Server.BackgroundServerProcess.Server destiny-elitebo:27484:dc79bb6b successfully reported itself as stopped in 8.267 ms [?] - MESSAGE: Server destiny-elitebo:27484:dc79bb6b successfully reported itself as stopped in 8.267 ms
+ 2026-07-24 12:58:03,412  INFO Hangfire.Server.BackgroundServerProcess.Server destiny-elitebo:27484:dc79bb6b has been stopped in total 63.419 ms [?] - MESSAGE: Server destiny-elitebo:27484:dc79bb6b has been stopped in total 63.419 ms
+ 2026-07-24 12:58:28,160  INFO Hangfire.SqlServer.SqlServerObjectsInstaller.Start installing Hangfire SQL objects... [?] - MESSAGE: Start installing Hangfire SQL objects...
+ 2026-07-24 12:58:30,711  INFO Hangfire.SqlServer.SqlServerObjectsInstaller.Hangfire SQL objects installed. [?] - MESSAGE: Hangfire SQL objects installed.
+ 2026-07-24 12:58:31,732  INFO Microsoft.Hosting.Lifetime.Now listening on: http://localhost:5050 [?] - MESSAGE: Now listening on: http://localhost:5050
+ 2026-07-24 12:58:31,749  INFO Hangfire.BackgroundJobServer.Starting Hangfire Server using job storage: 'SQL Server: DESTINY-ELITEBO@JUTIX_AutomationAPI_DB' [?] - MESSAGE: Starting Hangfire Server using job storage: 'SQL Server: DESTINY-ELITEBO@JUTIX_AutomationAPI_DB'
+ 2026-07-24 12:58:31,751  INFO Hangfire.BackgroundJobServer.Using the following options for SQL Server job storage: Queue poll interval: 00:00:00. [?] - MESSAGE: Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+ 2026-07-24 12:58:31,752  INFO Hangfire.BackgroundJobServer.Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15 [?] - MESSAGE: Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+ 2026-07-24 12:58:31,783  INFO Microsoft.Hosting.Lifetime.Application started. Press Ctrl+C to shut down. [0] - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2026-07-24 12:58:31,786  INFO Microsoft.Hosting.Lifetime.Hosting environment: Development [0] - MESSAGE: Hosting environment: Development
+ 2026-07-24 12:58:31,787  INFO Microsoft.Hosting.Lifetime.Content root path: C:\Sample Files\MY WORK\AutomationAPI\AutomationAPI [0] - MESSAGE: Content root path: C:\Sample Files\MY WORK\AutomationAPI\AutomationAPI
+ 2026-07-24 12:58:31,821  INFO Hangfire.Server.BackgroundServerProcess.Server destiny-elitebo:20392:7c0d26a5 successfully announced in 31.574 ms [?] - MESSAGE: Server destiny-elitebo:20392:7c0d26a5 successfully announced in 31.574 ms
+ 2026-07-24 12:58:31,826  INFO Hangfire.Server.BackgroundServerProcess.Server destiny-elitebo:20392:7c0d26a5 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, SqlServerHeartbeatProcess, ExpirationManager, CountersAggregator, Worker, DelayedJobScheduler, RecurringJobScheduler... [?] - MESSAGE: Server destiny-elitebo:20392:7c0d26a5 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, SqlServerHeartbeatProcess, ExpirationManager, CountersAggregator, Worker, DelayedJobScheduler, RecurringJobScheduler...
+ 2026-07-24 12:58:31,848  INFO Hangfire.Server.BackgroundServerProcess.Server destiny-elitebo:20392:7c0d26a5 all the dispatchers started [?] - MESSAGE: Server destiny-elitebo:20392:7c0d26a5 all the dispatchers started
+ 2026-07-24 12:58:33,738  WARN Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware.Failed to determine the https port for redirect. [?] - MESSAGE: Failed to determine the https port for redirect.
+ 2026-07-24 12:58:36,646  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (14ms) [Parameters=[@__p_1='?' (DbType = Int32), @__userId_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(@__p_1) [e].[Trigger] AS [trigger], [e].[Action] AS [action], COUNT(*) AS [count]
+FROM [ExecutionLogs] AS [e]
+WHERE [e].[UserId] = @__userId_0
+GROUP BY [e].[Trigger], [e].[Action]
+ORDER BY COUNT(*) DESC [?] - MESSAGE: Executed DbCommand (14ms) [Parameters=[@__p_1='?' (DbType = Int32), @__userId_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(@__p_1) [e].[Trigger] AS [trigger], [e].[Action] AS [action], COUNT(*) AS [count]
+FROM [ExecutionLogs] AS [e]
+WHERE [e].[UserId] = @__userId_0
+GROUP BY [e].[Trigger], [e].[Action]
+ORDER BY COUNT(*) DESC
+ 2026-07-24 12:58:36,646  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (15ms) [Parameters=[@__p_1='?' (DbType = Int32), @__userId_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(@__p_1) [e].[Trigger] AS [trigger], [e].[Action] AS [action], COUNT(*) AS [count]
+FROM [ExecutionLogs] AS [e]
+WHERE [e].[UserId] = @__userId_0
+GROUP BY [e].[Trigger], [e].[Action]
+ORDER BY COUNT(*) DESC [?] - MESSAGE: Executed DbCommand (15ms) [Parameters=[@__p_1='?' (DbType = Int32), @__userId_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(@__p_1) [e].[Trigger] AS [trigger], [e].[Action] AS [action], COUNT(*) AS [count]
+FROM [ExecutionLogs] AS [e]
+WHERE [e].[UserId] = @__userId_0
+GROUP BY [e].[Trigger], [e].[Action]
+ORDER BY COUNT(*) DESC
+ 2026-07-24 12:58:36,671  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (8ms) [Parameters=[@__userId_0='?' (Size = 4000), @__startDate_1='?' (DbType = DateTime2)], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+WHERE [e].[UserId] = @__userId_0 AND [e].[ExecutedAt] >= @__startDate_1 [?] - MESSAGE: Executed DbCommand (8ms) [Parameters=[@__userId_0='?' (Size = 4000), @__startDate_1='?' (DbType = DateTime2)], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+WHERE [e].[UserId] = @__userId_0 AND [e].[ExecutedAt] >= @__startDate_1
+ 2026-07-24 12:58:36,674  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (11ms) [Parameters=[@__userId_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [AutomationRules] AS [a]
+WHERE [a].[UserID] = @__userId_0 [?] - MESSAGE: Executed DbCommand (11ms) [Parameters=[@__userId_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [AutomationRules] AS [a]
+WHERE [a].[UserID] = @__userId_0
+ 2026-07-24 12:58:36,675  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [AutomationRules] AS [a]
+WHERE [a].[UserID] = @__userId_0 [?] - MESSAGE: Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [AutomationRules] AS [a]
+WHERE [a].[UserID] = @__userId_0
+ 2026-07-24 12:58:36,719  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (34ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC [?] - MESSAGE: Executed DbCommand (34ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC
+ 2026-07-24 12:58:36,719  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (34ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC [?] - MESSAGE: Executed DbCommand (34ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC
+ 2026-07-24 12:58:36,868  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (4ms) [Parameters=[@__userId_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [ExecutionLogs] AS [e]
+WHERE [e].[UserId] = @__userId_0 [?] - MESSAGE: Executed DbCommand (4ms) [Parameters=[@__userId_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [ExecutionLogs] AS [e]
+WHERE [e].[UserId] = @__userId_0
+ 2026-07-24 12:58:36,871  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (6ms) [Parameters=[@__userId_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [ExecutionLogs] AS [e]
+WHERE [e].[UserId] = @__userId_0 [?] - MESSAGE: Executed DbCommand (6ms) [Parameters=[@__userId_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [ExecutionLogs] AS [e]
+WHERE [e].[UserId] = @__userId_0
+ 2026-07-24 12:58:36,887  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (4ms) [Parameters=[@__userId_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [ExecutionLogs] AS [e]
+WHERE [e].[UserId] = @__userId_0 AND [e].[Status] = N'Success' [?] - MESSAGE: Executed DbCommand (4ms) [Parameters=[@__userId_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [ExecutionLogs] AS [e]
+WHERE [e].[UserId] = @__userId_0 AND [e].[Status] = N'Success'
+ 2026-07-24 12:58:36,887  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (4ms) [Parameters=[@__userId_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [ExecutionLogs] AS [e]
+WHERE [e].[UserId] = @__userId_0 AND [e].[Status] = N'Success' [?] - MESSAGE: Executed DbCommand (4ms) [Parameters=[@__userId_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [ExecutionLogs] AS [e]
+WHERE [e].[UserId] = @__userId_0 AND [e].[Status] = N'Success'
+ 2026-07-24 12:58:37,477  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (Size = 4000), @__startDate_1='?' (DbType = DateTime2)], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+WHERE [e].[UserId] = @__userId_0 AND [e].[ExecutedAt] >= @__startDate_1 [?] - MESSAGE: Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (Size = 4000), @__startDate_1='?' (DbType = DateTime2)], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+WHERE [e].[UserId] = @__userId_0 AND [e].[ExecutedAt] >= @__startDate_1
+ 2026-07-24 12:58:37,547  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [AutomationRules] AS [a]
+WHERE [a].[UserID] = @__userId_0 [?] - MESSAGE: Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [AutomationRules] AS [a]
+WHERE [a].[UserID] = @__userId_0
+ 2026-07-24 12:58:37,549  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (3ms) [Parameters=[@__userId_0='?' (Size = 4000), @__startDate_1='?' (DbType = DateTime2)], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+WHERE [e].[UserId] = @__userId_0 AND [e].[ExecutedAt] >= @__startDate_1 [?] - MESSAGE: Executed DbCommand (3ms) [Parameters=[@__userId_0='?' (Size = 4000), @__startDate_1='?' (DbType = DateTime2)], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+WHERE [e].[UserId] = @__userId_0 AND [e].[ExecutedAt] >= @__startDate_1
+ 2026-07-24 12:58:37,555  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (2ms) [Parameters=[@__userId_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [ExecutionLogs] AS [e]
+WHERE [e].[UserId] = @__userId_0 [?] - MESSAGE: Executed DbCommand (2ms) [Parameters=[@__userId_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [ExecutionLogs] AS [e]
+WHERE [e].[UserId] = @__userId_0
+ 2026-07-24 12:58:37,555  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (8ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC [?] - MESSAGE: Executed DbCommand (8ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC
+ 2026-07-24 12:58:37,563  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (2ms) [Parameters=[@__userId_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [ExecutionLogs] AS [e]
+WHERE [e].[UserId] = @__userId_0 AND [e].[Status] = N'Success' [?] - MESSAGE: Executed DbCommand (2ms) [Parameters=[@__userId_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [ExecutionLogs] AS [e]
+WHERE [e].[UserId] = @__userId_0 AND [e].[Status] = N'Success'
+ 2026-07-24 12:58:38,397  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (3ms) [Parameters=[@__p_1='?' (DbType = Int32), @__userId_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(@__p_1) [e].[Trigger] AS [trigger], [e].[Action] AS [action], COUNT(*) AS [count]
+FROM [ExecutionLogs] AS [e]
+WHERE [e].[UserId] = @__userId_0
+GROUP BY [e].[Trigger], [e].[Action]
+ORDER BY COUNT(*) DESC [?] - MESSAGE: Executed DbCommand (3ms) [Parameters=[@__p_1='?' (DbType = Int32), @__userId_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(@__p_1) [e].[Trigger] AS [trigger], [e].[Action] AS [action], COUNT(*) AS [count]
+FROM [ExecutionLogs] AS [e]
+WHERE [e].[UserId] = @__userId_0
+GROUP BY [e].[Trigger], [e].[Action]
+ORDER BY COUNT(*) DESC
+ 2026-07-24 12:58:40,721  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (16ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT [w].[ID], [w].[Name], [w].[Color], [w].[Icon], (
+    SELECT COUNT(*)
+    FROM [Folders] AS [f]
+    WHERE [w].[ID] = [f].[WorkSpaceId]) AS [Folders]
+FROM [WorkSpaces] AS [w]
+WHERE [w].[UserId] = @__userId_0 [?] - MESSAGE: Executed DbCommand (16ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT [w].[ID], [w].[Name], [w].[Color], [w].[Icon], (
+    SELECT COUNT(*)
+    FROM [Folders] AS [f]
+    WHERE [w].[ID] = [f].[WorkSpaceId]) AS [Folders]
+FROM [WorkSpaces] AS [w]
+WHERE [w].[UserId] = @__userId_0
+ 2026-07-24 12:58:40,726  INFO AutomationAPI.SERVICES.WorkSpaceService.[INFO] Retrieved 2 workspaces for user USER-2026-04-68155150. [53] - MESSAGE: [INFO] Retrieved 2 workspaces for user USER-2026-04-68155150.
+ 2026-07-24 12:58:40,927  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (8ms) [Parameters=[@__workSpaceId_0='?' (DbType = Int32), @__userId_1='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT [f].[ID], [f].[Name], [f].[WorkSpaceId]
+FROM [Folders] AS [f]
+INNER JOIN [WorkSpaces] AS [w] ON [f].[WorkSpaceId] = [w].[ID]
+WHERE [f].[WorkSpaceId] = @__workSpaceId_0 AND [w].[UserId] = @__userId_1 [?] - MESSAGE: Executed DbCommand (8ms) [Parameters=[@__workSpaceId_0='?' (DbType = Int32), @__userId_1='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT [f].[ID], [f].[Name], [f].[WorkSpaceId]
+FROM [Folders] AS [f]
+INNER JOIN [WorkSpaces] AS [w] ON [f].[WorkSpaceId] = [w].[ID]
+WHERE [f].[WorkSpaceId] = @__workSpaceId_0 AND [w].[UserId] = @__userId_1
+ 2026-07-24 12:58:40,930  INFO AutomationAPI.SERVICES.WorkSpaceService.[INFO] Retrieved 3 folders for workspace ID 2 and user USER-2026-04-68155150. [142] - MESSAGE: [INFO] Retrieved 3 folders for workspace ID 2 and user USER-2026-04-68155150.
+ 2026-07-24 12:58:42,416  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (6ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC [?] - MESSAGE: Executed DbCommand (6ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC
+ 2026-07-24 12:58:47,406  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (6ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC [?] - MESSAGE: Executed DbCommand (6ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC
+ 2026-07-24 12:58:52,407  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC [?] - MESSAGE: Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC
+ 2026-07-24 12:58:57,138  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (7ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[Provider], [c].[IsActive], [c].[ConnectedAt], [c].[ExternalAccountEmail], [c].[ExternalAccountId], [c].[MetaDataJson], [c].[ExpiresAt], [c].[LastSyncCursor]
+FROM [ConnectedApps] AS [c]
+WHERE [c].[UserId] = @__userId_0 [?] - MESSAGE: Executed DbCommand (7ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[Provider], [c].[IsActive], [c].[ConnectedAt], [c].[ExternalAccountEmail], [c].[ExternalAccountId], [c].[MetaDataJson], [c].[ExpiresAt], [c].[LastSyncCursor]
+FROM [ConnectedApps] AS [c]
+WHERE [c].[UserId] = @__userId_0
+ 2026-07-24 12:58:57,146  INFO AutomationAPI.SERVICES.ConnectAppsService.[INFO] User USER-2026-04-68155150 retrieved connected apps successfully. [135] - MESSAGE: [INFO] User USER-2026-04-68155150 retrieved connected apps successfully.
+ 2026-07-24 12:58:59,983  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (9ms) [Parameters=[@__userId_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT [a].[ID], [a].[Trigger], [a].[IsActive], [a].[CreatedAt], [w].[Id], [w].[Order], [w].[Action], [w].[Target], [a].[WebhookKey]
+FROM [AutomationRules] AS [a]
+LEFT JOIN [WorkFlowSteps] AS [w] ON [a].[ID] = [w].[AutomationRuleId]
+WHERE [a].[UserID] = @__userId_0
+ORDER BY [a].[ID], [w].[Order] [?] - MESSAGE: Executed DbCommand (9ms) [Parameters=[@__userId_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT [a].[ID], [a].[Trigger], [a].[IsActive], [a].[CreatedAt], [w].[Id], [w].[Order], [w].[Action], [w].[Target], [a].[WebhookKey]
+FROM [AutomationRules] AS [a]
+LEFT JOIN [WorkFlowSteps] AS [w] ON [a].[ID] = [w].[AutomationRuleId]
+WHERE [a].[UserID] = @__userId_0
+ORDER BY [a].[ID], [w].[Order]
+ 2026-07-24 13:00:02,871  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (6ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[AccessToken], [c].[ConnectedAt], [c].[ExpiresAt], [c].[ExternalAccountEmail], [c].[ExternalAccountId], [c].[IsActive], [c].[LastSyncCursor], [c].[MetaDataJson], [c].[Provider], [c].[RefreshToken], [c].[UserId]
+FROM [ConnectedApps] AS [c]
+WHERE [c].[Provider] = N'google' [?] - MESSAGE: Executed DbCommand (6ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[AccessToken], [c].[ConnectedAt], [c].[ExpiresAt], [c].[ExternalAccountEmail], [c].[ExternalAccountId], [c].[IsActive], [c].[LastSyncCursor], [c].[MetaDataJson], [c].[Provider], [c].[RefreshToken], [c].[UserId]
+FROM [ConnectedApps] AS [c]
+WHERE [c].[Provider] = N'google'
+ 2026-07-24 13:00:02,926  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (13ms) [Parameters=[@__triggerEvent_TriggerName_0='?' (Size = 4000), @__triggerEvent_UserId_1='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT [a].[ID], [a].[CreatedAt], [a].[FolderId], [a].[IsActive], [a].[IsWorkflow], [a].[Trigger], [a].[UserID], [a].[WebhookKey], [w].[Id], [w].[Action], [w].[AutomationRuleId], [w].[ConfigurationJson], [w].[DelayAmount], [w].[DelayUnit], [w].[FalseStepId], [w].[IsBranchStep], [w].[IsLoopStep], [w].[LoopField], [w].[Order], [w].[ResourceId], [w].[RetryCount], [w].[RetryDelaySeconds], [w].[Target], [w].[TrueStepId]
+FROM [AutomationRules] AS [a]
+LEFT JOIN [WorkFlowSteps] AS [w] ON [a].[ID] = [w].[AutomationRuleId]
+WHERE [a].[Trigger] = @__triggerEvent_TriggerName_0 AND [a].[IsActive] = CAST(1 AS bit) AND [a].[UserID] = @__triggerEvent_UserId_1
+ORDER BY [a].[ID] [?] - MESSAGE: Executed DbCommand (13ms) [Parameters=[@__triggerEvent_TriggerName_0='?' (Size = 4000), @__triggerEvent_UserId_1='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT [a].[ID], [a].[CreatedAt], [a].[FolderId], [a].[IsActive], [a].[IsWorkflow], [a].[Trigger], [a].[UserID], [a].[WebhookKey], [w].[Id], [w].[Action], [w].[AutomationRuleId], [w].[ConfigurationJson], [w].[DelayAmount], [w].[DelayUnit], [w].[FalseStepId], [w].[IsBranchStep], [w].[IsLoopStep], [w].[LoopField], [w].[Order], [w].[ResourceId], [w].[RetryCount], [w].[RetryDelaySeconds], [w].[Target], [w].[TrueStepId]
+FROM [AutomationRules] AS [a]
+LEFT JOIN [WorkFlowSteps] AS [w] ON [a].[ID] = [w].[AutomationRuleId]
+WHERE [a].[Trigger] = @__triggerEvent_TriggerName_0 AND [a].[IsActive] = CAST(1 AS bit) AND [a].[UserID] = @__triggerEvent_UserId_1
+ORDER BY [a].[ID]
+ 2026-07-24 13:00:02,930  INFO AutomationAPI.SERVICES.TriggerEngineService.Trigger Executed Successfully. [34] - MESSAGE: Trigger Executed Successfully.
+ 2026-07-24 13:15:49,054  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[AccessToken], [c].[ConnectedAt], [c].[ExpiresAt], [c].[ExternalAccountEmail], [c].[ExternalAccountId], [c].[IsActive], [c].[LastSyncCursor], [c].[MetaDataJson], [c].[Provider], [c].[RefreshToken], [c].[UserId]
+FROM [ConnectedApps] AS [c]
+WHERE [c].[Provider] = N'google' [?] - MESSAGE: Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[AccessToken], [c].[ConnectedAt], [c].[ExpiresAt], [c].[ExternalAccountEmail], [c].[ExternalAccountId], [c].[IsActive], [c].[LastSyncCursor], [c].[MetaDataJson], [c].[Provider], [c].[RefreshToken], [c].[UserId]
+FROM [ConnectedApps] AS [c]
+WHERE [c].[Provider] = N'google'
+ 2026-07-24 13:20:04,239  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (8ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[AccessToken], [c].[ConnectedAt], [c].[ExpiresAt], [c].[ExternalAccountEmail], [c].[ExternalAccountId], [c].[IsActive], [c].[LastSyncCursor], [c].[MetaDataJson], [c].[Provider], [c].[RefreshToken], [c].[UserId]
+FROM [ConnectedApps] AS [c]
+WHERE [c].[Provider] = N'google' [?] - MESSAGE: Executed DbCommand (8ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[AccessToken], [c].[ConnectedAt], [c].[ExpiresAt], [c].[ExternalAccountEmail], [c].[ExternalAccountId], [c].[IsActive], [c].[LastSyncCursor], [c].[MetaDataJson], [c].[Provider], [c].[RefreshToken], [c].[UserId]
+FROM [ConnectedApps] AS [c]
+WHERE [c].[Provider] = N'google'
+ 2026-07-24 13:25:05,248  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (5ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[AccessToken], [c].[ConnectedAt], [c].[ExpiresAt], [c].[ExternalAccountEmail], [c].[ExternalAccountId], [c].[IsActive], [c].[LastSyncCursor], [c].[MetaDataJson], [c].[Provider], [c].[RefreshToken], [c].[UserId]
+FROM [ConnectedApps] AS [c]
+WHERE [c].[Provider] = N'google' [?] - MESSAGE: Executed DbCommand (5ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[AccessToken], [c].[ConnectedAt], [c].[ExpiresAt], [c].[ExternalAccountEmail], [c].[ExternalAccountId], [c].[IsActive], [c].[LastSyncCursor], [c].[MetaDataJson], [c].[Provider], [c].[RefreshToken], [c].[UserId]
+FROM [ConnectedApps] AS [c]
+WHERE [c].[Provider] = N'google'
+ 2026-07-24 13:30:05,621  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[AccessToken], [c].[ConnectedAt], [c].[ExpiresAt], [c].[ExternalAccountEmail], [c].[ExternalAccountId], [c].[IsActive], [c].[LastSyncCursor], [c].[MetaDataJson], [c].[Provider], [c].[RefreshToken], [c].[UserId]
+FROM [ConnectedApps] AS [c]
+WHERE [c].[Provider] = N'google' [?] - MESSAGE: Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[AccessToken], [c].[ConnectedAt], [c].[ExpiresAt], [c].[ExternalAccountEmail], [c].[ExternalAccountId], [c].[IsActive], [c].[LastSyncCursor], [c].[MetaDataJson], [c].[Provider], [c].[RefreshToken], [c].[UserId]
+FROM [ConnectedApps] AS [c]
+WHERE [c].[Provider] = N'google'
+ 2026-07-24 13:35:05,883  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[AccessToken], [c].[ConnectedAt], [c].[ExpiresAt], [c].[ExternalAccountEmail], [c].[ExternalAccountId], [c].[IsActive], [c].[LastSyncCursor], [c].[MetaDataJson], [c].[Provider], [c].[RefreshToken], [c].[UserId]
+FROM [ConnectedApps] AS [c]
+WHERE [c].[Provider] = N'google' [?] - MESSAGE: Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[AccessToken], [c].[ConnectedAt], [c].[ExpiresAt], [c].[ExternalAccountEmail], [c].[ExternalAccountId], [c].[IsActive], [c].[LastSyncCursor], [c].[MetaDataJson], [c].[Provider], [c].[RefreshToken], [c].[UserId]
+FROM [ConnectedApps] AS [c]
+WHERE [c].[Provider] = N'google'
+ 2026-07-24 13:40:06,161  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[AccessToken], [c].[ConnectedAt], [c].[ExpiresAt], [c].[ExternalAccountEmail], [c].[ExternalAccountId], [c].[IsActive], [c].[LastSyncCursor], [c].[MetaDataJson], [c].[Provider], [c].[RefreshToken], [c].[UserId]
+FROM [ConnectedApps] AS [c]
+WHERE [c].[Provider] = N'google' [?] - MESSAGE: Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[AccessToken], [c].[ConnectedAt], [c].[ExpiresAt], [c].[ExternalAccountEmail], [c].[ExternalAccountId], [c].[IsActive], [c].[LastSyncCursor], [c].[MetaDataJson], [c].[Provider], [c].[RefreshToken], [c].[UserId]
+FROM [ConnectedApps] AS [c]
+WHERE [c].[Provider] = N'google'
+ 2026-07-24 14:49:54,770  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (283ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[AccessToken], [c].[ConnectedAt], [c].[ExpiresAt], [c].[ExternalAccountEmail], [c].[ExternalAccountId], [c].[IsActive], [c].[LastSyncCursor], [c].[MetaDataJson], [c].[Provider], [c].[RefreshToken], [c].[UserId]
+FROM [ConnectedApps] AS [c]
+WHERE [c].[Provider] = N'google' [?] - MESSAGE: Executed DbCommand (283ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[AccessToken], [c].[ConnectedAt], [c].[ExpiresAt], [c].[ExternalAccountEmail], [c].[ExternalAccountId], [c].[IsActive], [c].[LastSyncCursor], [c].[MetaDataJson], [c].[Provider], [c].[RefreshToken], [c].[UserId]
+FROM [ConnectedApps] AS [c]
+WHERE [c].[Provider] = N'google'
+ 2026-07-24 14:49:55,274  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (278ms) [Parameters=[@__triggerEvent_TriggerName_0='?' (Size = 4000), @__triggerEvent_UserId_1='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT [a].[ID], [a].[CreatedAt], [a].[FolderId], [a].[IsActive], [a].[IsWorkflow], [a].[Trigger], [a].[UserID], [a].[WebhookKey], [w].[Id], [w].[Action], [w].[AutomationRuleId], [w].[ConfigurationJson], [w].[DelayAmount], [w].[DelayUnit], [w].[FalseStepId], [w].[IsBranchStep], [w].[IsLoopStep], [w].[LoopField], [w].[Order], [w].[ResourceId], [w].[RetryCount], [w].[RetryDelaySeconds], [w].[Target], [w].[TrueStepId]
+FROM [AutomationRules] AS [a]
+LEFT JOIN [WorkFlowSteps] AS [w] ON [a].[ID] = [w].[AutomationRuleId]
+WHERE [a].[Trigger] = @__triggerEvent_TriggerName_0 AND [a].[IsActive] = CAST(1 AS bit) AND [a].[UserID] = @__triggerEvent_UserId_1
+ORDER BY [a].[ID] [?] - MESSAGE: Executed DbCommand (278ms) [Parameters=[@__triggerEvent_TriggerName_0='?' (Size = 4000), @__triggerEvent_UserId_1='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT [a].[ID], [a].[CreatedAt], [a].[FolderId], [a].[IsActive], [a].[IsWorkflow], [a].[Trigger], [a].[UserID], [a].[WebhookKey], [w].[Id], [w].[Action], [w].[AutomationRuleId], [w].[ConfigurationJson], [w].[DelayAmount], [w].[DelayUnit], [w].[FalseStepId], [w].[IsBranchStep], [w].[IsLoopStep], [w].[LoopField], [w].[Order], [w].[ResourceId], [w].[RetryCount], [w].[RetryDelaySeconds], [w].[Target], [w].[TrueStepId]
+FROM [AutomationRules] AS [a]
+LEFT JOIN [WorkFlowSteps] AS [w] ON [a].[ID] = [w].[AutomationRuleId]
+WHERE [a].[Trigger] = @__triggerEvent_TriggerName_0 AND [a].[IsActive] = CAST(1 AS bit) AND [a].[UserID] = @__triggerEvent_UserId_1
+ORDER BY [a].[ID]
+ 2026-07-24 14:49:56,093  INFO AutomationAPI.SERVICES.TriggerEngineService.Trigger Executed Successfully. [34] - MESSAGE: Trigger Executed Successfully.
+ 2026-07-24 14:50:09,431  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[AccessToken], [c].[ConnectedAt], [c].[ExpiresAt], [c].[ExternalAccountEmail], [c].[ExternalAccountId], [c].[IsActive], [c].[LastSyncCursor], [c].[MetaDataJson], [c].[Provider], [c].[RefreshToken], [c].[UserId]
+FROM [ConnectedApps] AS [c]
+WHERE [c].[Provider] = N'google' [?] - MESSAGE: Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[AccessToken], [c].[ConnectedAt], [c].[ExpiresAt], [c].[ExternalAccountEmail], [c].[ExternalAccountId], [c].[IsActive], [c].[LastSyncCursor], [c].[MetaDataJson], [c].[Provider], [c].[RefreshToken], [c].[UserId]
+FROM [ConnectedApps] AS [c]
+WHERE [c].[Provider] = N'google'
+ 2026-07-24 14:55:09,838  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[AccessToken], [c].[ConnectedAt], [c].[ExpiresAt], [c].[ExternalAccountEmail], [c].[ExternalAccountId], [c].[IsActive], [c].[LastSyncCursor], [c].[MetaDataJson], [c].[Provider], [c].[RefreshToken], [c].[UserId]
+FROM [ConnectedApps] AS [c]
+WHERE [c].[Provider] = N'google' [?] - MESSAGE: Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[AccessToken], [c].[ConnectedAt], [c].[ExpiresAt], [c].[ExternalAccountEmail], [c].[ExternalAccountId], [c].[IsActive], [c].[LastSyncCursor], [c].[MetaDataJson], [c].[Provider], [c].[RefreshToken], [c].[UserId]
+FROM [ConnectedApps] AS [c]
+WHERE [c].[Provider] = N'google'
+ 2026-07-24 15:27:35,637  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (465ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[AccessToken], [c].[ConnectedAt], [c].[ExpiresAt], [c].[ExternalAccountEmail], [c].[ExternalAccountId], [c].[IsActive], [c].[LastSyncCursor], [c].[MetaDataJson], [c].[Provider], [c].[RefreshToken], [c].[UserId]
+FROM [ConnectedApps] AS [c]
+WHERE [c].[Provider] = N'google' [?] - MESSAGE: Executed DbCommand (465ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[AccessToken], [c].[ConnectedAt], [c].[ExpiresAt], [c].[ExternalAccountEmail], [c].[ExternalAccountId], [c].[IsActive], [c].[LastSyncCursor], [c].[MetaDataJson], [c].[Provider], [c].[RefreshToken], [c].[UserId]
+FROM [ConnectedApps] AS [c]
+WHERE [c].[Provider] = N'google'
+ 2026-07-24 15:27:36,632  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (560ms) [Parameters=[@__triggerEvent_TriggerName_0='?' (Size = 4000), @__triggerEvent_UserId_1='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT [a].[ID], [a].[CreatedAt], [a].[FolderId], [a].[IsActive], [a].[IsWorkflow], [a].[Trigger], [a].[UserID], [a].[WebhookKey], [w].[Id], [w].[Action], [w].[AutomationRuleId], [w].[ConfigurationJson], [w].[DelayAmount], [w].[DelayUnit], [w].[FalseStepId], [w].[IsBranchStep], [w].[IsLoopStep], [w].[LoopField], [w].[Order], [w].[ResourceId], [w].[RetryCount], [w].[RetryDelaySeconds], [w].[Target], [w].[TrueStepId]
+FROM [AutomationRules] AS [a]
+LEFT JOIN [WorkFlowSteps] AS [w] ON [a].[ID] = [w].[AutomationRuleId]
+WHERE [a].[Trigger] = @__triggerEvent_TriggerName_0 AND [a].[IsActive] = CAST(1 AS bit) AND [a].[UserID] = @__triggerEvent_UserId_1
+ORDER BY [a].[ID] [?] - MESSAGE: Executed DbCommand (560ms) [Parameters=[@__triggerEvent_TriggerName_0='?' (Size = 4000), @__triggerEvent_UserId_1='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT [a].[ID], [a].[CreatedAt], [a].[FolderId], [a].[IsActive], [a].[IsWorkflow], [a].[Trigger], [a].[UserID], [a].[WebhookKey], [w].[Id], [w].[Action], [w].[AutomationRuleId], [w].[ConfigurationJson], [w].[DelayAmount], [w].[DelayUnit], [w].[FalseStepId], [w].[IsBranchStep], [w].[IsLoopStep], [w].[LoopField], [w].[Order], [w].[ResourceId], [w].[RetryCount], [w].[RetryDelaySeconds], [w].[Target], [w].[TrueStepId]
+FROM [AutomationRules] AS [a]
+LEFT JOIN [WorkFlowSteps] AS [w] ON [a].[ID] = [w].[AutomationRuleId]
+WHERE [a].[Trigger] = @__triggerEvent_TriggerName_0 AND [a].[IsActive] = CAST(1 AS bit) AND [a].[UserID] = @__triggerEvent_UserId_1
+ORDER BY [a].[ID]
+ 2026-07-24 15:27:37,155  INFO AutomationAPI.SERVICES.TriggerEngineService.Trigger Executed Successfully. [34] - MESSAGE: Trigger Executed Successfully.
+ 2026-07-24 15:27:38,682  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (98ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[AccessToken], [c].[ConnectedAt], [c].[ExpiresAt], [c].[ExternalAccountEmail], [c].[ExternalAccountId], [c].[IsActive], [c].[LastSyncCursor], [c].[MetaDataJson], [c].[Provider], [c].[RefreshToken], [c].[UserId]
+FROM [ConnectedApps] AS [c]
+WHERE [c].[Provider] = N'google' [?] - MESSAGE: Executed DbCommand (98ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[AccessToken], [c].[ConnectedAt], [c].[ExpiresAt], [c].[ExternalAccountEmail], [c].[ExternalAccountId], [c].[IsActive], [c].[LastSyncCursor], [c].[MetaDataJson], [c].[Provider], [c].[RefreshToken], [c].[UserId]
+FROM [ConnectedApps] AS [c]
+WHERE [c].[Provider] = N'google'
+ 2026-07-24 16:27:43,329  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (9ms) [Parameters=[@__triggerEvent_TriggerName_0='?' (Size = 4000), @__triggerEvent_UserId_1='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT [a].[ID], [a].[CreatedAt], [a].[FolderId], [a].[IsActive], [a].[IsWorkflow], [a].[Trigger], [a].[UserID], [a].[WebhookKey], [w].[Id], [w].[Action], [w].[AutomationRuleId], [w].[ConfigurationJson], [w].[DelayAmount], [w].[DelayUnit], [w].[FalseStepId], [w].[IsBranchStep], [w].[IsLoopStep], [w].[LoopField], [w].[Order], [w].[ResourceId], [w].[RetryCount], [w].[RetryDelaySeconds], [w].[Target], [w].[TrueStepId]
+FROM [AutomationRules] AS [a]
+LEFT JOIN [WorkFlowSteps] AS [w] ON [a].[ID] = [w].[AutomationRuleId]
+WHERE [a].[Trigger] = @__triggerEvent_TriggerName_0 AND [a].[IsActive] = CAST(1 AS bit) AND [a].[UserID] = @__triggerEvent_UserId_1
+ORDER BY [a].[ID] [?] - MESSAGE: Executed DbCommand (9ms) [Parameters=[@__triggerEvent_TriggerName_0='?' (Size = 4000), @__triggerEvent_UserId_1='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT [a].[ID], [a].[CreatedAt], [a].[FolderId], [a].[IsActive], [a].[IsWorkflow], [a].[Trigger], [a].[UserID], [a].[WebhookKey], [w].[Id], [w].[Action], [w].[AutomationRuleId], [w].[ConfigurationJson], [w].[DelayAmount], [w].[DelayUnit], [w].[FalseStepId], [w].[IsBranchStep], [w].[IsLoopStep], [w].[LoopField], [w].[Order], [w].[ResourceId], [w].[RetryCount], [w].[RetryDelaySeconds], [w].[Target], [w].[TrueStepId]
+FROM [AutomationRules] AS [a]
+LEFT JOIN [WorkFlowSteps] AS [w] ON [a].[ID] = [w].[AutomationRuleId]
+WHERE [a].[Trigger] = @__triggerEvent_TriggerName_0 AND [a].[IsActive] = CAST(1 AS bit) AND [a].[UserID] = @__triggerEvent_UserId_1
+ORDER BY [a].[ID]
+ 2026-07-24 16:27:43,332  INFO AutomationAPI.SERVICES.TriggerEngineService.Trigger Executed Successfully. [34] - MESSAGE: Trigger Executed Successfully.
+ 2026-07-24 16:27:43,334  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (8ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[AccessToken], [c].[ConnectedAt], [c].[ExpiresAt], [c].[ExternalAccountEmail], [c].[ExternalAccountId], [c].[IsActive], [c].[LastSyncCursor], [c].[MetaDataJson], [c].[Provider], [c].[RefreshToken], [c].[UserId]
+FROM [ConnectedApps] AS [c]
+WHERE [c].[Provider] = N'google' [?] - MESSAGE: Executed DbCommand (8ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[AccessToken], [c].[ConnectedAt], [c].[ExpiresAt], [c].[ExternalAccountEmail], [c].[ExternalAccountId], [c].[IsActive], [c].[LastSyncCursor], [c].[MetaDataJson], [c].[Provider], [c].[RefreshToken], [c].[UserId]
+FROM [ConnectedApps] AS [c]
+WHERE [c].[Provider] = N'google'
+ 2026-07-24 16:30:13,473  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[AccessToken], [c].[ConnectedAt], [c].[ExpiresAt], [c].[ExternalAccountEmail], [c].[ExternalAccountId], [c].[IsActive], [c].[LastSyncCursor], [c].[MetaDataJson], [c].[Provider], [c].[RefreshToken], [c].[UserId]
+FROM [ConnectedApps] AS [c]
+WHERE [c].[Provider] = N'google' [?] - MESSAGE: Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[AccessToken], [c].[ConnectedAt], [c].[ExpiresAt], [c].[ExternalAccountEmail], [c].[ExternalAccountId], [c].[IsActive], [c].[LastSyncCursor], [c].[MetaDataJson], [c].[Provider], [c].[RefreshToken], [c].[UserId]
+FROM [ConnectedApps] AS [c]
+WHERE [c].[Provider] = N'google'
+ 2026-07-24 16:35:14,873  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[AccessToken], [c].[ConnectedAt], [c].[ExpiresAt], [c].[ExternalAccountEmail], [c].[ExternalAccountId], [c].[IsActive], [c].[LastSyncCursor], [c].[MetaDataJson], [c].[Provider], [c].[RefreshToken], [c].[UserId]
+FROM [ConnectedApps] AS [c]
+WHERE [c].[Provider] = N'google' [?] - MESSAGE: Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[AccessToken], [c].[ConnectedAt], [c].[ExpiresAt], [c].[ExternalAccountEmail], [c].[ExternalAccountId], [c].[IsActive], [c].[LastSyncCursor], [c].[MetaDataJson], [c].[Provider], [c].[RefreshToken], [c].[UserId]
+FROM [ConnectedApps] AS [c]
+WHERE [c].[Provider] = N'google'
+ 2026-07-24 16:40:13,950  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[AccessToken], [c].[ConnectedAt], [c].[ExpiresAt], [c].[ExternalAccountEmail], [c].[ExternalAccountId], [c].[IsActive], [c].[LastSyncCursor], [c].[MetaDataJson], [c].[Provider], [c].[RefreshToken], [c].[UserId]
+FROM [ConnectedApps] AS [c]
+WHERE [c].[Provider] = N'google' [?] - MESSAGE: Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[AccessToken], [c].[ConnectedAt], [c].[ExpiresAt], [c].[ExternalAccountEmail], [c].[ExternalAccountId], [c].[IsActive], [c].[LastSyncCursor], [c].[MetaDataJson], [c].[Provider], [c].[RefreshToken], [c].[UserId]
+FROM [ConnectedApps] AS [c]
+WHERE [c].[Provider] = N'google'
+ 2026-07-24 16:45:15,340  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[AccessToken], [c].[ConnectedAt], [c].[ExpiresAt], [c].[ExternalAccountEmail], [c].[ExternalAccountId], [c].[IsActive], [c].[LastSyncCursor], [c].[MetaDataJson], [c].[Provider], [c].[RefreshToken], [c].[UserId]
+FROM [ConnectedApps] AS [c]
+WHERE [c].[Provider] = N'google' [?] - MESSAGE: Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[AccessToken], [c].[ConnectedAt], [c].[ExpiresAt], [c].[ExternalAccountEmail], [c].[ExternalAccountId], [c].[IsActive], [c].[LastSyncCursor], [c].[MetaDataJson], [c].[Provider], [c].[RefreshToken], [c].[UserId]
+FROM [ConnectedApps] AS [c]
+WHERE [c].[Provider] = N'google'
+ 2026-07-24 16:50:14,423  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[AccessToken], [c].[ConnectedAt], [c].[ExpiresAt], [c].[ExternalAccountEmail], [c].[ExternalAccountId], [c].[IsActive], [c].[LastSyncCursor], [c].[MetaDataJson], [c].[Provider], [c].[RefreshToken], [c].[UserId]
+FROM [ConnectedApps] AS [c]
+WHERE [c].[Provider] = N'google' [?] - MESSAGE: Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[AccessToken], [c].[ConnectedAt], [c].[ExpiresAt], [c].[ExternalAccountEmail], [c].[ExternalAccountId], [c].[IsActive], [c].[LastSyncCursor], [c].[MetaDataJson], [c].[Provider], [c].[RefreshToken], [c].[UserId]
+FROM [ConnectedApps] AS [c]
+WHERE [c].[Provider] = N'google'
+ 2026-07-24 16:55:14,647  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[AccessToken], [c].[ConnectedAt], [c].[ExpiresAt], [c].[ExternalAccountEmail], [c].[ExternalAccountId], [c].[IsActive], [c].[LastSyncCursor], [c].[MetaDataJson], [c].[Provider], [c].[RefreshToken], [c].[UserId]
+FROM [ConnectedApps] AS [c]
+WHERE [c].[Provider] = N'google' [?] - MESSAGE: Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[AccessToken], [c].[ConnectedAt], [c].[ExpiresAt], [c].[ExternalAccountEmail], [c].[ExternalAccountId], [c].[IsActive], [c].[LastSyncCursor], [c].[MetaDataJson], [c].[Provider], [c].[RefreshToken], [c].[UserId]
+FROM [ConnectedApps] AS [c]
+WHERE [c].[Provider] = N'google'
+ 2026-07-24 17:00:14,875  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[AccessToken], [c].[ConnectedAt], [c].[ExpiresAt], [c].[ExternalAccountEmail], [c].[ExternalAccountId], [c].[IsActive], [c].[LastSyncCursor], [c].[MetaDataJson], [c].[Provider], [c].[RefreshToken], [c].[UserId]
+FROM [ConnectedApps] AS [c]
+WHERE [c].[Provider] = N'google' [?] - MESSAGE: Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[AccessToken], [c].[ConnectedAt], [c].[ExpiresAt], [c].[ExternalAccountEmail], [c].[ExternalAccountId], [c].[IsActive], [c].[LastSyncCursor], [c].[MetaDataJson], [c].[Provider], [c].[RefreshToken], [c].[UserId]
+FROM [ConnectedApps] AS [c]
+WHERE [c].[Provider] = N'google'
+ 2026-07-24 17:00:14,895  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (7ms) [Parameters=[@__triggerEvent_TriggerName_0='?' (Size = 4000), @__triggerEvent_UserId_1='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT [a].[ID], [a].[CreatedAt], [a].[FolderId], [a].[IsActive], [a].[IsWorkflow], [a].[Trigger], [a].[UserID], [a].[WebhookKey], [w].[Id], [w].[Action], [w].[AutomationRuleId], [w].[ConfigurationJson], [w].[DelayAmount], [w].[DelayUnit], [w].[FalseStepId], [w].[IsBranchStep], [w].[IsLoopStep], [w].[LoopField], [w].[Order], [w].[ResourceId], [w].[RetryCount], [w].[RetryDelaySeconds], [w].[Target], [w].[TrueStepId]
+FROM [AutomationRules] AS [a]
+LEFT JOIN [WorkFlowSteps] AS [w] ON [a].[ID] = [w].[AutomationRuleId]
+WHERE [a].[Trigger] = @__triggerEvent_TriggerName_0 AND [a].[IsActive] = CAST(1 AS bit) AND [a].[UserID] = @__triggerEvent_UserId_1
+ORDER BY [a].[ID] [?] - MESSAGE: Executed DbCommand (7ms) [Parameters=[@__triggerEvent_TriggerName_0='?' (Size = 4000), @__triggerEvent_UserId_1='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT [a].[ID], [a].[CreatedAt], [a].[FolderId], [a].[IsActive], [a].[IsWorkflow], [a].[Trigger], [a].[UserID], [a].[WebhookKey], [w].[Id], [w].[Action], [w].[AutomationRuleId], [w].[ConfigurationJson], [w].[DelayAmount], [w].[DelayUnit], [w].[FalseStepId], [w].[IsBranchStep], [w].[IsLoopStep], [w].[LoopField], [w].[Order], [w].[ResourceId], [w].[RetryCount], [w].[RetryDelaySeconds], [w].[Target], [w].[TrueStepId]
+FROM [AutomationRules] AS [a]
+LEFT JOIN [WorkFlowSteps] AS [w] ON [a].[ID] = [w].[AutomationRuleId]
+WHERE [a].[Trigger] = @__triggerEvent_TriggerName_0 AND [a].[IsActive] = CAST(1 AS bit) AND [a].[UserID] = @__triggerEvent_UserId_1
+ORDER BY [a].[ID]
+ 2026-07-24 17:00:14,896  INFO AutomationAPI.SERVICES.TriggerEngineService.Trigger Executed Successfully. [34] - MESSAGE: Trigger Executed Successfully.
+ 2026-07-24 17:05:00,074  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[AccessToken], [c].[ConnectedAt], [c].[ExpiresAt], [c].[ExternalAccountEmail], [c].[ExternalAccountId], [c].[IsActive], [c].[LastSyncCursor], [c].[MetaDataJson], [c].[Provider], [c].[RefreshToken], [c].[UserId]
+FROM [ConnectedApps] AS [c]
+WHERE [c].[Provider] = N'google' [?] - MESSAGE: Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[AccessToken], [c].[ConnectedAt], [c].[ExpiresAt], [c].[ExternalAccountEmail], [c].[ExternalAccountId], [c].[IsActive], [c].[LastSyncCursor], [c].[MetaDataJson], [c].[Provider], [c].[RefreshToken], [c].[UserId]
+FROM [ConnectedApps] AS [c]
+WHERE [c].[Provider] = N'google'
+ 2026-07-24 17:10:00,298  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[AccessToken], [c].[ConnectedAt], [c].[ExpiresAt], [c].[ExternalAccountEmail], [c].[ExternalAccountId], [c].[IsActive], [c].[LastSyncCursor], [c].[MetaDataJson], [c].[Provider], [c].[RefreshToken], [c].[UserId]
+FROM [ConnectedApps] AS [c]
+WHERE [c].[Provider] = N'google' [?] - MESSAGE: Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[AccessToken], [c].[ConnectedAt], [c].[ExpiresAt], [c].[ExternalAccountEmail], [c].[ExternalAccountId], [c].[IsActive], [c].[LastSyncCursor], [c].[MetaDataJson], [c].[Provider], [c].[RefreshToken], [c].[UserId]
+FROM [ConnectedApps] AS [c]
+WHERE [c].[Provider] = N'google'
+ 2026-07-24 17:15:00,546  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[AccessToken], [c].[ConnectedAt], [c].[ExpiresAt], [c].[ExternalAccountEmail], [c].[ExternalAccountId], [c].[IsActive], [c].[LastSyncCursor], [c].[MetaDataJson], [c].[Provider], [c].[RefreshToken], [c].[UserId]
+FROM [ConnectedApps] AS [c]
+WHERE [c].[Provider] = N'google' [?] - MESSAGE: Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[AccessToken], [c].[ConnectedAt], [c].[ExpiresAt], [c].[ExternalAccountEmail], [c].[ExternalAccountId], [c].[IsActive], [c].[LastSyncCursor], [c].[MetaDataJson], [c].[Provider], [c].[RefreshToken], [c].[UserId]
+FROM [ConnectedApps] AS [c]
+WHERE [c].[Provider] = N'google'
+ 2026-07-24 17:20:00,803  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[AccessToken], [c].[ConnectedAt], [c].[ExpiresAt], [c].[ExternalAccountEmail], [c].[ExternalAccountId], [c].[IsActive], [c].[LastSyncCursor], [c].[MetaDataJson], [c].[Provider], [c].[RefreshToken], [c].[UserId]
+FROM [ConnectedApps] AS [c]
+WHERE [c].[Provider] = N'google' [?] - MESSAGE: Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[AccessToken], [c].[ConnectedAt], [c].[ExpiresAt], [c].[ExternalAccountEmail], [c].[ExternalAccountId], [c].[IsActive], [c].[LastSyncCursor], [c].[MetaDataJson], [c].[Provider], [c].[RefreshToken], [c].[UserId]
+FROM [ConnectedApps] AS [c]
+WHERE [c].[Provider] = N'google'
+ 2026-07-24 17:25:01,073  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[AccessToken], [c].[ConnectedAt], [c].[ExpiresAt], [c].[ExternalAccountEmail], [c].[ExternalAccountId], [c].[IsActive], [c].[LastSyncCursor], [c].[MetaDataJson], [c].[Provider], [c].[RefreshToken], [c].[UserId]
+FROM [ConnectedApps] AS [c]
+WHERE [c].[Provider] = N'google' [?] - MESSAGE: Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[AccessToken], [c].[ConnectedAt], [c].[ExpiresAt], [c].[ExternalAccountEmail], [c].[ExternalAccountId], [c].[IsActive], [c].[LastSyncCursor], [c].[MetaDataJson], [c].[Provider], [c].[RefreshToken], [c].[UserId]
+FROM [ConnectedApps] AS [c]
+WHERE [c].[Provider] = N'google'
+ 2026-07-24 17:30:01,246  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[AccessToken], [c].[ConnectedAt], [c].[ExpiresAt], [c].[ExternalAccountEmail], [c].[ExternalAccountId], [c].[IsActive], [c].[LastSyncCursor], [c].[MetaDataJson], [c].[Provider], [c].[RefreshToken], [c].[UserId]
+FROM [ConnectedApps] AS [c]
+WHERE [c].[Provider] = N'google' [?] - MESSAGE: Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[AccessToken], [c].[ConnectedAt], [c].[ExpiresAt], [c].[ExternalAccountEmail], [c].[ExternalAccountId], [c].[IsActive], [c].[LastSyncCursor], [c].[MetaDataJson], [c].[Provider], [c].[RefreshToken], [c].[UserId]
+FROM [ConnectedApps] AS [c]
+WHERE [c].[Provider] = N'google'
+ 2026-07-24 17:35:01,436  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[AccessToken], [c].[ConnectedAt], [c].[ExpiresAt], [c].[ExternalAccountEmail], [c].[ExternalAccountId], [c].[IsActive], [c].[LastSyncCursor], [c].[MetaDataJson], [c].[Provider], [c].[RefreshToken], [c].[UserId]
+FROM [ConnectedApps] AS [c]
+WHERE [c].[Provider] = N'google' [?] - MESSAGE: Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[AccessToken], [c].[ConnectedAt], [c].[ExpiresAt], [c].[ExternalAccountEmail], [c].[ExternalAccountId], [c].[IsActive], [c].[LastSyncCursor], [c].[MetaDataJson], [c].[Provider], [c].[RefreshToken], [c].[UserId]
+FROM [ConnectedApps] AS [c]
+WHERE [c].[Provider] = N'google'
+ 2026-07-24 17:40:01,643  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[AccessToken], [c].[ConnectedAt], [c].[ExpiresAt], [c].[ExternalAccountEmail], [c].[ExternalAccountId], [c].[IsActive], [c].[LastSyncCursor], [c].[MetaDataJson], [c].[Provider], [c].[RefreshToken], [c].[UserId]
+FROM [ConnectedApps] AS [c]
+WHERE [c].[Provider] = N'google' [?] - MESSAGE: Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[AccessToken], [c].[ConnectedAt], [c].[ExpiresAt], [c].[ExternalAccountEmail], [c].[ExternalAccountId], [c].[IsActive], [c].[LastSyncCursor], [c].[MetaDataJson], [c].[Provider], [c].[RefreshToken], [c].[UserId]
+FROM [ConnectedApps] AS [c]
+WHERE [c].[Provider] = N'google'
+ 2026-07-24 17:45:01,862  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[AccessToken], [c].[ConnectedAt], [c].[ExpiresAt], [c].[ExternalAccountEmail], [c].[ExternalAccountId], [c].[IsActive], [c].[LastSyncCursor], [c].[MetaDataJson], [c].[Provider], [c].[RefreshToken], [c].[UserId]
+FROM [ConnectedApps] AS [c]
+WHERE [c].[Provider] = N'google' [?] - MESSAGE: Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[AccessToken], [c].[ConnectedAt], [c].[ExpiresAt], [c].[ExternalAccountEmail], [c].[ExternalAccountId], [c].[IsActive], [c].[LastSyncCursor], [c].[MetaDataJson], [c].[Provider], [c].[RefreshToken], [c].[UserId]
+FROM [ConnectedApps] AS [c]
+WHERE [c].[Provider] = N'google'
+ 2026-07-24 17:50:02,988  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[AccessToken], [c].[ConnectedAt], [c].[ExpiresAt], [c].[ExternalAccountEmail], [c].[ExternalAccountId], [c].[IsActive], [c].[LastSyncCursor], [c].[MetaDataJson], [c].[Provider], [c].[RefreshToken], [c].[UserId]
+FROM [ConnectedApps] AS [c]
+WHERE [c].[Provider] = N'google' [?] - MESSAGE: Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[AccessToken], [c].[ConnectedAt], [c].[ExpiresAt], [c].[ExternalAccountEmail], [c].[ExternalAccountId], [c].[IsActive], [c].[LastSyncCursor], [c].[MetaDataJson], [c].[Provider], [c].[RefreshToken], [c].[UserId]
+FROM [ConnectedApps] AS [c]
+WHERE [c].[Provider] = N'google'
+ 2026-07-24 19:27:37,126  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (9ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[AccessToken], [c].[ConnectedAt], [c].[ExpiresAt], [c].[ExternalAccountEmail], [c].[ExternalAccountId], [c].[IsActive], [c].[LastSyncCursor], [c].[MetaDataJson], [c].[Provider], [c].[RefreshToken], [c].[UserId]
+FROM [ConnectedApps] AS [c]
+WHERE [c].[Provider] = N'google' [?] - MESSAGE: Executed DbCommand (9ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[AccessToken], [c].[ConnectedAt], [c].[ExpiresAt], [c].[ExternalAccountEmail], [c].[ExternalAccountId], [c].[IsActive], [c].[LastSyncCursor], [c].[MetaDataJson], [c].[Provider], [c].[RefreshToken], [c].[UserId]
+FROM [ConnectedApps] AS [c]
+WHERE [c].[Provider] = N'google'
+ 2026-07-24 19:27:38,426  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (48ms) [Parameters=[@__triggerEvent_TriggerName_0='?' (Size = 4000), @__triggerEvent_UserId_1='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT [a].[ID], [a].[CreatedAt], [a].[FolderId], [a].[IsActive], [a].[IsWorkflow], [a].[Trigger], [a].[UserID], [a].[WebhookKey], [w].[Id], [w].[Action], [w].[AutomationRuleId], [w].[ConfigurationJson], [w].[DelayAmount], [w].[DelayUnit], [w].[FalseStepId], [w].[IsBranchStep], [w].[IsLoopStep], [w].[LoopField], [w].[Order], [w].[ResourceId], [w].[RetryCount], [w].[RetryDelaySeconds], [w].[Target], [w].[TrueStepId]
+FROM [AutomationRules] AS [a]
+LEFT JOIN [WorkFlowSteps] AS [w] ON [a].[ID] = [w].[AutomationRuleId]
+WHERE [a].[Trigger] = @__triggerEvent_TriggerName_0 AND [a].[IsActive] = CAST(1 AS bit) AND [a].[UserID] = @__triggerEvent_UserId_1
+ORDER BY [a].[ID] [?] - MESSAGE: Executed DbCommand (48ms) [Parameters=[@__triggerEvent_TriggerName_0='?' (Size = 4000), @__triggerEvent_UserId_1='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT [a].[ID], [a].[CreatedAt], [a].[FolderId], [a].[IsActive], [a].[IsWorkflow], [a].[Trigger], [a].[UserID], [a].[WebhookKey], [w].[Id], [w].[Action], [w].[AutomationRuleId], [w].[ConfigurationJson], [w].[DelayAmount], [w].[DelayUnit], [w].[FalseStepId], [w].[IsBranchStep], [w].[IsLoopStep], [w].[LoopField], [w].[Order], [w].[ResourceId], [w].[RetryCount], [w].[RetryDelaySeconds], [w].[Target], [w].[TrueStepId]
+FROM [AutomationRules] AS [a]
+LEFT JOIN [WorkFlowSteps] AS [w] ON [a].[ID] = [w].[AutomationRuleId]
+WHERE [a].[Trigger] = @__triggerEvent_TriggerName_0 AND [a].[IsActive] = CAST(1 AS bit) AND [a].[UserID] = @__triggerEvent_UserId_1
+ORDER BY [a].[ID]
+ 2026-07-24 19:27:38,447  INFO AutomationAPI.SERVICES.TriggerEngineService.Trigger Executed Successfully. [34] - MESSAGE: Trigger Executed Successfully.
+ 2026-07-24 22:05:37,112  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (11ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[AccessToken], [c].[ConnectedAt], [c].[ExpiresAt], [c].[ExternalAccountEmail], [c].[ExternalAccountId], [c].[IsActive], [c].[LastSyncCursor], [c].[MetaDataJson], [c].[Provider], [c].[RefreshToken], [c].[UserId]
+FROM [ConnectedApps] AS [c]
+WHERE [c].[Provider] = N'google' [?] - MESSAGE: Executed DbCommand (11ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[AccessToken], [c].[ConnectedAt], [c].[ExpiresAt], [c].[ExternalAccountEmail], [c].[ExternalAccountId], [c].[IsActive], [c].[LastSyncCursor], [c].[MetaDataJson], [c].[Provider], [c].[RefreshToken], [c].[UserId]
+FROM [ConnectedApps] AS [c]
+WHERE [c].[Provider] = N'google'
+ 2026-07-24 22:05:37,288  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (110ms) [Parameters=[@__triggerEvent_TriggerName_0='?' (Size = 4000), @__triggerEvent_UserId_1='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT [a].[ID], [a].[CreatedAt], [a].[FolderId], [a].[IsActive], [a].[IsWorkflow], [a].[Trigger], [a].[UserID], [a].[WebhookKey], [w].[Id], [w].[Action], [w].[AutomationRuleId], [w].[ConfigurationJson], [w].[DelayAmount], [w].[DelayUnit], [w].[FalseStepId], [w].[IsBranchStep], [w].[IsLoopStep], [w].[LoopField], [w].[Order], [w].[ResourceId], [w].[RetryCount], [w].[RetryDelaySeconds], [w].[Target], [w].[TrueStepId]
+FROM [AutomationRules] AS [a]
+LEFT JOIN [WorkFlowSteps] AS [w] ON [a].[ID] = [w].[AutomationRuleId]
+WHERE [a].[Trigger] = @__triggerEvent_TriggerName_0 AND [a].[IsActive] = CAST(1 AS bit) AND [a].[UserID] = @__triggerEvent_UserId_1
+ORDER BY [a].[ID] [?] - MESSAGE: Executed DbCommand (110ms) [Parameters=[@__triggerEvent_TriggerName_0='?' (Size = 4000), @__triggerEvent_UserId_1='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT [a].[ID], [a].[CreatedAt], [a].[FolderId], [a].[IsActive], [a].[IsWorkflow], [a].[Trigger], [a].[UserID], [a].[WebhookKey], [w].[Id], [w].[Action], [w].[AutomationRuleId], [w].[ConfigurationJson], [w].[DelayAmount], [w].[DelayUnit], [w].[FalseStepId], [w].[IsBranchStep], [w].[IsLoopStep], [w].[LoopField], [w].[Order], [w].[ResourceId], [w].[RetryCount], [w].[RetryDelaySeconds], [w].[Target], [w].[TrueStepId]
+FROM [AutomationRules] AS [a]
+LEFT JOIN [WorkFlowSteps] AS [w] ON [a].[ID] = [w].[AutomationRuleId]
+WHERE [a].[Trigger] = @__triggerEvent_TriggerName_0 AND [a].[IsActive] = CAST(1 AS bit) AND [a].[UserID] = @__triggerEvent_UserId_1
+ORDER BY [a].[ID]
+ 2026-07-24 22:05:37,405  INFO AutomationAPI.SERVICES.TriggerEngineService.Trigger Executed Successfully. [34] - MESSAGE: Trigger Executed Successfully.
+ 2026-07-24 22:10:09,170  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (32ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[AccessToken], [c].[ConnectedAt], [c].[ExpiresAt], [c].[ExternalAccountEmail], [c].[ExternalAccountId], [c].[IsActive], [c].[LastSyncCursor], [c].[MetaDataJson], [c].[Provider], [c].[RefreshToken], [c].[UserId]
+FROM [ConnectedApps] AS [c]
+WHERE [c].[Provider] = N'google' [?] - MESSAGE: Executed DbCommand (32ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[AccessToken], [c].[ConnectedAt], [c].[ExpiresAt], [c].[ExternalAccountEmail], [c].[ExternalAccountId], [c].[IsActive], [c].[LastSyncCursor], [c].[MetaDataJson], [c].[Provider], [c].[RefreshToken], [c].[UserId]
+FROM [ConnectedApps] AS [c]
+WHERE [c].[Provider] = N'google'
+ 2026-07-24 22:15:11,456  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (66ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[AccessToken], [c].[ConnectedAt], [c].[ExpiresAt], [c].[ExternalAccountEmail], [c].[ExternalAccountId], [c].[IsActive], [c].[LastSyncCursor], [c].[MetaDataJson], [c].[Provider], [c].[RefreshToken], [c].[UserId]
+FROM [ConnectedApps] AS [c]
+WHERE [c].[Provider] = N'google' [?] - MESSAGE: Executed DbCommand (66ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[AccessToken], [c].[ConnectedAt], [c].[ExpiresAt], [c].[ExternalAccountEmail], [c].[ExternalAccountId], [c].[IsActive], [c].[LastSyncCursor], [c].[MetaDataJson], [c].[Provider], [c].[RefreshToken], [c].[UserId]
+FROM [ConnectedApps] AS [c]
+WHERE [c].[Provider] = N'google'
+ 2026-07-24 22:20:15,328  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (52ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[AccessToken], [c].[ConnectedAt], [c].[ExpiresAt], [c].[ExternalAccountEmail], [c].[ExternalAccountId], [c].[IsActive], [c].[LastSyncCursor], [c].[MetaDataJson], [c].[Provider], [c].[RefreshToken], [c].[UserId]
+FROM [ConnectedApps] AS [c]
+WHERE [c].[Provider] = N'google' [?] - MESSAGE: Executed DbCommand (52ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[AccessToken], [c].[ConnectedAt], [c].[ExpiresAt], [c].[ExternalAccountEmail], [c].[ExternalAccountId], [c].[IsActive], [c].[LastSyncCursor], [c].[MetaDataJson], [c].[Provider], [c].[RefreshToken], [c].[UserId]
+FROM [ConnectedApps] AS [c]
+WHERE [c].[Provider] = N'google'
+ 2026-07-24 22:25:00,897  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (6ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[AccessToken], [c].[ConnectedAt], [c].[ExpiresAt], [c].[ExternalAccountEmail], [c].[ExternalAccountId], [c].[IsActive], [c].[LastSyncCursor], [c].[MetaDataJson], [c].[Provider], [c].[RefreshToken], [c].[UserId]
+FROM [ConnectedApps] AS [c]
+WHERE [c].[Provider] = N'google' [?] - MESSAGE: Executed DbCommand (6ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[AccessToken], [c].[ConnectedAt], [c].[ExpiresAt], [c].[ExternalAccountEmail], [c].[ExternalAccountId], [c].[IsActive], [c].[LastSyncCursor], [c].[MetaDataJson], [c].[Provider], [c].[RefreshToken], [c].[UserId]
+FROM [ConnectedApps] AS [c]
+WHERE [c].[Provider] = N'google'
+ 2026-07-24 22:30:01,321  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (7ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[AccessToken], [c].[ConnectedAt], [c].[ExpiresAt], [c].[ExternalAccountEmail], [c].[ExternalAccountId], [c].[IsActive], [c].[LastSyncCursor], [c].[MetaDataJson], [c].[Provider], [c].[RefreshToken], [c].[UserId]
+FROM [ConnectedApps] AS [c]
+WHERE [c].[Provider] = N'google' [?] - MESSAGE: Executed DbCommand (7ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[AccessToken], [c].[ConnectedAt], [c].[ExpiresAt], [c].[ExternalAccountEmail], [c].[ExternalAccountId], [c].[IsActive], [c].[LastSyncCursor], [c].[MetaDataJson], [c].[Provider], [c].[RefreshToken], [c].[UserId]
+FROM [ConnectedApps] AS [c]
+WHERE [c].[Provider] = N'google'
+ 2026-07-24 22:35:01,730  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (8ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[AccessToken], [c].[ConnectedAt], [c].[ExpiresAt], [c].[ExternalAccountEmail], [c].[ExternalAccountId], [c].[IsActive], [c].[LastSyncCursor], [c].[MetaDataJson], [c].[Provider], [c].[RefreshToken], [c].[UserId]
+FROM [ConnectedApps] AS [c]
+WHERE [c].[Provider] = N'google' [?] - MESSAGE: Executed DbCommand (8ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[AccessToken], [c].[ConnectedAt], [c].[ExpiresAt], [c].[ExternalAccountEmail], [c].[ExternalAccountId], [c].[IsActive], [c].[LastSyncCursor], [c].[MetaDataJson], [c].[Provider], [c].[RefreshToken], [c].[UserId]
+FROM [ConnectedApps] AS [c]
+WHERE [c].[Provider] = N'google'
+ 2026-07-24 22:40:02,980  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (91ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[AccessToken], [c].[ConnectedAt], [c].[ExpiresAt], [c].[ExternalAccountEmail], [c].[ExternalAccountId], [c].[IsActive], [c].[LastSyncCursor], [c].[MetaDataJson], [c].[Provider], [c].[RefreshToken], [c].[UserId]
+FROM [ConnectedApps] AS [c]
+WHERE [c].[Provider] = N'google' [?] - MESSAGE: Executed DbCommand (91ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[AccessToken], [c].[ConnectedAt], [c].[ExpiresAt], [c].[ExternalAccountEmail], [c].[ExternalAccountId], [c].[IsActive], [c].[LastSyncCursor], [c].[MetaDataJson], [c].[Provider], [c].[RefreshToken], [c].[UserId]
+FROM [ConnectedApps] AS [c]
+WHERE [c].[Provider] = N'google'
+ 2026-07-24 22:42:29,127  INFO Hangfire.Server.BackgroundServerProcess.Server destiny-elitebo:20392:7c0d26a5 caught stopping signal... [?] - MESSAGE: Server destiny-elitebo:20392:7c0d26a5 caught stopping signal...
+ 2026-07-24 22:42:29,137  INFO Microsoft.Hosting.Lifetime.Application is shutting down... [0] - MESSAGE: Application is shutting down...
+ 2026-07-24 22:42:29,247  INFO Hangfire.Server.BackgroundServerProcess.Server destiny-elitebo:20392:7c0d26a5 All dispatchers stopped [?] - MESSAGE: Server destiny-elitebo:20392:7c0d26a5 All dispatchers stopped
+ 2026-07-24 22:42:29,260  INFO Hangfire.Server.BackgroundServerProcess.Server destiny-elitebo:20392:7c0d26a5 successfully reported itself as stopped in 7.4357 ms [?] - MESSAGE: Server destiny-elitebo:20392:7c0d26a5 successfully reported itself as stopped in 7.4357 ms
+ 2026-07-24 22:42:29,260  INFO Hangfire.Server.BackgroundServerProcess.Server destiny-elitebo:20392:7c0d26a5 has been stopped in total 124.3989 ms [?] - MESSAGE: Server destiny-elitebo:20392:7c0d26a5 has been stopped in total 124.3989 ms
+ 

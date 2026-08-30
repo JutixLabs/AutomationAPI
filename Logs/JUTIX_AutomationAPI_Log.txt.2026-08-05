@@ -1,0 +1,45 @@
+2026-08-05 21:06:03,597  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (337ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT 1 [?] - MESSAGE: Executed DbCommand (337ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT 1
+ 2026-08-05 21:06:04,029  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (353ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]'); [?] - MESSAGE: Executed DbCommand (353ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+ 2026-08-05 21:06:04,341  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (308ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT 1 [?] - MESSAGE: Executed DbCommand (308ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT 1
+ 2026-08-05 21:06:04,784  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (441ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]'); [?] - MESSAGE: Executed DbCommand (441ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+ 2026-08-05 21:06:05,138  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (317ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId]; [?] - MESSAGE: Executed DbCommand (317ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+ 2026-08-05 21:06:05,188  INFO Microsoft.EntityFrameworkCore.Migrations.Applying migration '20260805200511_TrelloWatcherTable'. [?] - MESSAGE: Applying migration '20260805200511_TrelloWatcherTable'.
+ 2026-08-05 21:06:06,116  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (327ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE [TrelloWatchedBoards] (
+    [Id] int NOT NULL IDENTITY,
+    [UserId] nvarchar(max) NOT NULL,
+    [BoardId] nvarchar(max) NOT NULL,
+    [BoardName] nvarchar(max) NOT NULL,
+    [TrelloWebhookId] nvarchar(max) NOT NULL,
+    [CreatedAt] datetime2 NOT NULL,
+    CONSTRAINT [PK_TrelloWatchedBoards] PRIMARY KEY ([Id])
+); [?] - MESSAGE: Executed DbCommand (327ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE [TrelloWatchedBoards] (
+    [Id] int NOT NULL IDENTITY,
+    [UserId] nvarchar(max) NOT NULL,
+    [BoardId] nvarchar(max) NOT NULL,
+    [BoardName] nvarchar(max) NOT NULL,
+    [TrelloWebhookId] nvarchar(max) NOT NULL,
+    [CreatedAt] datetime2 NOT NULL,
+    CONSTRAINT [PK_TrelloWatchedBoards] PRIMARY KEY ([Id])
+);
+ 2026-08-05 21:06:06,415  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (297ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20260805200511_TrelloWatcherTable', N'8.0.5'); [?] - MESSAGE: Executed DbCommand (297ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20260805200511_TrelloWatcherTable', N'8.0.5');
+ 

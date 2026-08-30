@@ -1,0 +1,49 @@
+2026-08-08 13:27:18,742  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (739ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT 1 [?] - MESSAGE: Executed DbCommand (739ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT 1
+ 2026-08-08 13:27:19,381  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (593ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]'); [?] - MESSAGE: Executed DbCommand (593ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+ 2026-08-08 13:27:19,927  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (544ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT 1 [?] - MESSAGE: Executed DbCommand (544ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT 1
+ 2026-08-08 13:27:20,488  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (560ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]'); [?] - MESSAGE: Executed DbCommand (560ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+ 2026-08-08 13:27:21,078  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (575ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId]; [?] - MESSAGE: Executed DbCommand (575ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+ 2026-08-08 13:27:21,096  INFO Microsoft.EntityFrameworkCore.Migrations.Applying migration '20260808122649_AddDiscordWatchedChannel'. [?] - MESSAGE: Applying migration '20260808122649_AddDiscordWatchedChannel'.
+ 2026-08-08 13:27:22,329  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (602ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE [DiscordWatchedChannels] (
+    [Id] int NOT NULL IDENTITY,
+    [UserId] nvarchar(max) NOT NULL,
+    [ServerId] nvarchar(max) NOT NULL,
+    [ServerName] nvarchar(max) NOT NULL,
+    [ChannelId] nvarchar(max) NOT NULL,
+    [ChannelName] nvarchar(max) NOT NULL,
+    [LastMessageId] nvarchar(max) NOT NULL,
+    [CreatedAt] datetime2 NOT NULL,
+    CONSTRAINT [PK_DiscordWatchedChannels] PRIMARY KEY ([Id])
+); [?] - MESSAGE: Executed DbCommand (602ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE [DiscordWatchedChannels] (
+    [Id] int NOT NULL IDENTITY,
+    [UserId] nvarchar(max) NOT NULL,
+    [ServerId] nvarchar(max) NOT NULL,
+    [ServerName] nvarchar(max) NOT NULL,
+    [ChannelId] nvarchar(max) NOT NULL,
+    [ChannelName] nvarchar(max) NOT NULL,
+    [LastMessageId] nvarchar(max) NOT NULL,
+    [CreatedAt] datetime2 NOT NULL,
+    CONSTRAINT [PK_DiscordWatchedChannels] PRIMARY KEY ([Id])
+);
+ 2026-08-08 13:27:22,955  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (625ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20260808122649_AddDiscordWatchedChannel', N'8.0.5'); [?] - MESSAGE: Executed DbCommand (625ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20260808122649_AddDiscordWatchedChannel', N'8.0.5');
+ 

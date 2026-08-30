@@ -1,0 +1,449 @@
+2026-05-31 23:07:14,542  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (40ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT 1 [?] - MESSAGE: Executed DbCommand (40ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT 1
+ 2026-05-31 23:07:14,666  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (27ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]'); [?] - MESSAGE: Executed DbCommand (27ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+ 2026-05-31 23:07:14,671  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT 1 [?] - MESSAGE: Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT 1
+ 2026-05-31 23:07:14,674  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]'); [?] - MESSAGE: Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+ 2026-05-31 23:07:14,759  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (45ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId]; [?] - MESSAGE: Executed DbCommand (45ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+ 2026-05-31 23:07:14,797  INFO Microsoft.EntityFrameworkCore.Migrations.Applying migration '20260531220639_UpgradeConnectedApps'. [?] - MESSAGE: Applying migration '20260531220639_UpgradeConnectedApps'.
+ 2026-05-31 23:07:15,006  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (71ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+ALTER TABLE [WorkFlowSteps] ADD [IsLoopStep] bit NOT NULL DEFAULT CAST(0 AS bit); [?] - MESSAGE: Executed DbCommand (71ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+ALTER TABLE [WorkFlowSteps] ADD [IsLoopStep] bit NOT NULL DEFAULT CAST(0 AS bit);
+ 2026-05-31 23:07:15,022  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (14ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+ALTER TABLE [WorkFlowSteps] ADD [LoopField] nvarchar(max) NOT NULL DEFAULT N''; [?] - MESSAGE: Executed DbCommand (14ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+ALTER TABLE [WorkFlowSteps] ADD [LoopField] nvarchar(max) NOT NULL DEFAULT N'';
+ 2026-05-31 23:07:15,030  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (8ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+ALTER TABLE [WorkFlowSteps] ADD [Provider] nvarchar(max) NOT NULL DEFAULT N''; [?] - MESSAGE: Executed DbCommand (8ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+ALTER TABLE [WorkFlowSteps] ADD [Provider] nvarchar(max) NOT NULL DEFAULT N'';
+ 2026-05-31 23:07:15,036  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (5ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+ALTER TABLE [WorkFlowSteps] ADD [RetryCount] int NOT NULL DEFAULT 0; [?] - MESSAGE: Executed DbCommand (5ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+ALTER TABLE [WorkFlowSteps] ADD [RetryCount] int NOT NULL DEFAULT 0;
+ 2026-05-31 23:07:15,043  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (6ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+ALTER TABLE [WorkFlowSteps] ADD [RetryDelaySeconds] int NOT NULL DEFAULT 0; [?] - MESSAGE: Executed DbCommand (6ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+ALTER TABLE [WorkFlowSteps] ADD [RetryDelaySeconds] int NOT NULL DEFAULT 0;
+ 2026-05-31 23:07:15,055  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (11ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+ALTER TABLE [ConnectedApps] ADD [ExternalAccountEmail] nvarchar(max) NOT NULL DEFAULT N''; [?] - MESSAGE: Executed DbCommand (11ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+ALTER TABLE [ConnectedApps] ADD [ExternalAccountEmail] nvarchar(max) NOT NULL DEFAULT N'';
+ 2026-05-31 23:07:15,063  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (6ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+ALTER TABLE [ConnectedApps] ADD [ExternalAccountId] nvarchar(max) NOT NULL DEFAULT N''; [?] - MESSAGE: Executed DbCommand (6ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+ALTER TABLE [ConnectedApps] ADD [ExternalAccountId] nvarchar(max) NOT NULL DEFAULT N'';
+ 2026-05-31 23:07:15,071  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (7ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+ALTER TABLE [ConnectedApps] ADD [MetaDataJson] nvarchar(max) NOT NULL DEFAULT N''; [?] - MESSAGE: Executed DbCommand (7ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+ALTER TABLE [ConnectedApps] ADD [MetaDataJson] nvarchar(max) NOT NULL DEFAULT N'';
+ 2026-05-31 23:07:15,095  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (23ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE [WorkflowDeadLetters] (
+    [Id] int NOT NULL IDENTITY,
+    [RuleId] int NOT NULL,
+    [RuleStepId] int NOT NULL,
+    [PayloadJson] nvarchar(max) NOT NULL,
+    [ErrorMessage] nvarchar(max) NOT NULL,
+    [Attempts] int NOT NULL,
+    [Resolved] bit NOT NULL,
+    [CreatedAt] datetime2 NOT NULL,
+    CONSTRAINT [PK_WorkflowDeadLetters] PRIMARY KEY ([Id])
+); [?] - MESSAGE: Executed DbCommand (23ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE [WorkflowDeadLetters] (
+    [Id] int NOT NULL IDENTITY,
+    [RuleId] int NOT NULL,
+    [RuleStepId] int NOT NULL,
+    [PayloadJson] nvarchar(max) NOT NULL,
+    [ErrorMessage] nvarchar(max) NOT NULL,
+    [Attempts] int NOT NULL,
+    [Resolved] bit NOT NULL,
+    [CreatedAt] datetime2 NOT NULL,
+    CONSTRAINT [PK_WorkflowDeadLetters] PRIMARY KEY ([Id])
+);
+ 2026-05-31 23:07:15,102  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (7ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE [WorkflowExecutionLogs] (
+    [Id] int NOT NULL IDENTITY,
+    [RuleId] int NOT NULL,
+    [RuleStepId] int NOT NULL,
+    [Status] nvarchar(max) NOT NULL,
+    [Message] nvarchar(max) NOT NULL,
+    [Attempt] int NOT NULL,
+    [CreatedAt] datetime2 NOT NULL,
+    CONSTRAINT [PK_WorkflowExecutionLogs] PRIMARY KEY ([Id])
+); [?] - MESSAGE: Executed DbCommand (7ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE [WorkflowExecutionLogs] (
+    [Id] int NOT NULL IDENTITY,
+    [RuleId] int NOT NULL,
+    [RuleStepId] int NOT NULL,
+    [Status] nvarchar(max) NOT NULL,
+    [Message] nvarchar(max) NOT NULL,
+    [Attempt] int NOT NULL,
+    [CreatedAt] datetime2 NOT NULL,
+    CONSTRAINT [PK_WorkflowExecutionLogs] PRIMARY KEY ([Id])
+);
+ 2026-05-31 23:07:15,110  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (7ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE [WorkflowInstances] (
+    [Id] int NOT NULL IDENTITY,
+    [RuleId] int NOT NULL,
+    [CurrentStepId] int NOT NULL,
+    [Status] nvarchar(max) NOT NULL,
+    [PayloadJson] nvarchar(max) NOT NULL,
+    [StartedAt] datetime2 NOT NULL,
+    [CompletedAt] datetime2 NULL,
+    [LastExecutedAt] datetime2 NULL,
+    CONSTRAINT [PK_WorkflowInstances] PRIMARY KEY ([Id])
+); [?] - MESSAGE: Executed DbCommand (7ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE [WorkflowInstances] (
+    [Id] int NOT NULL IDENTITY,
+    [RuleId] int NOT NULL,
+    [CurrentStepId] int NOT NULL,
+    [Status] nvarchar(max) NOT NULL,
+    [PayloadJson] nvarchar(max) NOT NULL,
+    [StartedAt] datetime2 NOT NULL,
+    [CompletedAt] datetime2 NULL,
+    [LastExecutedAt] datetime2 NULL,
+    CONSTRAINT [PK_WorkflowInstances] PRIMARY KEY ([Id])
+);
+ 2026-05-31 23:07:15,120  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (9ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20260531220639_UpgradeConnectedApps', N'8.0.5'); [?] - MESSAGE: Executed DbCommand (9ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20260531220639_UpgradeConnectedApps', N'8.0.5');
+ 2026-05-31 23:33:41,905  INFO Hangfire.SqlServer.SqlServerObjectsInstaller.Start installing Hangfire SQL objects... [?] - MESSAGE: Start installing Hangfire SQL objects...
+ 2026-05-31 23:33:44,429  INFO Hangfire.SqlServer.SqlServerObjectsInstaller.Hangfire SQL objects installed. [?] - MESSAGE: Hangfire SQL objects installed.
+ 2026-05-31 23:33:46,874  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (30ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [f].[Id], [f].[CreatedAt], [f].[LastProcessedRow], [f].[RuleId], [f].[SheetName], [f].[SpreadSheetId], [f].[UserId]
+FROM [FormWatches] AS [f] [?] - MESSAGE: Executed DbCommand (30ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [f].[Id], [f].[CreatedAt], [f].[LastProcessedRow], [f].[RuleId], [f].[SheetName], [f].[SpreadSheetId], [f].[UserId]
+FROM [FormWatches] AS [f]
+ 2026-05-31 23:33:46,979  INFO Microsoft.Hosting.Lifetime.Now listening on: http://localhost:5050 [?] - MESSAGE: Now listening on: http://localhost:5050
+ 2026-05-31 23:33:46,997  INFO Hangfire.BackgroundJobServer.Starting Hangfire Server using job storage: 'SQL Server: DESTINY-ELITEBO@JUTIX_AutomationAPI_DB' [?] - MESSAGE: Starting Hangfire Server using job storage: 'SQL Server: DESTINY-ELITEBO@JUTIX_AutomationAPI_DB'
+ 2026-05-31 23:33:46,999  INFO Hangfire.BackgroundJobServer.Using the following options for SQL Server job storage: Queue poll interval: 00:00:00. [?] - MESSAGE: Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+ 2026-05-31 23:33:47,000  INFO Hangfire.BackgroundJobServer.Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15 [?] - MESSAGE: Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+ 2026-05-31 23:33:47,021 ERROR AutomationAPI.SERVICES.GoogleSheetsService.[ERROR]: Object reference not set to an instance of an object. [55] - MESSAGE: [ERROR]: Object reference not set to an instance of an object.
+ 2026-05-31 23:33:47,023  INFO Microsoft.Hosting.Lifetime.Application started. Press Ctrl+C to shut down. [0] - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2026-05-31 23:33:47,034  INFO Microsoft.Hosting.Lifetime.Hosting environment: Development [0] - MESSAGE: Hosting environment: Development
+ 2026-05-31 23:33:47,034  INFO Microsoft.Hosting.Lifetime.Content root path: C:\Sample Files\MY WORK\AutomationAPI\AutomationAPI [0] - MESSAGE: Content root path: C:\Sample Files\MY WORK\AutomationAPI\AutomationAPI
+ 2026-05-31 23:33:47,035 ERROR AutomationAPI.SERVICES.GoogleSheetsService.[ERROR]: Object reference not set to an instance of an object. [27] - MESSAGE: [ERROR]: Object reference not set to an instance of an object.
+ 2026-05-31 23:33:47,039 ERROR AutomationAPI.SERVICES.FormWatcherService.[ERROR]: Object reference not set to an instance of an object. [48] - MESSAGE: [ERROR]: Object reference not set to an instance of an object.
+ 2026-05-31 23:33:47,041 ERROR AutomationAPI.SERVICES.GoogleSheetsService.[ERROR]: Object reference not set to an instance of an object. [55] - MESSAGE: [ERROR]: Object reference not set to an instance of an object.
+ 2026-05-31 23:33:47,042 ERROR AutomationAPI.SERVICES.GoogleSheetsService.[ERROR]: Object reference not set to an instance of an object. [27] - MESSAGE: [ERROR]: Object reference not set to an instance of an object.
+ 2026-05-31 23:33:47,043 ERROR AutomationAPI.SERVICES.FormWatcherService.[ERROR]: Object reference not set to an instance of an object. [48] - MESSAGE: [ERROR]: Object reference not set to an instance of an object.
+ 2026-05-31 23:33:47,264  INFO Hangfire.Server.BackgroundServerProcess.Server destiny-elitebo:28720:b3c7da96 successfully announced in 237.1981 ms [?] - MESSAGE: Server destiny-elitebo:28720:b3c7da96 successfully announced in 237.1981 ms
+ 2026-05-31 23:33:47,269  INFO Hangfire.Server.BackgroundServerProcess.Server destiny-elitebo:28720:b3c7da96 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, SqlServerHeartbeatProcess, ExpirationManager, CountersAggregator, Worker, DelayedJobScheduler, RecurringJobScheduler... [?] - MESSAGE: Server destiny-elitebo:28720:b3c7da96 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, SqlServerHeartbeatProcess, ExpirationManager, CountersAggregator, Worker, DelayedJobScheduler, RecurringJobScheduler...
+ 2026-05-31 23:33:47,285  INFO Hangfire.Server.BackgroundServerProcess.Server destiny-elitebo:28720:b3c7da96 all the dispatchers started [?] - MESSAGE: Server destiny-elitebo:28720:b3c7da96 all the dispatchers started
+ 2026-05-31 23:34:09,096  WARN Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware.Failed to determine the https port for redirect. [?] - MESSAGE: Failed to determine the https port for redirect.
+ 2026-05-31 23:34:09,371  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (7ms) [Parameters=[@__model_Email_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[ID], [u].[CreatedAt], [u].[Email], [u].[FullName], [u].[PasswordHash]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__model_Email_0 [?] - MESSAGE: Executed DbCommand (7ms) [Parameters=[@__model_Email_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[ID], [u].[CreatedAt], [u].[Email], [u].[FullName], [u].[PasswordHash]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__model_Email_0
+ 2026-05-31 23:34:10,072  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (2ms) [Parameters=[@__userModel_Email_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[ID], [u].[CreatedAt], [u].[Email], [u].[FullName], [u].[PasswordHash]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__userModel_Email_0 [?] - MESSAGE: Executed DbCommand (2ms) [Parameters=[@__userModel_Email_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[ID], [u].[CreatedAt], [u].[Email], [u].[FullName], [u].[PasswordHash]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__userModel_Email_0
+ 2026-05-31 23:34:11,163  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (25ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC [?] - MESSAGE: Executed DbCommand (25ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC
+ 2026-05-31 23:34:11,164  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (16ms) [Parameters=[@__userId_0='?' (Size = 4000), @__startDate_1='?' (DbType = DateTime2)], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+WHERE [e].[UserId] = @__userId_0 AND [e].[ExecutedAt] >= @__startDate_1 [?] - MESSAGE: Executed DbCommand (16ms) [Parameters=[@__userId_0='?' (Size = 4000), @__startDate_1='?' (DbType = DateTime2)], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+WHERE [e].[UserId] = @__userId_0 AND [e].[ExecutedAt] >= @__startDate_1
+ 2026-05-31 23:34:11,239  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (13ms) [Parameters=[@__p_1='?' (DbType = Int32), @__userId_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(@__p_1) [e].[Trigger] AS [trigger], [e].[Action] AS [action], COUNT(*) AS [count]
+FROM [ExecutionLogs] AS [e]
+WHERE [e].[UserId] = @__userId_0
+GROUP BY [e].[Trigger], [e].[Action]
+ORDER BY COUNT(*) DESC [?] - MESSAGE: Executed DbCommand (13ms) [Parameters=[@__p_1='?' (DbType = Int32), @__userId_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(@__p_1) [e].[Trigger] AS [trigger], [e].[Action] AS [action], COUNT(*) AS [count]
+FROM [ExecutionLogs] AS [e]
+WHERE [e].[UserId] = @__userId_0
+GROUP BY [e].[Trigger], [e].[Action]
+ORDER BY COUNT(*) DESC
+ 2026-05-31 23:34:11,239  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (13ms) [Parameters=[@__userId_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [AutomationRules] AS [a]
+WHERE [a].[UserID] = @__userId_0 [?] - MESSAGE: Executed DbCommand (13ms) [Parameters=[@__userId_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [AutomationRules] AS [a]
+WHERE [a].[UserID] = @__userId_0
+ 2026-05-31 23:34:11,252  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (4ms) [Parameters=[@__userId_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [ExecutionLogs] AS [e]
+WHERE [e].[UserId] = @__userId_0 [?] - MESSAGE: Executed DbCommand (4ms) [Parameters=[@__userId_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [ExecutionLogs] AS [e]
+WHERE [e].[UserId] = @__userId_0
+ 2026-05-31 23:34:11,266  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (4ms) [Parameters=[@__userId_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [ExecutionLogs] AS [e]
+WHERE [e].[UserId] = @__userId_0 AND [e].[Status] = N'Success' [?] - MESSAGE: Executed DbCommand (4ms) [Parameters=[@__userId_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [ExecutionLogs] AS [e]
+WHERE [e].[UserId] = @__userId_0 AND [e].[Status] = N'Success'
+ 2026-05-31 23:34:15,819  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC [?] - MESSAGE: Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[ID], [e].[Action], [e].[ErrorMessage], [e].[ExecutedAt], [e].[RetryCount], [e].[Status], [e].[Target], [e].[Trigger], [e].[UserId]
+FROM [ExecutionLogs] AS [e]
+ORDER BY [e].[ExecutedAt] DESC
+ 2026-05-31 23:34:17,062  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [f].[Id], [f].[CreatedAt], [f].[LastProcessedRow], [f].[RuleId], [f].[SheetName], [f].[SpreadSheetId], [f].[UserId]
+FROM [FormWatches] AS [f] [?] - MESSAGE: Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [f].[Id], [f].[CreatedAt], [f].[LastProcessedRow], [f].[RuleId], [f].[SheetName], [f].[SpreadSheetId], [f].[UserId]
+FROM [FormWatches] AS [f]
+ 2026-05-31 23:34:17,065 ERROR AutomationAPI.SERVICES.GoogleSheetsService.[ERROR]: Object reference not set to an instance of an object. [55] - MESSAGE: [ERROR]: Object reference not set to an instance of an object.
+ 2026-05-31 23:34:17,067 ERROR AutomationAPI.SERVICES.GoogleSheetsService.[ERROR]: Object reference not set to an instance of an object. [27] - MESSAGE: [ERROR]: Object reference not set to an instance of an object.
+ 2026-05-31 23:34:17,068 ERROR AutomationAPI.SERVICES.FormWatcherService.[ERROR]: Object reference not set to an instance of an object. [48] - MESSAGE: [ERROR]: Object reference not set to an instance of an object.
+ 2026-05-31 23:34:17,069 ERROR AutomationAPI.SERVICES.GoogleSheetsService.[ERROR]: Object reference not set to an instance of an object. [55] - MESSAGE: [ERROR]: Object reference not set to an instance of an object.
+ 2026-05-31 23:34:17,070 ERROR AutomationAPI.SERVICES.GoogleSheetsService.[ERROR]: Object reference not set to an instance of an object. [27] - MESSAGE: [ERROR]: Object reference not set to an instance of an object.
+ 2026-05-31 23:34:17,071 ERROR AutomationAPI.SERVICES.FormWatcherService.[ERROR]: Object reference not set to an instance of an object. [48] - MESSAGE: [ERROR]: Object reference not set to an instance of an object.
+ 2026-05-31 23:34:17,691  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (9ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[Provider], [c].[IsActive], [c].[ConnectedAt]
+FROM [ConnectedApps] AS [c]
+WHERE [c].[UserId] = @__userId_0 [?] - MESSAGE: Executed DbCommand (9ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[Provider], [c].[IsActive], [c].[ConnectedAt]
+FROM [ConnectedApps] AS [c]
+WHERE [c].[UserId] = @__userId_0
+ 2026-05-31 23:34:17,696  INFO AutomationAPI.SERVICES.ConnectAppsService.[INFO] User USER-2026-04-68155150 retrieved connected apps successfully. [114] - MESSAGE: [INFO] User USER-2026-04-68155150 retrieved connected apps successfully.
+ 2026-05-31 23:34:47,122  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (12ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [f].[Id], [f].[CreatedAt], [f].[LastProcessedRow], [f].[RuleId], [f].[SheetName], [f].[SpreadSheetId], [f].[UserId]
+FROM [FormWatches] AS [f] [?] - MESSAGE: Executed DbCommand (12ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [f].[Id], [f].[CreatedAt], [f].[LastProcessedRow], [f].[RuleId], [f].[SheetName], [f].[SpreadSheetId], [f].[UserId]
+FROM [FormWatches] AS [f]
+ 2026-05-31 23:34:47,124 ERROR AutomationAPI.SERVICES.GoogleSheetsService.[ERROR]: Object reference not set to an instance of an object. [55] - MESSAGE: [ERROR]: Object reference not set to an instance of an object.
+ 2026-05-31 23:34:47,125 ERROR AutomationAPI.SERVICES.GoogleSheetsService.[ERROR]: Object reference not set to an instance of an object. [27] - MESSAGE: [ERROR]: Object reference not set to an instance of an object.
+ 2026-05-31 23:34:47,126 ERROR AutomationAPI.SERVICES.FormWatcherService.[ERROR]: Object reference not set to an instance of an object. [48] - MESSAGE: [ERROR]: Object reference not set to an instance of an object.
+ 2026-05-31 23:34:47,127 ERROR AutomationAPI.SERVICES.GoogleSheetsService.[ERROR]: Object reference not set to an instance of an object. [55] - MESSAGE: [ERROR]: Object reference not set to an instance of an object.
+ 2026-05-31 23:34:47,127 ERROR AutomationAPI.SERVICES.GoogleSheetsService.[ERROR]: Object reference not set to an instance of an object. [27] - MESSAGE: [ERROR]: Object reference not set to an instance of an object.
+ 2026-05-31 23:34:47,128 ERROR AutomationAPI.SERVICES.FormWatcherService.[ERROR]: Object reference not set to an instance of an object. [48] - MESSAGE: [ERROR]: Object reference not set to an instance of an object.
+ 2026-05-31 23:34:53,181  INFO Hangfire.Server.BackgroundServerProcess.Server destiny-elitebo:28720:b3c7da96 caught stopping signal... [?] - MESSAGE: Server destiny-elitebo:28720:b3c7da96 caught stopping signal...
+ 2026-05-31 23:34:53,184  INFO Microsoft.Hosting.Lifetime.Application is shutting down... [0] - MESSAGE: Application is shutting down...
+ 2026-05-31 23:34:53,714  INFO Hangfire.Server.BackgroundServerProcess.Server destiny-elitebo:28720:b3c7da96 caught stopped signal... [?] - MESSAGE: Server destiny-elitebo:28720:b3c7da96 caught stopped signal...
+ 2026-05-31 23:34:53,765  INFO Hangfire.Server.BackgroundServerProcess.Server destiny-elitebo:28720:b3c7da96 All dispatchers stopped [?] - MESSAGE: Server destiny-elitebo:28720:b3c7da96 All dispatchers stopped
+ 2026-05-31 23:34:53,773  INFO Hangfire.Server.BackgroundServerProcess.Server destiny-elitebo:28720:b3c7da96 successfully reported itself as stopped in 4.4171 ms [?] - MESSAGE: Server destiny-elitebo:28720:b3c7da96 successfully reported itself as stopped in 4.4171 ms
+ 2026-05-31 23:34:53,773  INFO Hangfire.Server.BackgroundServerProcess.Server destiny-elitebo:28720:b3c7da96 has been stopped in total 590.1481 ms [?] - MESSAGE: Server destiny-elitebo:28720:b3c7da96 has been stopped in total 590.1481 ms
+ 2026-05-31 23:35:28,380  INFO Hangfire.SqlServer.SqlServerObjectsInstaller.Start installing Hangfire SQL objects... [?] - MESSAGE: Start installing Hangfire SQL objects...
+ 2026-05-31 23:35:31,886  INFO Hangfire.SqlServer.SqlServerObjectsInstaller.Hangfire SQL objects installed. [?] - MESSAGE: Hangfire SQL objects installed.
+ 2026-05-31 23:35:35,224  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (33ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [f].[Id], [f].[CreatedAt], [f].[LastProcessedRow], [f].[RuleId], [f].[SheetName], [f].[SpreadSheetId], [f].[UserId]
+FROM [FormWatches] AS [f] [?] - MESSAGE: Executed DbCommand (33ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [f].[Id], [f].[CreatedAt], [f].[LastProcessedRow], [f].[RuleId], [f].[SheetName], [f].[SpreadSheetId], [f].[UserId]
+FROM [FormWatches] AS [f]
+ 2026-05-31 23:35:35,318  INFO Microsoft.Hosting.Lifetime.Now listening on: http://localhost:5050 [?] - MESSAGE: Now listening on: http://localhost:5050
+ 2026-05-31 23:35:35,338  INFO Hangfire.BackgroundJobServer.Starting Hangfire Server using job storage: 'SQL Server: DESTINY-ELITEBO@JUTIX_AutomationAPI_DB' [?] - MESSAGE: Starting Hangfire Server using job storage: 'SQL Server: DESTINY-ELITEBO@JUTIX_AutomationAPI_DB'
+ 2026-05-31 23:35:35,340  INFO Hangfire.BackgroundJobServer.Using the following options for SQL Server job storage: Queue poll interval: 00:00:00. [?] - MESSAGE: Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+ 2026-05-31 23:35:35,343  INFO Hangfire.BackgroundJobServer.Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15 [?] - MESSAGE: Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+ 2026-05-31 23:35:35,374  INFO Microsoft.Hosting.Lifetime.Application started. Press Ctrl+C to shut down. [0] - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2026-05-31 23:35:35,380  INFO Microsoft.Hosting.Lifetime.Hosting environment: Development [0] - MESSAGE: Hosting environment: Development
+ 2026-05-31 23:35:35,381  INFO Microsoft.Hosting.Lifetime.Content root path: C:\Sample Files\MY WORK\AutomationAPI\AutomationAPI [0] - MESSAGE: Content root path: C:\Sample Files\MY WORK\AutomationAPI\AutomationAPI
+ 2026-05-31 23:35:35,411 ERROR AutomationAPI.SERVICES.GoogleSheetsService.[ERROR]: Object reference not set to an instance of an object. [55] - MESSAGE: [ERROR]: Object reference not set to an instance of an object.
+ 2026-05-31 23:35:35,415 ERROR AutomationAPI.SERVICES.GoogleSheetsService.[ERROR]: Object reference not set to an instance of an object. [27] - MESSAGE: [ERROR]: Object reference not set to an instance of an object.
+ 2026-05-31 23:35:35,418 ERROR AutomationAPI.SERVICES.FormWatcherService.[ERROR]: Object reference not set to an instance of an object. [48] - MESSAGE: [ERROR]: Object reference not set to an instance of an object.
+ 2026-05-31 23:35:35,421 ERROR AutomationAPI.SERVICES.GoogleSheetsService.[ERROR]: Object reference not set to an instance of an object. [55] - MESSAGE: [ERROR]: Object reference not set to an instance of an object.
+ 2026-05-31 23:35:35,423 ERROR AutomationAPI.SERVICES.GoogleSheetsService.[ERROR]: Object reference not set to an instance of an object. [27] - MESSAGE: [ERROR]: Object reference not set to an instance of an object.
+ 2026-05-31 23:35:35,424 ERROR AutomationAPI.SERVICES.FormWatcherService.[ERROR]: Object reference not set to an instance of an object. [48] - MESSAGE: [ERROR]: Object reference not set to an instance of an object.
+ 2026-05-31 23:35:35,688  INFO Hangfire.Server.BackgroundServerProcess.Server destiny-elitebo:31832:65247c79 successfully announced in 310.6835 ms [?] - MESSAGE: Server destiny-elitebo:31832:65247c79 successfully announced in 310.6835 ms
+ 2026-05-31 23:35:35,695  INFO Hangfire.Server.BackgroundServerProcess.Server destiny-elitebo:31832:65247c79 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, SqlServerHeartbeatProcess, ExpirationManager, CountersAggregator, Worker, DelayedJobScheduler, RecurringJobScheduler... [?] - MESSAGE: Server destiny-elitebo:31832:65247c79 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, SqlServerHeartbeatProcess, ExpirationManager, CountersAggregator, Worker, DelayedJobScheduler, RecurringJobScheduler...
+ 2026-05-31 23:35:35,760  INFO Hangfire.Server.BackgroundServerProcess.Server destiny-elitebo:31832:65247c79 all the dispatchers started [?] - MESSAGE: Server destiny-elitebo:31832:65247c79 all the dispatchers started
+ 2026-05-31 23:35:50,331  WARN Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware.Failed to determine the https port for redirect. [?] - MESSAGE: Failed to determine the https port for redirect.
+ 2026-05-31 23:35:50,583  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (7ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[Provider], [c].[IsActive], [c].[ConnectedAt], [c].[ExternalAccountEmail], [c].[ExpiresAt]
+FROM [ConnectedApps] AS [c]
+WHERE [c].[UserId] = @__userId_0 [?] - MESSAGE: Executed DbCommand (7ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[Provider], [c].[IsActive], [c].[ConnectedAt], [c].[ExternalAccountEmail], [c].[ExpiresAt]
+FROM [ConnectedApps] AS [c]
+WHERE [c].[UserId] = @__userId_0
+ 2026-05-31 23:35:50,591  INFO AutomationAPI.SERVICES.ConnectAppsService.[INFO] User USER-2026-04-68155150 retrieved connected apps successfully. [118] - MESSAGE: [INFO] User USER-2026-04-68155150 retrieved connected apps successfully.
+ 2026-05-31 23:35:52,461  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[Provider], [c].[IsActive], [c].[ConnectedAt], [c].[ExternalAccountEmail], [c].[ExpiresAt]
+FROM [ConnectedApps] AS [c]
+WHERE [c].[UserId] = @__userId_0 [?] - MESSAGE: Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[Provider], [c].[IsActive], [c].[ConnectedAt], [c].[ExternalAccountEmail], [c].[ExpiresAt]
+FROM [ConnectedApps] AS [c]
+WHERE [c].[UserId] = @__userId_0
+ 2026-05-31 23:35:52,463  INFO AutomationAPI.SERVICES.ConnectAppsService.[INFO] User USER-2026-04-68155150 retrieved connected apps successfully. [118] - MESSAGE: [INFO] User USER-2026-04-68155150 retrieved connected apps successfully.
+ 2026-05-31 23:35:55,828  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[Provider], [c].[IsActive], [c].[ConnectedAt], [c].[ExternalAccountEmail], [c].[ExpiresAt]
+FROM [ConnectedApps] AS [c]
+WHERE [c].[UserId] = @__userId_0 [?] - MESSAGE: Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[Provider], [c].[IsActive], [c].[ConnectedAt], [c].[ExternalAccountEmail], [c].[ExpiresAt]
+FROM [ConnectedApps] AS [c]
+WHERE [c].[UserId] = @__userId_0
+ 2026-05-31 23:35:55,832  INFO AutomationAPI.SERVICES.ConnectAppsService.[INFO] User USER-2026-04-68155150 retrieved connected apps successfully. [118] - MESSAGE: [INFO] User USER-2026-04-68155150 retrieved connected apps successfully.
+ 2026-05-31 23:35:57,735  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[Provider], [c].[IsActive], [c].[ConnectedAt], [c].[ExternalAccountEmail], [c].[ExpiresAt]
+FROM [ConnectedApps] AS [c]
+WHERE [c].[UserId] = @__userId_0 [?] - MESSAGE: Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[Provider], [c].[IsActive], [c].[ConnectedAt], [c].[ExternalAccountEmail], [c].[ExpiresAt]
+FROM [ConnectedApps] AS [c]
+WHERE [c].[UserId] = @__userId_0
+ 2026-05-31 23:35:57,737  INFO AutomationAPI.SERVICES.ConnectAppsService.[INFO] User USER-2026-04-68155150 retrieved connected apps successfully. [118] - MESSAGE: [INFO] User USER-2026-04-68155150 retrieved connected apps successfully.
+ 2026-05-31 23:36:05,446  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [f].[Id], [f].[CreatedAt], [f].[LastProcessedRow], [f].[RuleId], [f].[SheetName], [f].[SpreadSheetId], [f].[UserId]
+FROM [FormWatches] AS [f] [?] - MESSAGE: Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [f].[Id], [f].[CreatedAt], [f].[LastProcessedRow], [f].[RuleId], [f].[SheetName], [f].[SpreadSheetId], [f].[UserId]
+FROM [FormWatches] AS [f]
+ 2026-05-31 23:36:05,448 ERROR AutomationAPI.SERVICES.GoogleSheetsService.[ERROR]: Object reference not set to an instance of an object. [55] - MESSAGE: [ERROR]: Object reference not set to an instance of an object.
+ 2026-05-31 23:36:05,449 ERROR AutomationAPI.SERVICES.GoogleSheetsService.[ERROR]: Object reference not set to an instance of an object. [27] - MESSAGE: [ERROR]: Object reference not set to an instance of an object.
+ 2026-05-31 23:36:05,450 ERROR AutomationAPI.SERVICES.FormWatcherService.[ERROR]: Object reference not set to an instance of an object. [48] - MESSAGE: [ERROR]: Object reference not set to an instance of an object.
+ 2026-05-31 23:36:05,451 ERROR AutomationAPI.SERVICES.GoogleSheetsService.[ERROR]: Object reference not set to an instance of an object. [55] - MESSAGE: [ERROR]: Object reference not set to an instance of an object.
+ 2026-05-31 23:36:05,451 ERROR AutomationAPI.SERVICES.GoogleSheetsService.[ERROR]: Object reference not set to an instance of an object. [27] - MESSAGE: [ERROR]: Object reference not set to an instance of an object.
+ 2026-05-31 23:36:05,452 ERROR AutomationAPI.SERVICES.FormWatcherService.[ERROR]: Object reference not set to an instance of an object. [48] - MESSAGE: [ERROR]: Object reference not set to an instance of an object.
+ 2026-05-31 23:36:05,802  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[Provider], [c].[IsActive], [c].[ConnectedAt], [c].[ExternalAccountEmail], [c].[ExpiresAt]
+FROM [ConnectedApps] AS [c]
+WHERE [c].[UserId] = @__userId_0 [?] - MESSAGE: Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[Provider], [c].[IsActive], [c].[ConnectedAt], [c].[ExternalAccountEmail], [c].[ExpiresAt]
+FROM [ConnectedApps] AS [c]
+WHERE [c].[UserId] = @__userId_0
+ 2026-05-31 23:36:05,804  INFO AutomationAPI.SERVICES.ConnectAppsService.[INFO] User USER-2026-04-68155150 retrieved connected apps successfully. [118] - MESSAGE: [INFO] User USER-2026-04-68155150 retrieved connected apps successfully.
+ 2026-05-31 23:36:10,651  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (2ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[Provider], [c].[IsActive], [c].[ConnectedAt], [c].[ExternalAccountEmail], [c].[ExpiresAt]
+FROM [ConnectedApps] AS [c]
+WHERE [c].[UserId] = @__userId_0 [?] - MESSAGE: Executed DbCommand (2ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[Provider], [c].[IsActive], [c].[ConnectedAt], [c].[ExternalAccountEmail], [c].[ExpiresAt]
+FROM [ConnectedApps] AS [c]
+WHERE [c].[UserId] = @__userId_0
+ 2026-05-31 23:36:10,653  INFO AutomationAPI.SERVICES.ConnectAppsService.[INFO] User USER-2026-04-68155150 retrieved connected apps successfully. [118] - MESSAGE: [INFO] User USER-2026-04-68155150 retrieved connected apps successfully.
+ 2026-05-31 23:36:23,724  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[Provider], [c].[IsActive], [c].[ConnectedAt], [c].[ExternalAccountEmail], [c].[ExpiresAt]
+FROM [ConnectedApps] AS [c]
+WHERE [c].[UserId] = @__userId_0 [?] - MESSAGE: Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[Provider], [c].[IsActive], [c].[ConnectedAt], [c].[ExternalAccountEmail], [c].[ExpiresAt]
+FROM [ConnectedApps] AS [c]
+WHERE [c].[UserId] = @__userId_0
+ 2026-05-31 23:36:23,727  INFO AutomationAPI.SERVICES.ConnectAppsService.[INFO] User USER-2026-04-68155150 retrieved connected apps successfully. [118] - MESSAGE: [INFO] User USER-2026-04-68155150 retrieved connected apps successfully.
+ 2026-05-31 23:36:28,705  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[Provider], [c].[IsActive], [c].[ConnectedAt], [c].[ExternalAccountEmail], [c].[ExpiresAt]
+FROM [ConnectedApps] AS [c]
+WHERE [c].[UserId] = @__userId_0 [?] - MESSAGE: Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[Provider], [c].[IsActive], [c].[ConnectedAt], [c].[ExternalAccountEmail], [c].[ExpiresAt]
+FROM [ConnectedApps] AS [c]
+WHERE [c].[UserId] = @__userId_0
+ 2026-05-31 23:36:28,707  INFO AutomationAPI.SERVICES.ConnectAppsService.[INFO] User USER-2026-04-68155150 retrieved connected apps successfully. [118] - MESSAGE: [INFO] User USER-2026-04-68155150 retrieved connected apps successfully.
+ 2026-05-31 23:36:35,477  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [f].[Id], [f].[CreatedAt], [f].[LastProcessedRow], [f].[RuleId], [f].[SheetName], [f].[SpreadSheetId], [f].[UserId]
+FROM [FormWatches] AS [f] [?] - MESSAGE: Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [f].[Id], [f].[CreatedAt], [f].[LastProcessedRow], [f].[RuleId], [f].[SheetName], [f].[SpreadSheetId], [f].[UserId]
+FROM [FormWatches] AS [f]
+ 2026-05-31 23:36:35,478 ERROR AutomationAPI.SERVICES.GoogleSheetsService.[ERROR]: Object reference not set to an instance of an object. [55] - MESSAGE: [ERROR]: Object reference not set to an instance of an object.
+ 2026-05-31 23:36:35,479 ERROR AutomationAPI.SERVICES.GoogleSheetsService.[ERROR]: Object reference not set to an instance of an object. [27] - MESSAGE: [ERROR]: Object reference not set to an instance of an object.
+ 2026-05-31 23:36:35,479 ERROR AutomationAPI.SERVICES.FormWatcherService.[ERROR]: Object reference not set to an instance of an object. [48] - MESSAGE: [ERROR]: Object reference not set to an instance of an object.
+ 2026-05-31 23:36:35,480 ERROR AutomationAPI.SERVICES.GoogleSheetsService.[ERROR]: Object reference not set to an instance of an object. [55] - MESSAGE: [ERROR]: Object reference not set to an instance of an object.
+ 2026-05-31 23:36:35,481 ERROR AutomationAPI.SERVICES.GoogleSheetsService.[ERROR]: Object reference not set to an instance of an object. [27] - MESSAGE: [ERROR]: Object reference not set to an instance of an object.
+ 2026-05-31 23:36:35,481 ERROR AutomationAPI.SERVICES.FormWatcherService.[ERROR]: Object reference not set to an instance of an object. [48] - MESSAGE: [ERROR]: Object reference not set to an instance of an object.
+ 2026-05-31 23:37:05,501  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [f].[Id], [f].[CreatedAt], [f].[LastProcessedRow], [f].[RuleId], [f].[SheetName], [f].[SpreadSheetId], [f].[UserId]
+FROM [FormWatches] AS [f] [?] - MESSAGE: Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [f].[Id], [f].[CreatedAt], [f].[LastProcessedRow], [f].[RuleId], [f].[SheetName], [f].[SpreadSheetId], [f].[UserId]
+FROM [FormWatches] AS [f]
+ 2026-05-31 23:37:05,502 ERROR AutomationAPI.SERVICES.GoogleSheetsService.[ERROR]: Object reference not set to an instance of an object. [55] - MESSAGE: [ERROR]: Object reference not set to an instance of an object.
+ 2026-05-31 23:37:05,504 ERROR AutomationAPI.SERVICES.GoogleSheetsService.[ERROR]: Object reference not set to an instance of an object. [27] - MESSAGE: [ERROR]: Object reference not set to an instance of an object.
+ 2026-05-31 23:37:05,505 ERROR AutomationAPI.SERVICES.FormWatcherService.[ERROR]: Object reference not set to an instance of an object. [48] - MESSAGE: [ERROR]: Object reference not set to an instance of an object.
+ 2026-05-31 23:37:05,506 ERROR AutomationAPI.SERVICES.GoogleSheetsService.[ERROR]: Object reference not set to an instance of an object. [55] - MESSAGE: [ERROR]: Object reference not set to an instance of an object.
+ 2026-05-31 23:37:05,507 ERROR AutomationAPI.SERVICES.GoogleSheetsService.[ERROR]: Object reference not set to an instance of an object. [27] - MESSAGE: [ERROR]: Object reference not set to an instance of an object.
+ 2026-05-31 23:37:05,507 ERROR AutomationAPI.SERVICES.FormWatcherService.[ERROR]: Object reference not set to an instance of an object. [48] - MESSAGE: [ERROR]: Object reference not set to an instance of an object.
+ 2026-05-31 23:37:20,738  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (7ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[Provider], [c].[IsActive], [c].[ConnectedAt], [c].[ExternalAccountEmail], [c].[ExpiresAt]
+FROM [ConnectedApps] AS [c]
+WHERE [c].[UserId] = @__userId_0 [?] - MESSAGE: Executed DbCommand (7ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[Provider], [c].[IsActive], [c].[ConnectedAt], [c].[ExternalAccountEmail], [c].[ExpiresAt]
+FROM [ConnectedApps] AS [c]
+WHERE [c].[UserId] = @__userId_0
+ 2026-05-31 23:37:20,740  INFO AutomationAPI.SERVICES.ConnectAppsService.[INFO] User USER-2026-04-68155150 retrieved connected apps successfully. [118] - MESSAGE: [INFO] User USER-2026-04-68155150 retrieved connected apps successfully.
+ 2026-05-31 23:37:35,512  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [f].[Id], [f].[CreatedAt], [f].[LastProcessedRow], [f].[RuleId], [f].[SheetName], [f].[SpreadSheetId], [f].[UserId]
+FROM [FormWatches] AS [f] [?] - MESSAGE: Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [f].[Id], [f].[CreatedAt], [f].[LastProcessedRow], [f].[RuleId], [f].[SheetName], [f].[SpreadSheetId], [f].[UserId]
+FROM [FormWatches] AS [f]
+ 2026-05-31 23:37:35,513 ERROR AutomationAPI.SERVICES.GoogleSheetsService.[ERROR]: Object reference not set to an instance of an object. [55] - MESSAGE: [ERROR]: Object reference not set to an instance of an object.
+ 2026-05-31 23:37:35,515 ERROR AutomationAPI.SERVICES.GoogleSheetsService.[ERROR]: Object reference not set to an instance of an object. [27] - MESSAGE: [ERROR]: Object reference not set to an instance of an object.
+ 2026-05-31 23:37:35,517 ERROR AutomationAPI.SERVICES.FormWatcherService.[ERROR]: Object reference not set to an instance of an object. [48] - MESSAGE: [ERROR]: Object reference not set to an instance of an object.
+ 2026-05-31 23:37:35,518 ERROR AutomationAPI.SERVICES.GoogleSheetsService.[ERROR]: Object reference not set to an instance of an object. [55] - MESSAGE: [ERROR]: Object reference not set to an instance of an object.
+ 2026-05-31 23:37:35,520 ERROR AutomationAPI.SERVICES.GoogleSheetsService.[ERROR]: Object reference not set to an instance of an object. [27] - MESSAGE: [ERROR]: Object reference not set to an instance of an object.
+ 2026-05-31 23:37:35,522 ERROR AutomationAPI.SERVICES.FormWatcherService.[ERROR]: Object reference not set to an instance of an object. [48] - MESSAGE: [ERROR]: Object reference not set to an instance of an object.
+ 2026-05-31 23:38:05,540  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [f].[Id], [f].[CreatedAt], [f].[LastProcessedRow], [f].[RuleId], [f].[SheetName], [f].[SpreadSheetId], [f].[UserId]
+FROM [FormWatches] AS [f] [?] - MESSAGE: Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [f].[Id], [f].[CreatedAt], [f].[LastProcessedRow], [f].[RuleId], [f].[SheetName], [f].[SpreadSheetId], [f].[UserId]
+FROM [FormWatches] AS [f]
+ 2026-05-31 23:38:05,542 ERROR AutomationAPI.SERVICES.GoogleSheetsService.[ERROR]: Object reference not set to an instance of an object. [55] - MESSAGE: [ERROR]: Object reference not set to an instance of an object.
+ 2026-05-31 23:38:05,544 ERROR AutomationAPI.SERVICES.GoogleSheetsService.[ERROR]: Object reference not set to an instance of an object. [27] - MESSAGE: [ERROR]: Object reference not set to an instance of an object.
+ 2026-05-31 23:38:05,544 ERROR AutomationAPI.SERVICES.FormWatcherService.[ERROR]: Object reference not set to an instance of an object. [48] - MESSAGE: [ERROR]: Object reference not set to an instance of an object.
+ 2026-05-31 23:38:05,545 ERROR AutomationAPI.SERVICES.GoogleSheetsService.[ERROR]: Object reference not set to an instance of an object. [55] - MESSAGE: [ERROR]: Object reference not set to an instance of an object.
+ 2026-05-31 23:38:05,546 ERROR AutomationAPI.SERVICES.GoogleSheetsService.[ERROR]: Object reference not set to an instance of an object. [27] - MESSAGE: [ERROR]: Object reference not set to an instance of an object.
+ 2026-05-31 23:38:05,547 ERROR AutomationAPI.SERVICES.FormWatcherService.[ERROR]: Object reference not set to an instance of an object. [48] - MESSAGE: [ERROR]: Object reference not set to an instance of an object.
+ 2026-05-31 23:38:35,553  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [f].[Id], [f].[CreatedAt], [f].[LastProcessedRow], [f].[RuleId], [f].[SheetName], [f].[SpreadSheetId], [f].[UserId]
+FROM [FormWatches] AS [f] [?] - MESSAGE: Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [f].[Id], [f].[CreatedAt], [f].[LastProcessedRow], [f].[RuleId], [f].[SheetName], [f].[SpreadSheetId], [f].[UserId]
+FROM [FormWatches] AS [f]
+ 2026-05-31 23:38:35,554 ERROR AutomationAPI.SERVICES.GoogleSheetsService.[ERROR]: Object reference not set to an instance of an object. [55] - MESSAGE: [ERROR]: Object reference not set to an instance of an object.
+ 2026-05-31 23:38:35,555 ERROR AutomationAPI.SERVICES.GoogleSheetsService.[ERROR]: Object reference not set to an instance of an object. [27] - MESSAGE: [ERROR]: Object reference not set to an instance of an object.
+ 2026-05-31 23:38:35,557 ERROR AutomationAPI.SERVICES.FormWatcherService.[ERROR]: Object reference not set to an instance of an object. [48] - MESSAGE: [ERROR]: Object reference not set to an instance of an object.
+ 2026-05-31 23:38:35,558 ERROR AutomationAPI.SERVICES.GoogleSheetsService.[ERROR]: Object reference not set to an instance of an object. [55] - MESSAGE: [ERROR]: Object reference not set to an instance of an object.
+ 2026-05-31 23:38:35,558 ERROR AutomationAPI.SERVICES.GoogleSheetsService.[ERROR]: Object reference not set to an instance of an object. [27] - MESSAGE: [ERROR]: Object reference not set to an instance of an object.
+ 2026-05-31 23:38:35,559 ERROR AutomationAPI.SERVICES.FormWatcherService.[ERROR]: Object reference not set to an instance of an object. [48] - MESSAGE: [ERROR]: Object reference not set to an instance of an object.
+ 2026-05-31 23:39:05,580  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (16ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [f].[Id], [f].[CreatedAt], [f].[LastProcessedRow], [f].[RuleId], [f].[SheetName], [f].[SpreadSheetId], [f].[UserId]
+FROM [FormWatches] AS [f] [?] - MESSAGE: Executed DbCommand (16ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [f].[Id], [f].[CreatedAt], [f].[LastProcessedRow], [f].[RuleId], [f].[SheetName], [f].[SpreadSheetId], [f].[UserId]
+FROM [FormWatches] AS [f]
+ 2026-05-31 23:39:05,582 ERROR AutomationAPI.SERVICES.GoogleSheetsService.[ERROR]: Object reference not set to an instance of an object. [55] - MESSAGE: [ERROR]: Object reference not set to an instance of an object.
+ 2026-05-31 23:39:05,583 ERROR AutomationAPI.SERVICES.GoogleSheetsService.[ERROR]: Object reference not set to an instance of an object. [27] - MESSAGE: [ERROR]: Object reference not set to an instance of an object.
+ 2026-05-31 23:39:05,588 ERROR AutomationAPI.SERVICES.FormWatcherService.[ERROR]: Object reference not set to an instance of an object. [48] - MESSAGE: [ERROR]: Object reference not set to an instance of an object.
+ 2026-05-31 23:39:05,589 ERROR AutomationAPI.SERVICES.GoogleSheetsService.[ERROR]: Object reference not set to an instance of an object. [55] - MESSAGE: [ERROR]: Object reference not set to an instance of an object.
+ 2026-05-31 23:39:05,591 ERROR AutomationAPI.SERVICES.GoogleSheetsService.[ERROR]: Object reference not set to an instance of an object. [27] - MESSAGE: [ERROR]: Object reference not set to an instance of an object.
+ 2026-05-31 23:39:05,596 ERROR AutomationAPI.SERVICES.FormWatcherService.[ERROR]: Object reference not set to an instance of an object. [48] - MESSAGE: [ERROR]: Object reference not set to an instance of an object.
+ 2026-05-31 23:39:35,618  INFO Microsoft.EntityFrameworkCore.Database.Command.Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [f].[Id], [f].[CreatedAt], [f].[LastProcessedRow], [f].[RuleId], [f].[SheetName], [f].[SpreadSheetId], [f].[UserId]
+FROM [FormWatches] AS [f] [?] - MESSAGE: Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [f].[Id], [f].[CreatedAt], [f].[LastProcessedRow], [f].[RuleId], [f].[SheetName], [f].[SpreadSheetId], [f].[UserId]
+FROM [FormWatches] AS [f]
+ 2026-05-31 23:39:35,621 ERROR AutomationAPI.SERVICES.GoogleSheetsService.[ERROR]: Object reference not set to an instance of an object. [55] - MESSAGE: [ERROR]: Object reference not set to an instance of an object.
+ 2026-05-31 23:39:35,623 ERROR AutomationAPI.SERVICES.GoogleSheetsService.[ERROR]: Object reference not set to an instance of an object. [27] - MESSAGE: [ERROR]: Object reference not set to an instance of an object.
+ 2026-05-31 23:39:35,625 ERROR AutomationAPI.SERVICES.FormWatcherService.[ERROR]: Object reference not set to an instance of an object. [48] - MESSAGE: [ERROR]: Object reference not set to an instance of an object.
+ 2026-05-31 23:39:35,626 ERROR AutomationAPI.SERVICES.GoogleSheetsService.[ERROR]: Object reference not set to an instance of an object. [55] - MESSAGE: [ERROR]: Object reference not set to an instance of an object.
+ 2026-05-31 23:39:35,627 ERROR AutomationAPI.SERVICES.GoogleSheetsService.[ERROR]: Object reference not set to an instance of an object. [27] - MESSAGE: [ERROR]: Object reference not set to an instance of an object.
+ 2026-05-31 23:39:35,628 ERROR AutomationAPI.SERVICES.FormWatcherService.[ERROR]: Object reference not set to an instance of an object. [48] - MESSAGE: [ERROR]: Object reference not set to an instance of an object.
+ 2026-05-31 23:39:40,152  INFO Hangfire.Server.BackgroundServerProcess.Server destiny-elitebo:31832:65247c79 caught stopping signal... [?] - MESSAGE: Server destiny-elitebo:31832:65247c79 caught stopping signal...
+ 2026-05-31 23:39:40,154  INFO Microsoft.Hosting.Lifetime.Application is shutting down... [0] - MESSAGE: Application is shutting down...
+ 2026-05-31 23:39:40,406  INFO Hangfire.Server.BackgroundServerProcess.Server destiny-elitebo:31832:65247c79 All dispatchers stopped [?] - MESSAGE: Server destiny-elitebo:31832:65247c79 All dispatchers stopped
+ 2026-05-31 23:39:40,415  INFO Hangfire.Server.BackgroundServerProcess.Server destiny-elitebo:31832:65247c79 successfully reported itself as stopped in 5.7949 ms [?] - MESSAGE: Server destiny-elitebo:31832:65247c79 successfully reported itself as stopped in 5.7949 ms
+ 2026-05-31 23:39:40,416  INFO Hangfire.Server.BackgroundServerProcess.Server destiny-elitebo:31832:65247c79 has been stopped in total 262.1075 ms [?] - MESSAGE: Server destiny-elitebo:31832:65247c79 has been stopped in total 262.1075 ms
+ 
