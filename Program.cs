@@ -154,7 +154,7 @@ builder.Services.AddCors(options =>
                         // only the origins listed below are actually allowed. Add preview-deploy
                         // origins here as you get them.
                         .WithOrigins(
-                            "https://jutixlabs-automation.vercel.app/",
+                            "https://jutixlabs-nexus.vercel.app/",
                             "http://localhost:3000",
                             "http://localhost:5173")
                         .AllowAnyMethod()
